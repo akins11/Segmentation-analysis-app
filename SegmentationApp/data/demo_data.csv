@@ -1,0 +1,2241 @@
+id,income,age,total_amount_spent,total_purchase,education,country,total_campaign_accepted,marital_status
+1826,84835,44,1190,15,Bsc,Spain,0,Divorced
+1,57091,53,577,18,Bsc,Canada,1,Single
+10476,67267,56,251,11,Bsc,United State,0,Married
+1386,32474,47,11,4,Bsc,Australia,0,Single
+5371,21474,25,91,8,Bsc,Spain,1,Single
+7348,71691,56,1192,17,PhD,Spain,0,Single
+4073,63564,60,1215,28,Undergraduate,Germany,1,Married
+1991,44931,47,96,7,Bsc,Spain,0,Single
+4047,65324,60,544,20,PhD,United State,0,Married
+9477,65324,60,544,20,PhD,India,0,Married
+2079,81044,67,1208,22,Undergraduate,United State,0,Married
+5642,62499,35,222,12,Master,Spain,0,Single
+10530,67786,55,1156,16,PhD,India,0,Single
+2964,26872,33,72,5,Bsc,Canada,0,Married
+10311,4428,45,359,25,Bsc,Spain,0,Married
+837,54809,37,174,12,Bsc,Spain,0,Married
+10521,54809,37,174,12,Bsc,Spain,0,Married
+10175,32173,56,22,5,PhD,Spain,0,Divorced
+1473,47823,54,72,7,Undergraduate,Canada,0,Single
+2795,30523,56,13,4,Master,Canada,0,Single
+2285,36634,60,335,15,Master,South Africa,0,Single
+115,43456,48,393,17,Master,India,0,Single
+10470,40662,35,92,8,Master,Germany,0,Married
+4065,49544,38,404,16,PhD,Spain,0,Married
+10968,57731,45,704,26,Bsc,India,0,Single
+5985,33168,49,122,10,Master,Spain,0,Single
+5430,54450,58,684,31,Bsc,Spain,0,Single
+8432,54450,58,684,31,Bsc,Spain,0,Single
+453,35340,58,45,7,PhD,Spain,0,Single
+9687,73170,39,726,16,Bsc,Canada,0,Single
+8890,65808,43,272,14,PhD,Spain,0,Divorced
+9264,79529,28,1638,22,Bsc,Canada,0,Married
+5824,34578,42,8,4,PhD,Australia,0,Single
+5794,46374,40,446,18,PhD,India,2,Married
+3068,18351,24,43,6,Bsc,Spain,0,Married
+7962,95169,27,1901,12,PhD,Spain,2,Single
+2681,65370,30,461,19,Undergraduate,Spain,0,Married
+10141,39228,54,20,4,Master,South Africa,0,Divorced
+3725,84865,53,1688,16,PhD,Spain,4,Single
+3767,61314,46,1008,24,Bsc,Spain,0,Married
+5585,21359,42,48,7,Bsc,Canada,0,Single
+7030,66465,59,1485,35,PhD,Spain,1,Married
+1524,81698,31,1104,16,Undergraduate,Spain,1,Single
+3657,39146,28,165,11,Bsc,Spain,0,Single
+5740,25959,44,56,7,Undergraduate,Spain,0,Divorced
+9595,64260,53,1574,14,Bsc,Spain,0,Single
+3158,32300,41,39,5,Bsc,Spain,0,Married
+5114,74806,49,965,16,Master,Australia,0,Married
+340,72967,44,497,19,Bsc,Germany,1,Divorced
+8805,48904,54,371,17,Bsc,United State,0,Single
+1241,14796,30,51,6,Undergraduate,Germany,0,Married
+1402,66991,60,1253,21,Master,Germany,0,Married
+7264,52195,36,17,4,Undergraduate,South Africa,0,Single
+1619,90369,58,1588,17,Bsc,Spain,0,Married
+6398,18393,40,50,8,Basic,Spain,0,Married
+1857,47139,62,83,7,Bsc,Spain,0,Single
+4877,38576,41,41,5,Master,India,0,Married
+3066,61905,39,231,12,PhD,South Africa,0,Single
+10286,83715,52,926,24,Bsc,South Africa,0,Married
+1992,60597,50,893,16,Bsc,Spain,1,Married
+4246,6560,32,373,2,Master,Spain,0,Single
+10623,48330,53,32,5,Master,Spain,0,Single
+4867,38236,46,88,11,PhD,Spain,0,Single
+3112,22701,37,24,5,Master,Spain,0,Married
+4865,53367,40,400,21,Master,Australia,0,Divorced
+6287,34728,28,36,5,Bsc,Spain,0,Single
+4405,63915,58,789,23,Master,Australia,0,Married
+5332,82504,54,1066,17,Undergraduate,India,0,Married
+1519,38578,42,73,9,PhD,Spain,0,Single
+9080,38578,42,73,9,PhD,Spain,0,Single
+1772,79174,39,2043,19,PhD,Canada,2,Married
+5341,81975,52,1588,14,Undergraduate,South Africa,1,Divorced
+5510,43263,37,441,16,Master,Spain,0,Married
+3887,27242,44,106,7,Bsc,India,0,Single
+7022,76445,43,1410,21,Bsc,South Africa,0,Married
+9999,75276,49,1040,23,Bsc,Spain,0,Single
+10352,34213,51,117,9,Bsc,South Africa,0,Single
+7919,72335,38,2092,23,PhD,Spain,0,Single
+4114,79143,50,1693,29,Master,Australia,0,Married
+7990,27469,67,17,4,Bsc,Canada,0,Married
+9888,68695,45,1091,16,Bsc,Spain,0,Single
+4399,68695,45,1091,16,Bsc,Canada,0,Single
+4452,50388,57,372,17,Bsc,Germany,2,Single
+4785,77622,44,714,22,PhD,South Africa,0,Single
+8461,46102,52,16,4,Bsc,Spain,0,Divorced
+3878,31859,34,48,5,Undergraduate,Spain,0,Single
+9612,23830,27,43,5,Undergraduate,Spain,0,Single
+4098,24639,41,44,9,Bsc,Australia,0,Married
+158,71604,69,1196,17,PhD,Spain,1,Single
+3896,27255,30,37,5,Bsc,Spain,0,Married
+9970,55375,37,162,9,Bsc,Canada,0,Single
+4002,77037,54,1123,27,PhD,Spain,0,Married
+10914,24163,44,17,6,Bsc,Spain,0,Single
+7279,69476,45,1044,15,PhD,United State,0,Single
+10582,72063,35,758,21,Bsc,Germany,0,Married
+4470,58646,52,140,8,Master,Spain,0,Married
+6183,58646,52,140,8,Master,Germany,0,Married
+6379,47570,65,121,9,Master,United State,0,Single
+8601,80011,34,1395,21,Bsc,Australia,0,Married
+4827,54998,58,455,20,PhD,Spain,0,Single
+6715,60200,66,685,25,PhD,Spain,0,Single
+10676,63211,32,1173,20,Bsc,Spain,0,Married
+1041,48432,41,424,19,PhD,South Africa,0,Single
+492,48432,41,424,19,PhD,Canada,0,Single
+11133,48432,41,424,19,PhD,India,0,Single
+4491,62845,65,1178,28,Master,Spain,1,Married
+873,62845,65,1178,28,Master,Spain,1,Married
+1631,65220,49,1282,23,PhD,Germany,0,Single
+8278,74214,24,1711,16,PhD,Spain,0,Married
+6815,96547,34,809,21,Undergraduate,Spain,3,Married
+254,53863,59,473,18,Bsc,Spain,1,Single
+1349,50447,44,148,8,Bsc,India,0,Married
+2534,37716,61,188,10,Bsc,Australia,0,Married
+2130,45203,32,147,8,Bsc,South Africa,0,Single
+2296,37368,39,30,4,Master,Spain,1,Married
+3799,67225,59,868,23,Bsc,United State,0,Married
+11084,65104,38,1053,17,Master,Canada,0,Single
+5172,65104,38,1053,17,Master,Spain,0,Single
+9504,81698,65,1008,25,Master,Spain,0,Married
+850,70566,46,757,22,Bsc,Spain,0,Single
+4477,69096,56,653,18,Bsc,Germany,0,Single
+1945,71434,52,1400,21,Bsc,Spain,2,Married
+7685,33039,36,78,7,Bsc,Spain,0,Married
+6310,33039,36,78,7,Bsc,Canada,0,Married
+10832,46610,56,467,14,Bsc,Spain,0,Single
+3025,49967,56,306,15,Bsc,Canada,0,Single
+2404,53359,38,257,14,Bsc,United State,0,Married
+8581,49505,43,751,29,Master,Spain,0,Married
+8755,68657,68,1196,18,Master,Australia,0,Married
+10177,72071,60,1338,20,Bsc,Spain,0,Divorced
+2429,72071,60,1338,20,Bsc,Canada,0,Divorced
+8920,59235,47,1128,28,Master,India,0,Single
+8430,21994,57,22,4,Bsc,Australia,0,Single
+8619,21994,57,22,4,Bsc,Spain,0,Single
+8996,51381.5,57,603,29,PhD,Germany,0,Married
+7233,69209,42,1782,16,Bsc,Canada,1,Married
+6678,31928,25,72,9,Bsc,India,0,Single
+830,74004,27,1658,15,PhD,India,2,Single
+6365,30390,27,80,6,Undergraduate,India,0,Married
+6770,21355,29,68,7,Bsc,United State,1,Married
+2261,26304,45,16,4,Bsc,Germany,0,Married
+1031,85710,25,1062,26,Undergraduate,India,1,Married
+10089,102692,40,1112,29,Bsc,South Africa,4,Divorced
+9256,58350,43,1001,27,Bsc,Spain,0,Single
+10641,7500,36,57,10,Bsc,Spain,0,Single
+624,18890,30,35,4,Master,South Africa,1,Single
+4211,20425,28,57,7,Basic,Canada,0,Married
+1407,20425,28,57,7,Basic,Germany,0,Married
+10356,41437,57,32,5,PhD,Spain,0,Divorced
+9323,49912,65,874,26,Master,Mexico,1,Single
+1146,49912,65,874,26,Master,Australia,1,Single
+6343,79823,55,1518,23,Bsc,Australia,1,Married
+8545,85683,60,1789,17,Bsc,Spain,4,Divorced
+8275,47025,49,20,4,PhD,Spain,0,Divorced
+10673,68397,38,1416,21,PhD,South Africa,0,Married
+8799,38175,30,153,11,PhD,Spain,0,Married
+67,46423,42,92,9,Master,Spain,0,Single
+9923,46423,42,92,9,Master,Spain,0,Single
+2814,30560,38,31,5,Master,South Africa,0,Single
+2711,30560,38,31,5,Master,Canada,0,Single
+4320,60152,35,943,23,Bsc,Spain,0,Single
+10451,29672,49,25,4,Bsc,South Africa,0,Single
+4198,29672,49,25,4,Bsc,Spain,0,Single
+10814,70321,67,1376,25,Bsc,Spain,0,Single
+944,56181,52,393,14,Bsc,Spain,0,Married
+8151,24279,24,263,9,Basic,Spain,0,Married
+6184,68462,45,1670,15,PhD,Spain,0,Married
+3498,55424,38,877,25,PhD,Spain,1,Married
+2870,49094,41,502,20,Bsc,Spain,0,Married
+7342,59184,53,1072,27,Undergraduate,Spain,0,Single
+1911,67430,27,1364,29,Bsc,Germany,0,Single
+10862,30522,54,326,17,Master,Spain,0,Married
+2546,31878,37,70,6,Undergraduate,Spain,0,Single
+3005,83528,22,1650,23,Bsc,Spain,2,Single
+8318,90300,35,1738,19,Bsc,Spain,1,Single
+2930,68092,36,1281,20,Master,South Africa,0,Single
+8216,53761,42,325,17,Master,Australia,0,Married
+1212,52845,41,936,25,Bsc,Spain,1,Married
+2541,24027,38,48,7,Bsc,Spain,0,Married
+10659,7500,35,53,11,Undergraduate,India,0,Single
+10905,42586,59,252,16,Bsc,Spain,0,Single
+8910,42586,59,252,16,Bsc,Spain,0,Single
+7349,9722,41,103,11,Basic,Spain,0,Single
+7872,86836,39,557,23,PhD,Spain,3,Married
+4290,30467,42,24,4,Bsc,Canada,0,Married
+7408,54549,62,233,12,PhD,South Africa,0,Married
+9986,19444,32,54,10,Bsc,South Africa,0,Single
+8235,69245,58,843,23,Master,South Africa,0,Single
+10949,72968,51,1958,19,PhD,Spain,1,Divorced
+7284,48686,61,20,4,Bsc,Spain,0,Married
+9529,73687,24,1627,22,Bsc,South Africa,1,Married
+9930,82716,69,1167,28,PhD,Canada,0,Single
+10270,35523,33,66,8,Undergraduate,Germany,0,Married
+760,60554,39,811,23,PhD,South Africa,0,Divorced
+5519,64090,58,797,20,Bsc,South Africa,0,Single
+232,61559,49,530,17,Bsc,Spain,0,Single
+3009,71670,52,1766,15,PhD,Spain,3,Single
+6518,67680,63,606,19,PhD,Australia,0,Single
+10669,54386,33,470,17,Bsc,Spain,0,Married
+5682,64108,61,1099,30,PhD,Australia,0,Single
+1570,69702,63,1039,26,PhD,Spain,0,Single
+1497,47958,62,407,16,Bsc,South Africa,0,Single
+9723,67716,54,1016,28,Bsc,Canada,1,Married
+7261,34600,43,318,17,Bsc,Spain,0,Single
+2452,34600,43,318,17,Bsc,Spain,0,Single
+5621,48752,45,316,17,Bsc,Spain,0,Married
+10995,15716,26,92,10,Undergraduate,South Africa,0,Married
+7373,46610,62,302,17,PhD,Australia,0,Divorced
+5331,74985,37,1869,17,Bsc,Germany,0,Married
+263,45576,69,145,8,PhD,Spain,0,Single
+4619,113734,69,277,27,PhD,Spain,0,Single
+940,57100,27,311,14,Bsc,South Africa,0,Single
+10084,24434,42,50,7,Bsc,India,0,Married
+6019,37126,43,72,6,PhD,Spain,1,Married
+1463,45160,56,21,4,Bsc,Australia,0,Single
+6424,33178,37,49,5,Bsc,Spain,0,Single
+8233,64866,64,556,21,Master,Canada,1,Single
+1515,34176,39,28,5,Master,Canada,0,Single
+10855,50014,46,396,15,Master,Spain,0,Single
+10909,92344,66,1899,20,Bsc,Australia,2,Married
+3376,55282,44,235,11,Master,Spain,0,Divorced
+10232,48799,51,331,15,PhD,Spain,0,Divorced
+5547,84169,32,1919,20,PhD,Spain,2,Married
+8362,84169,32,1919,20,PhD,South Africa,2,Married
+3524,39763,43,167,10,Master,Spain,0,Single
+10095,74165,39,1293,20,PhD,Canada,0,Divorced
+8897,42720,49,654,25,Bsc,Germany,0,Single
+466,65275,69,746,21,Bsc,Spain,0,Married
+11025,36443,53,138,11,Bsc,Spain,0,Married
+2387,43776,62,275,17,Master,South Africa,0,Single
+1618,56046,49,692,21,Bsc,Germany,1,Single
+25,65148,56,1115,21,Bsc,Canada,0,Married
+3277,49431,59,365,15,Bsc,Spain,0,Divorced
+8566,32583,53,9,4,PhD,Spain,0,Single
+2634,16653,35,69,9,Master,Spain,0,Single
+8036,26850,43,63,11,Undergraduate,Spain,0,Single
+8159,51287,46,182,11,Bsc,Spain,0,Married
+7628,43050,41,76,8,Undergraduate,Spain,0,Married
+9597,73448,45,725,19,Bsc,Canada,0,Married
+1384,17256,22,62,7,Basic,United State,1,Married
+10150,86429,53,1449,18,Bsc,South Africa,1,Single
+3885,33569,31,63,5,PhD,Spain,1,Married
+11003,25130,34,50,7,Undergraduate,Canada,0,Single
+8026,62998,62,463,19,Bsc,Canada,0,Married
+577,26907,38,22,6,Undergraduate,Spain,0,Single
+8702,26907,38,22,6,Undergraduate,Australia,0,Single
+5429,45579,66,183,10,PhD,Spain,0,Married
+977,47320,57,414,20,Bsc,Canada,0,Single
+2793,70179,38,1034,26,PhD,South Africa,0,Divorced
+1071,70179,38,1034,26,PhD,United State,0,Divorced
+5074,28072,28,47,5,Master,Canada,0,Married
+2632,50501,60,500,20,Bsc,India,1,Married
+6404,58917,45,282,16,Bsc,South Africa,0,Single
+10240,69372,65,1381,21,Bsc,Canada,2,Single
+2521,35178,43,59,5,Master,Spain,1,Married
+4301,35178,43,59,5,Master,Australia,1,Married
+7381,75693,46,1442,22,Bsc,Spain,3,Divorced
+2407,69109,32,1555,20,Bsc,United State,1,Married
+9064,69109,32,1555,20,Bsc,Spain,1,Married
+5067,80134,20,1378,21,Bsc,Spain,4,Single
+10281,64713,44,602,19,Bsc,Australia,0,Divorced
+11191,41411,28,139,8,Bsc,Spain,0,Divorced
+1994,51381.5,31,19,4,Bsc,United State,0,Married
+2552,55521,59,446,24,PhD,Spain,1,Single
+6720,43795,46,492,17,Master,Spain,1,Single
+4557,22070,44,67,8,Bsc,South Africa,0,Single
+1183,36408,65,22,4,Master,Germany,0,Married
+4186,34026,64,76,9,Bsc,Canada,0,Single
+1419,34026,64,76,9,Bsc,Spain,0,Single
+967,46049,38,515,26,Bsc,Spain,0,Married
+1048,35641,42,178,10,Master,South Africa,0,Married
+9262,32414,30,52,5,Undergraduate,South Africa,1,Single
+3427,59821,59,734,26,PhD,South Africa,0,Married
+5892,34968,34,221,17,Bsc,South Africa,0,Married
+8911,56320,47,702,21,PhD,Spain,0,Married
+6606,70091,45,1161,19,Master,Spain,1,Married
+2677,46097,58,241,15,Bsc,South Africa,0,Single
+252,41003,51,601,17,PhD,South Africa,0,Divorced
+9860,44911,55,215,12,Bsc,Spain,0,Single
+1388,33249,39,112,8,Bsc,Australia,0,Single
+979,33249,39,112,8,Bsc,Spain,0,Single
+7494,42873,64,269,15,PhD,Canada,0,Divorced
+10490,51039,45,417,14,PhD,Australia,0,Married
+3403,78952,56,2092,21,PhD,Spain,0,Single
+2715,29435,48,180,11,Master,Canada,0,Divorced
+4828,79865,60,792,21,Bsc,South Africa,0,Divorced
+92,34176,26,89,11,Bsc,Canada,0,Married
+3312,34176,26,89,11,Bsc,India,0,Single
+11176,65968,44,495,18,PhD,Canada,0,Single
+1446,86424,58,1226,28,Master,South Africa,0,Single
+9699,67272,48,733,23,Bsc,Spain,0,Divorced
+9790,78499,57,1334,19,Bsc,Canada,1,Single
+2324,77044,42,1065,31,Bsc,Spain,1,Single
+5080,70515,21,1258,17,Bsc,Mexico,0,Single
+4992,17459,39,69,9,Master,Spain,0,Single
+7849,80336,44,1052,25,PhD,Spain,0,Married
+4808,15759,58,17,4,Bsc,Spain,0,Married
+10401,26326,38,18,4,Undergraduate,Germany,0,Single
+7793,62061,38,800,24,Bsc,Spain,1,Single
+9303,5305,38,32,1,Bsc,India,0,Married
+6853,75777,32,1438,21,Master,Australia,2,Single
+7366,75777,32,1438,21,Master,India,2,Single
+9780,71499,43,795,26,Master,Spain,0,Single
+7573,31626,36,86,6,PhD,Germany,1,Single
+1379,42670,22,241,11,Master,South Africa,0,Single
+8923,83917,41,1587,21,Bsc,Spain,0,Single
+3547,41021,45,64,7,Master,South Africa,0,Single
+8707,79456,58,1401,16,Bsc,Spain,0,Married
+1891,78789,34,1754,16,Master,Spain,0,Divorced
+6271,50870,62,63,6,PhD,Spain,0,Married
+9635,35876,31,129,8,Master,Spain,0,Married
+9727,23539,57,81,7,Bsc,Canada,0,Married
+6205,32557,47,80,9,Master,Canada,0,Single
+10681,62466,44,889,26,Undergraduate,Spain,0,Married
+5156,62466,44,889,26,Undergraduate,Spain,0,Married
+3050,54198,48,235,16,Bsc,Spain,0,Married
+8164,82170,36,1908,19,PhD,South Africa,0,Married
+5626,61798,50,463,16,PhD,Spain,0,Single
+7600,15253,22,29,6,Basic,Canada,0,Single
+6406,78285,26,1427,21,Master,Germany,0,Married
+7002,62535,59,398,14,Bsc,Spain,0,Single
+8234,27190,41,18,4,Basic,Spain,1,Single
+6116,48985,46,75,6,Undergraduate,Spain,0,Married
+291,72940,44,981,13,Bsc,South Africa,0,Married
+8779,36145,29,172,12,Undergraduate,United State,1,Married
+4931,157146,37,1730,28,Bsc,South Africa,0,Single
+1650,81843,54,1643,27,Master,Spain,0,Married
+9701,41883,26,312,12,Bsc,Canada,0,Single
+6431,45759,50,68,7,PhD,India,0,Married
+10789,45759,50,68,7,PhD,Spain,0,Married
+5302,78394,28,1428,16,Bsc,Spain,0,Single
+4459,30279,25,37,5,Bsc,Spain,0,Single
+10642,30279,25,37,5,Bsc,Spain,0,Single
+9213,31880,44,15,4,Bsc,Spain,0,Single
+3678,60208,41,656,29,Bsc,Spain,1,Single
+3698,78687,31,2130,19,Bsc,Spain,1,Single
+5929,37401,41,48,7,PhD,Spain,0,Married
+10795,37401,41,48,7,PhD,India,0,Married
+4390,75315,60,841,23,Bsc,South Africa,0,Single
+9362,69263,49,568,18,Bsc,Canada,1,Single
+1577,78569,68,1736,15,Bsc,Spain,1,Married
+4609,57705,48,486,18,PhD,Spain,0,Married
+7143,74805,59,820,26,Undergraduate,Spain,0,Single
+1729,66426,53,1377,20,PhD,Spain,0,Single
+10664,51529,65,467,17,Master,Spain,0,Single
+5029,18100,68,14,4,Bsc,Spain,0,Married
+10507,59601,37,797,15,Undergraduate,United State,1,Divorced
+3865,20981,37,73,7,Undergraduate,Canada,0,Single
+6982,74068,38,1581,24,Bsc,India,0,Married
+7042,36790,31,66,6,Bsc,Spain,0,Married
+9668,18793,43,77,9,Bsc,South Africa,0,Married
+6878,27421,60,324,14,Bsc,Spain,0,Single
+4099,30675,42,62,5,Bsc,Spain,0,Married
+5031,83145,40,1833,26,Bsc,Spain,1,Single
+1970,34053,46,103,7,Master,Spain,0,Single
+5726,31788,31,60,10,Master,South Africa,0,Single
+5231,45894,40,51,5,Undergraduate,Spain,0,Married
+1307,41986,36,63,10,Bsc,Spain,0,Divorced
+10609,42769,52,88,8,PhD,Canada,0,Married
+5782,58582,32,763,22,Undergraduate,Spain,1,Single
+7533,49096,50,187,13,Bsc,Canada,0,Married
+9493,76412,34,1808,18,PhD,Canada,2,Single
+2253,18929,24,85,6,Bsc,Spain,0,Married
+2326,18929,24,85,6,Bsc,Spain,0,Married
+1876,18929,24,85,6,Bsc,India,0,Married
+7141,21888,28,213,12,Master,Spain,0,Single
+7393,41580,36,92,9,Bsc,Spain,0,Single
+4713,31605,35,125,9,PhD,Spain,0,Married
+5093,25509,40,101,9,PhD,Spain,0,Divorced
+8524,25509,40,101,9,PhD,Spain,0,Divorced
+3766,33051,55,835,21,Master,Spain,0,Single
+9725,28764,48,12,4,PhD,Spain,1,Single
+8933,32146,31,66,8,Undergraduate,Canada,0,Married
+10779,22148,31,49,5,Bsc,Spain,0,Single
+9289,36781,35,63,6,Bsc,Spain,0,Married
+2613,54197,54,237,12,Master,Spain,0,Married
+10133,93790,44,2349,25,Bsc,Canada,3,Single
+8443,24762,42,86,9,Bsc,South Africa,1,Single
+10796,30477,30,66,6,Master,India,0,Married
+10241,11448,39,14,4,Undergraduate,Spain,0,Divorced
+3388,70844,47,294,17,Bsc,Germany,0,Divorced
+6507,30828,34,56,8,Bsc,Australia,0,Single
+7446,62513,47,716,22,Master,United State,0,Single
+87,27733,33,57,7,Undergraduate,Germany,0,Married
+10477,39435,41,102,7,PhD,Spain,0,Single
+6072,75345,44,2087,20,Master,Spain,1,Single
+2518,20491,28,30,4,Undergraduate,Germany,0,Single
+247,36715,43,357,19,Bsc,Spain,0,Married
+9463,71706,55,1443,25,Bsc,Canada,0,Single
+1459,69063,48,928,14,PhD,Spain,0,Married
+9530,24645,26,17,4,Bsc,South Africa,0,Married
+9653,35797,39,68,7,Bsc,South Africa,0,Married
+10785,44078,45,41,7,Bsc,South Africa,0,Married
+9392,26954,43,17,4,Bsc,Spain,0,Single
+3769,51381.5,42,42,5,PhD,Australia,0,Single
+10146,38887,42,42,5,PhD,Australia,0,Single
+4741,65463,40,562,19,Undergraduate,Spain,1,Married
+1880,53537,55,93,8,PhD,India,0,Single
+6471,36230,43,59,7,Master,Spain,0,Single
+5718,80763,64,1415,23,Bsc,South Africa,2,Married
+3478,60585,43,736,30,PhD,Canada,0,Married
+7848,49166,40,368,13,Bsc,India,0,Single
+7999,75261,59,1743,17,PhD,Spain,2,Single
+11101,89891,23,836,26,Bsc,Australia,1,Single
+9212,72828,52,1678,28,Master,Spain,0,Married
+10983,75278,62,930,23,Bsc,South Africa,0,Single
+3629,38557,36,145,9,Bsc,Canada,0,Single
+4673,81300,51,1241,21,PhD,Spain,1,Married
+796,60161,49,1071,26,Undergraduate,Canada,0,Divorced
+618,69389,37,797,22,PhD,Australia,0,Married
+380,64497,60,1804,29,Bsc,South Africa,1,Divorced
+1092,61014,34,1147,20,Bsc,India,0,Married
+8962,44319,39,37,7,Master,South Africa,0,Married
+8207,53233,57,40,5,Undergraduate,Canada,0,Married
+6521,77972,60,1101,20,Bsc,South Africa,0,Single
+535,81361,27,778,27,Bsc,Germany,0,Divorced
+4608,81361,27,778,27,Bsc,South Africa,0,Divorced
+11086,25707,30,21,5,Basic,Spain,0,Single
+1064,42403,43,42,5,PhD,Spain,0,Married
+7000,65704,42,817,23,Undergraduate,Germany,0,Single
+1581,37406,34,17,4,Bsc,Spain,0,Married
+7384,39767,63,485,17,Master,Spain,0,Single
+10552,54210,35,367,14,Undergraduate,Spain,0,Married
+6409,57136,47,1179,20,Bsc,South Africa,0,Divorced
+9507,40794,39,434,16,Bsc,Spain,0,Married
+9560,83003,49,1674,22,Bsc,Spain,1,Single
+10991,89058,54,850,14,Master,Canada,0,Married
+4712,20193,23,82,7,Undergraduate,Spain,0,Single
+11056,72099,40,1188,18,Bsc,Spain,0,Married
+7414,43824,43,186,12,Bsc,Spain,0,Married
+3076,66653,39,612,22,Bsc,Australia,0,Single
+6355,44359,36,45,9,Bsc,Spain,0,Married
+7959,79410,53,1370,11,Bsc,Spain,0,Married
+5512,55842,37,518,17,Master,Spain,0,Married
+10102,79946,48,1478,22,Bsc,South Africa,0,Single
+9369,88194,35,1274,32,Undergraduate,Germany,2,Single
+3711,80184,69,1902,20,Master,Spain,2,Married
+6931,76982,47,1062,16,Bsc,Spain,1,Divorced
+9596,65295,34,664,20,PhD,United State,0,Single
+2727,57100,41,409,13,Bsc,South Africa,0,Single
+8416,29009,33,44,7,Bsc,United State,0,Married
+3967,78931,43,943,24,PhD,Canada,0,Married
+2139,7500,39,31,8,Master,Australia,0,Married
+2162,56939,38,561,18,Bsc,Spain,0,Married
+9242,64509,24,1722,19,Bsc,South Africa,1,Single
+10595,30093,24,69,6,Bsc,Spain,0,Married
+4855,30351,40,46,6,PhD,United State,0,Single
+5049,30351,40,46,6,PhD,Spain,0,Single
+4967,38201,54,268,15,PhD,South Africa,0,Single
+5255,51381.5,28,637,27,Bsc,Australia,0,Single
+9215,43974,34,551,21,PhD,Canada,0,Married
+3525,38200,44,17,4,Bsc,Spain,0,Single
+3619,87305,54,1152,17,Undergraduate,Australia,1,Divorced
+4415,16860,53,38,8,Bsc,Spain,0,Married
+3645,27213,42,70,9,PhD,Spain,0,Single
+4692,7500,38,71,12,Bsc,Australia,1,Married
+3955,4861,49,6,0,Bsc,South Africa,0,Divorced
+5313,38196,43,44,9,Master,Spain,0,Married
+7196,41145,64,13,4,PhD,Canada,0,Married
+1381,38513,32,324,17,PhD,Spain,0,Single
+10951,45688,46,306,14,Bsc,Spain,1,Married
+4322,77863,56,1291,20,PhD,Spain,0,Single
+7444,42169,45,30,6,Master,Spain,0,Married
+2942,45906,50,486,15,Bsc,Spain,1,Single
+2874,35388,26,32,5,Undergraduate,South Africa,0,Divorced
+3667,80952,45,1757,25,Bsc,Germany,3,Married
+3697,39898,60,134,9,Bsc,Canada,0,Single
+9955,39898,60,134,9,Bsc,Spain,0,Single
+5320,44051,41,171,12,Master,South Africa,0,Divorced
+6422,86718,60,1270,17,Bsc,India,0,Married
+3690,80141,28,2091,22,Master,Spain,1,Married
+2408,58597,38,733,32,Bsc,India,0,Married
+9260,70356,69,1706,27,PhD,Canada,0,Married
+9648,46904,47,253,14,Bsc,Spain,0,Single
+4939,37760,68,317,13,Bsc,United State,0,Single
+8652,37760,68,317,13,Bsc,South Africa,0,Single
+4702,61839,50,1895,17,Bsc,Spain,0,Single
+2587,29791,42,20,7,PhD,Australia,0,Married
+2811,48918,51,62,7,PhD,Spain,0,Single
+9150,48918,51,62,7,PhD,Spain,0,Single
+10127,58692,49,395,15,Bsc,Canada,0,Married
+5493,39356,38,23,4,Bsc,Spain,1,Married
+2666,76234,42,907,23,Master,Canada,1,Married
+10099,55434,30,882,24,Bsc,South Africa,0,Married
+10562,66835,68,1033,24,Master,India,0,Married
+7881,66835,68,1033,24,Master,Spain,0,Married
+6721,71965,63,1213,17,Bsc,Canada,0,Married
+5204,74538,43,1461,22,Bsc,Spain,1,Single
+5209,50002,60,638,19,Bsc,South Africa,0,Divorced
+10128,53977,56,907,27,Bsc,Canada,0,Single
+9284,53977,56,907,27,Bsc,Spain,0,Single
+8643,69930,43,1662,22,Bsc,India,0,Single
+1685,62981,47,1482,23,PhD,Canada,1,Single
+2877,46014,40,541,26,Master,South Africa,0,Single
+8369,18227,27,28,4,Bsc,Spain,0,Single
+6233,65991,38,971,27,Bsc,Spain,0,Married
+195,38808,42,246,14,Bsc,Spain,1,Single
+1501,160069.2699999999,32,1717,44,PhD,United State,0,Married
+10846,43783,36,629,22,Master,Canada,1,Married
+8341,30396,45,34,6,PhD,Spain,1,Married
+10766,65526,50,506,17,PhD,Spain,0,Married
+9971,65526,50,506,17,PhD,South Africa,0,Married
+1740,55956,69,999,16,Bsc,Spain,1,Married
+8737,55563,36,43,6,Bsc,Spain,0,Divorced
+6466,57236,49,121,10,PhD,Spain,0,Married
+10430,89694,41,1472,14,Bsc,Australia,3,Divorced
+8773,57420,43,322,15,Master,United State,1,Single
+2371,33622,42,81,9,Bsc,Germany,0,Married
+7786,29999,28,160,12,PhD,Spain,0,Single
+4088,31497,52,155,10,PhD,Spain,0,Single
+4971,31497,52,155,10,PhD,South Africa,0,Single
+10560,36802,34,20,5,PhD,Spain,0,Single
+6892,61671,46,732,28,Bsc,Spain,2,Divorced
+11004,60182,69,22,4,Undergraduate,South Africa,0,Single
+1818,29732,43,38,5,PhD,Canada,0,Single
+9485,45921,28,199,10,PhD,South Africa,0,Married
+6646,16529,30,22,5,Bsc,Canada,0,Single
+4248,98777,54,2008,19,Master,Spain,1,Single
+7451,98777,54,2008,19,Master,Spain,1,Single
+7861,77027,62,1175,19,Master,Spain,0,Married
+5232,69139,49,227,11,Bsc,Spain,0,Married
+3011,69139,49,227,11,Bsc,South Africa,0,Married
+5758,65169,32,1189,28,Bsc,Spain,4,Married
+2173,40049,62,32,5,Bsc,Spain,0,Single
+10711,69755,69,894,22,Bsc,South Africa,0,Married
+8268,51381.5,53,404,17,PhD,Canada,0,Married
+2782,54456,53,404,17,PhD,Spain,0,Married
+9432,160069.2699999999,37,62,11,Bsc,South Africa,0,Single
+5872,60689,63,639,22,Bsc,United State,0,Single
+11187,26487,36,69,9,Basic,Canada,0,Single
+2428,28164,44,78,9,Bsc,Germany,0,Married
+1726,22585,44,81,5,Bsc,Spain,1,Single
+1802,64795,43,680,21,Bsc,Spain,0,Married
+1162,42000,27,653,20,PhD,Spain,0,Single
+10643,42000,27,653,20,PhD,Australia,0,Single
+11112,70713,48,1477,25,Bsc,Spain,0,Single
+2114,82800,68,1315,26,PhD,United State,2,Single
+4261,82800,68,1315,26,PhD,South Africa,2,Single
+2457,30801,39,45,6,Basic,Spain,0,Married
+2495,83891,40,816,22,Master,Spain,0,Married
+6983,38054,64,45,7,Master,India,0,Divorced
+3436,14045,45,20,5,Bsc,Spain,0,Married
+7505,44155,57,46,5,PhD,Spain,0,Married
+4286,57642,44,679,22,PhD,India,1,Single
+7224,31353,37,31,6,Bsc,India,0,Married
+6215,31353,37,31,6,Bsc,South Africa,0,Married
+968,41335,46,187,12,Master,Australia,0,Divorced
+4096,41335,46,187,12,Master,United State,0,Divorced
+3153,40737,57,17,4,PhD,South Africa,0,Single
+6504,19789,39,78,9,Undergraduate,Spain,1,Single
+5329,35946,65,11,4,PhD,Australia,0,Divorced
+1175,36262,31,426,12,Master,Spain,1,Married
+1377,44551,60,285,12,Master,South Africa,0,Single
+4607,71367,55,777,17,Bsc,Spain,0,Single
+4944,71367,55,777,17,Bsc,Spain,0,Single
+9483,57957,55,637,25,Bsc,Canada,0,Single
+1378,50334,42,694,23,Undergraduate,South Africa,0,Single
+5991,48150,65,266,13,Master,Germany,0,Married
+2807,56796,45,1001,27,Bsc,Spain,0,Married
+1052,56796,45,1001,27,Bsc,Australia,0,Married
+9760,52278,51,1198,31,PhD,South Africa,0,Single
+7101,52278,51,1198,31,PhD,Spain,0,Single
+9909,7500,18,122,10,Undergraduate,Australia,0,Married
+5907,33444,62,18,4,Master,Spain,0,Married
+793,20895,41,45,6,Bsc,Australia,0,Married
+8832,37509,38,123,9,Master,Germany,0,Single
+2535,88097,36,844,20,Master,Spain,3,Married
+1523,59041,41,96,8,Bsc,South Africa,0,Married
+1839,43322,40,141,8,Bsc,India,0,Single
+9972,46015,59,46,5,PhD,South Africa,2,Single
+2945,46015,59,46,5,PhD,Canada,2,Single
+9291,34242,55,15,4,Master,Spain,0,Married
+2829,65210,59,731,22,Bsc,Canada,2,Married
+8594,50520,56,135,9,PhD,Spain,0,Single
+1592,90765,44,1724,15,Bsc,Canada,2,Married
+4310,80589,69,1428,21,Bsc,Australia,1,Married
+6950,49572,56,54,7,Master,Canada,0,Married
+8492,75437,36,1493,23,Bsc,Spain,1,Single
+5684,44635,43,68,7,Master,Spain,0,Divorced
+5909,58512,50,1171,20,Bsc,Germany,0,Married
+9855,62000,62,1020,26,PhD,Spain,1,Single
+975,54252,58,264,15,Bsc,Australia,0,Single
+8754,45068,40,20,4,PhD,Spain,0,Single
+1456,60474,35,1180,31,Bsc,India,0,Single
+2849,60474,35,1180,31,Bsc,Canada,0,Single
+9984,56337,33,724,22,Undergraduate,Spain,2,Married
+5527,22434,27,58,7,Bsc,Spain,0,Single
+5628,61416,32,1665,24,Bsc,United State,1,Single
+7627,92163,39,2086,21,Master,Spain,2,Married
+1351,58656,58,1220,32,Master,Spain,1,Single
+10629,51381.5,41,109,9,Undergraduate,Germany,0,Married
+10395,8940,28,101,10,Basic,Spain,0,Single
+6961,26751,40,11,4,Bsc,Spain,0,Married
+10196,71427,36,614,20,Bsc,United State,0,Married
+6182,26646,30,53,8,Bsc,United State,0,Single
+10432,19346,40,22,5,Bsc,Canada,0,Divorced
+1542,56243,39,396,20,Bsc,United State,0,Single
+4220,59892,44,87,7,PhD,Canada,0,Married
+4141,71613,49,776,21,Bsc,United State,0,Single
+1940,25252,28,18,4,Bsc,Australia,0,Married
+1506,42160,39,140,11,Bsc,Spain,0,Single
+6347,15862,35,36,5,Basic,Spain,0,Single
+1361,82584,40,1435,16,Master,Spain,2,Married
+9422,38360,25,131,9,Bsc,Australia,0,Married
+1081,75283,57,1019,25,PhD,South Africa,0,Married
+7458,34941,58,97,8,Master,Australia,0,Single
+1012,61823,62,884,24,Bsc,Australia,0,Single
+5453,90226,58,2352,24,Master,South Africa,1,Married
+6818,44989,40,369,16,Bsc,Spain,0,Married
+7807,44989,40,369,16,Bsc,Spain,0,Married
+7532,43586,34,132,10,Bsc,Germany,0,Married
+8346,32233,40,296,12,Bsc,Spain,1,Single
+5564,62882,45,1338,20,Bsc,Australia,0,Single
+3267,57288,51,608,20,Master,Canada,1,Single
+3091,75774,33,823,21,Undergraduate,South Africa,0,Single
+762,75774,33,823,21,Undergraduate,Spain,0,Single
+8029,90247,26,1621,15,Master,United State,3,Single
+4376,32218,54,93,7,Undergraduate,Spain,1,Single
+10981,84219,26,1198,18,Bsc,South Africa,0,Married
+486,84219,26,1198,18,Bsc,Canada,0,Married
+1158,48877,48,144,8,Bsc,Spain,0,Divorced
+9119,60905,64,392,15,Bsc,United State,0,Single
+6694,75236,50,1068,25,Bsc,Spain,0,Married
+10573,62551,61,421,18,Bsc,India,1,Divorced
+10140,70123,31,1727,17,PhD,India,2,Single
+2286,50785,52,114,8,Bsc,Canada,0,Single
+8420,15315,44,64,8,Undergraduate,Spain,0,Married
+10065,15315,44,64,8,Undergraduate,Spain,0,Married
+1029,64413,44,279,12,PhD,Spain,0,Single
+4207,87171,33,1298,25,PhD,Spain,2,Married
+10277,30081,53,42,5,Bsc,Spain,0,Single
+4436,20180,38,137,8,Bsc,Spain,0,Single
+2929,20180,38,137,8,Bsc,Spain,0,Single
+6281,55686,48,982,16,Bsc,Spain,1,Divorced
+10390,26887,55,30,5,Undergraduate,Spain,0,Married
+2574,61996,37,1230,21,PhD,Spain,3,Married
+709,51537,62,1103,18,Bsc,South Africa,0,Divorced
+5955,72025,52,1932,16,Bsc,Spain,0,Single
+8486,30538,43,367,17,Master,Spain,0,Single
+10343,61618,23,1345,19,Undergraduate,India,0,Single
+6652,77343,49,1134,17,Bsc,Canada,0,Married
+8746,75433,25,1188,19,Bsc,Spain,2,Married
+4686,82571,52,1686,24,PhD,Spain,1,Single
+3551,60033,60,198,10,Master,Spain,0,Single
+4338,39062,31,44,5,Bsc,Spain,1,Single
+4444,30023,42,61,6,Bsc,Spain,0,Married
+498,30015,44,57,7,Bsc,Spain,0,Single
+8230,33228,34,71,6,Bsc,Spain,0,Married
+2826,22574,47,37,7,Bsc,Spain,0,Married
+6222,22574,47,37,7,Bsc,Spain,0,Married
+7352,55267,57,405,17,Bsc,Canada,0,Married
+10928,66886,56,599,17,Bsc,Spain,0,Single
+10736,72258,43,1525,22,Bsc,Canada,0,Single
+10163,82733,30,1323,20,PhD,Spain,0,Single
+6168,45146,51,53,6,Bsc,India,0,Divorced
+4656,51250,24,710,24,Undergraduate,South Africa,1,Single
+626,32871,63,43,5,Bsc,United State,0,Married
+3870,63855,36,1006,24,Undergraduate,Germany,0,Single
+6299,42564,46,813,24,PhD,Canada,1,Divorced
+7798,46344,42,429,17,Undergraduate,Canada,0,Single
+9973,50437,51,490,19,Bsc,Spain,0,Married
+4299,70971,54,1825,34,Bsc,Spain,0,Single
+10971,37774,37,473,16,Bsc,Spain,1,Single
+9931,4023,51,9,15,PhD,Spain,0,Married
+6679,33279,48,16,4,Bsc,Spain,0,Single
+5961,42693,36,57,5,Bsc,Spain,0,Married
+6255,70545,62,334,13,Master,Australia,0,Single
+8614,65486,57,507,17,Bsc,Australia,0,Single
+7828,77882,33,818,12,Master,South Africa,0,Single
+1277,78468,54,1004,28,Bsc,United State,1,Single
+3595,77226,51,1138,28,Bsc,Spain,0,Single
+5735,90638,23,2525,18,Master,Spain,1,Single
+5350,90638,23,2525,18,Master,South Africa,1,Single
+4137,70666,66,1076,16,Bsc,Australia,0,Single
+6357,59052,55,491,18,Undergraduate,South Africa,0,Divorced
+9316,13084,62,29,5,Basic,United State,0,Single
+3578,49160,65,236,12,Bsc,Spain,0,Divorced
+153,23272,61,46,5,Bsc,Spain,0,Divorced
+10524,49476,51,795,22,Master,Canada,0,Divorced
+1518,62694,49,749,24,Master,Spain,0,Married
+2036,57906,41,401,17,PhD,India,0,Single
+9495,71853,32,1149,17,Bsc,Spain,0,Single
+2631,71853,32,1149,17,Bsc,Spain,0,Single
+6312,65031,55,863,30,Bsc,Germany,0,Married
+615,30507,54,343,11,Bsc,Spain,0,Single
+4406,67419,44,1471,25,Bsc,Canada,0,Single
+10061,59462,64,1088,25,Bsc,United State,0,Married
+10619,95529,20,1990,18,Bsc,South Africa,1,Single
+4945,53653,61,1210,28,Bsc,Spain,0,Single
+1777,25965,34,74,6,Basic,Spain,0,Married
+4023,22979,44,115,10,Bsc,Spain,0,Married
+7922,64950,63,966,25,PhD,South Africa,1,Single
+10699,44322,29,92,8,Bsc,South Africa,0,Married
+7516,30096,31,45,6,Bsc,Germany,0,Married
+3129,30096,31,45,6,Bsc,Spain,0,Married
+5121,56628,37,761,20,Bsc,Canada,1,Single
+2186,82326,37,2257,22,Undergraduate,Spain,3,Single
+10548,71163,19,960,24,Bsc,Germany,0,Single
+6384,71022,36,1453,21,Bsc,United State,1,Divorced
+2625,42607,60,350,14,Undergraduate,South Africa,0,Single
+1676,43057,39,266,15,Bsc,Spain,0,Married
+5534,47808,39,224,10,Master,Spain,1,Married
+6859,29236,27,99,9,Bsc,Spain,0,Single
+271,40590,45,258,15,Bsc,Canada,1,Single
+7699,40590,45,258,15,Bsc,Canada,1,Single
+7832,77520,55,1526,23,Master,Spain,3,Married
+938,40211,33,87,7,Bsc,Spain,1,Married
+7873,63516,41,300,16,PhD,Canada,0,Single
+9967,53034,40,447,22,Bsc,United State,0,Divorced
+1087,22669,39,173,10,Master,Spain,0,Single
+8314,79908,32,1772,19,Bsc,Spain,1,Married
+3762,69867,28,925,17,PhD,South Africa,1,Single
+10383,70287,48,1093,21,Bsc,Australia,0,Divorced
+6798,37070,48,433,23,Bsc,South Africa,0,Single
+4168,37070,48,433,23,Bsc,Spain,0,Single
+6690,38179,48,90,11,Master,South Africa,0,Married
+10602,39922,31,156,9,Bsc,India,0,Married
+3220,39922,31,156,9,Bsc,Germany,0,Married
+5424,39922,31,156,9,Bsc,South Africa,0,Married
+7488,64191,51,825,24,Master,Spain,0,Single
+5289,41658,39,72,6,Undergraduate,Australia,0,Single
+347,40780,38,377,17,Bsc,Canada,0,Divorced
+5236,77568,35,2194,21,Bsc,Spain,3,Single
+9478,66503,29,401,15,Bsc,Spain,0,Single
+477,83512,28,2157,22,Bsc,Spain,4,Married
+7411,31686,50,17,6,PhD,South Africa,0,Married
+3107,71322,38,350,13,Bsc,Australia,0,Single
+7437,27938,26,29,6,Bsc,Australia,0,Single
+255,22263,63,21,6,Bsc,Spain,0,Divorced
+3790,34633,58,15,4,Bsc,South Africa,0,Single
+749,42162,33,145,9,Bsc,Spain,1,Single
+1503,160069.2699999999,38,107,1,PhD,Spain,0,Single
+8650,54162,36,42,5,Bsc,Spain,0,Single
+607,41769,59,521,22,Undergraduate,India,0,Divorced
+1008,44953,33,1021,24,PhD,Germany,1,Single
+9396,37717,36,25,4,PhD,South Africa,0,Married
+933,37717,36,25,4,PhD,Spain,0,Married
+5710,40548,44,120,9,Bsc,Australia,1,Single
+2882,67893,39,995,16,Undergraduate,South Africa,0,Divorced
+2379,69267,61,1635,14,Bsc,South Africa,0,Single
+5342,9548,38,29,6,Basic,Canada,0,Divorced
+3262,68281,56,1655,25,Bsc,Spain,0,Single
+5832,92556,54,1263,21,Undergraduate,Spain,0,Single
+5025,48526,35,135,8,Bsc,Spain,0,Single
+569,90273,23,1991,19,Bsc,Spain,3,Single
+3102,19414,33,32,5,Undergraduate,Canada,0,Single
+9449,79761,56,605,19,PhD,South Africa,0,Single
+8104,53312,63,278,12,PhD,Spain,0,Married
+75,41039,32,467,15,Undergraduate,United State,0,Single
+6421,88347,53,2116,21,Bsc,Spain,1,Single
+3037,50150,31,410,16,PhD,Canada,0,Married
+4698,50150,31,410,16,PhD,Spain,0,Married
+948,10245,43,41,8,Bsc,Spain,0,Single
+6177,33454,29,169,10,PhD,United State,0,Married
+3517,40887,62,161,10,Bsc,Spain,0,Single
+3491,55914,39,1260,29,Bsc,United State,0,Single
+7610,37292,31,460,19,Bsc,Spain,0,Single
+4377,52914,43,575,15,Bsc,Canada,1,Married
+9850,24884,42,19,4,Undergraduate,Spain,0,Married
+5544,67384,44,1490,22,Bsc,Spain,1,Single
+6497,51651,54,433,17,Bsc,Australia,0,Married
+4543,82497,34,1919,19,Bsc,South Africa,1,Married
+5117,32632,51,576,18,Undergraduate,Spain,0,Married
+1448,33562,51,51,9,Master,India,0,Married
+6887,79146,47,564,19,Bsc,Germany,0,Single
+7500,79146,47,564,19,Bsc,Spain,0,Single
+2724,36143,33,19,4,Master,Spain,0,Single
+2256,27159,41,21,6,Master,Spain,0,Married
+1100,41275,54,61,11,Master,Canada,0,Single
+7725,76800,49,641,16,Undergraduate,India,0,Married
+2612,75794,27,1682,25,Bsc,South Africa,1,Married
+113,30833,63,28,6,Bsc,Spain,0,Married
+2868,26518,65,57,8,PhD,United State,0,Single
+4216,91065,33,1474,26,Bsc,Spain,2,Single
+199,45183,52,315,13,Master,Canada,1,Single
+359,48070,64,504,19,Bsc,Spain,0,Single
+8842,30372,43,44,8,Bsc,Spain,0,Single
+2154,30372,43,44,8,Bsc,Spain,0,Single
+6050,57036,39,1513,26,Undergraduate,India,1,Married
+9204,66731,44,1029,17,Bsc,Spain,0,Single
+4472,35682,44,57,6,PhD,Australia,0,Divorced
+6864,10979,25,30,8,Master,Australia,0,Divorced
+10617,10979,25,30,8,Master,Spain,0,Divorced
+3924,57912,49,916,28,PhD,South Africa,1,Divorced
+5654,36026,42,61,7,Bsc,Australia,0,Married
+9216,35788,43,44,7,Bsc,Canada,0,Married
+8086,42243,55,55,7,Bsc,South Africa,0,Married
+9097,46086,58,343,16,Bsc,Spain,0,Divorced
+7631,61346,36,989,23,Master,India,0,Single
+7275,33316,43,131,10,Master,United State,0,Single
+8334,33316,43,131,10,Master,Spain,0,Single
+1987,21063,27,59,7,Basic,Spain,0,Single
+2281,33697,44,28,4,Bsc,Germany,1,Single
+7034,25804,36,55,7,Undergraduate,Canada,0,Married
+2797,72117,37,1073,26,Bsc,Spain,0,Married
+3934,61286,48,608,18,Bsc,India,0,Married
+2493,61286,48,608,18,Bsc,Germany,0,Married
+3759,65196,56,1155,26,Bsc,Spain,1,Single
+965,55635,43,590,21,Bsc,United State,0,Divorced
+7378,42021,33,573,22,Master,Spain,1,Single
+1859,75251,42,1890,19,Master,Germany,0,Married
+6263,35322,46,106,9,Bsc,Spain,0,Single
+2072,53374,45,1064,21,PhD,Canada,1,Single
+8908,87195,55,1097,20,Bsc,Canada,0,Married
+738,42395,33,182,12,Undergraduate,India,0,Single
+10129,82427,48,1456,21,Bsc,Spain,1,Single
+807,44602,45,292,17,Master,India,0,Single
+3334,94642,63,2211,21,Bsc,Spain,2,Married
+5423,28359,31,16,4,Bsc,South Africa,0,Single
+4426,55801,39,527,21,Bsc,United State,1,Single
+10489,92955,41,1778,23,Bsc,South Africa,2,Married
+2570,56534,46,815,25,Bsc,Spain,2,Single
+3834,69627,52,861,23,Bsc,United State,0,Single
+590,78579,44,1812,16,Master,Spain,0,Divorced
+4791,44964,34,41,5,Bsc,Australia,0,Single
+5304,30899,40,33,6,PhD,South Africa,0,Single
+2426,78825,50,895,29,PhD,Spain,0,Divorced
+35,25545,27,210,10,Bsc,Spain,0,Married
+8041,47111,43,1092,21,PhD,South Africa,0,Single
+3584,49667,59,1396,22,PhD,Canada,1,Single
+7718,66000,67,711,10,Master,Spain,0,Single
+8605,46910,50,68,7,PhD,Spain,0,Single
+1646,25224,42,46,7,Basic,Canada,0,Married
+9206,77382,46,1121,26,Bsc,Spain,1,Single
+10757,28420,47,13,4,PhD,Spain,0,Divorced
+6885,32952,37,55,6,Bsc,Canada,0,Divorced
+907,46149,39,362,18,Bsc,Spain,0,Married
+1150,83532,69,1853,15,PhD,Spain,1,Single
+3867,73059,67,1095,26,PhD,Spain,0,Single
+3859,73059,67,1095,26,PhD,South Africa,0,Single
+3265,35701,55,46,5,Bsc,Spain,0,Married
+4418,89616,31,1644,25,Master,Canada,0,Single
+4611,105471,44,1724,30,Bsc,Spain,2,Single
+4530,78427,66,1930,23,Master,Germany,1,Single
+7736,22518,28,61,7,Bsc,Spain,1,Married
+9949,59809,38,877,15,Bsc,Canada,0,Married
+942,39660,32,299,14,Bsc,Spain,0,Single
+6181,52203,64,939,27,Undergraduate,United State,0,Single
+7660,35860,41,49,6,PhD,Canada,1,Married
+2055,35860,41,49,6,PhD,Spain,1,Divorced
+5107,35860,41,49,6,PhD,Spain,1,Divorced
+1626,35860,41,49,6,PhD,South Africa,1,Divorced
+6428,76842,64,1130,17,PhD,Spain,0,Single
+9617,15033,63,19,5,Bsc,South Africa,0,Single
+4339,67353,44,913,28,PhD,Australia,0,Married
+7235,17003,39,38,9,Undergraduate,Germany,0,Married
+8527,65735,49,395,19,Master,Spain,0,Single
+1968,45684,43,28,4,Bsc,South Africa,0,Single
+9862,21918,45,33,7,Bsc,Canada,0,Single
+11075,51267,36,270,15,Bsc,Canada,0,Married
+6658,59868,42,1194,32,Bsc,Spain,0,Single
+4552,51373,23,393,12,Bsc,Spain,0,Married
+10377,46692,56,397,15,Master,Spain,0,Single
+5336,157733,43,59,2,Master,Spain,0,Single
+10350,54432,64,38,5,PhD,Spain,0,Married
+11071,79607,30,1923,16,Bsc,Canada,0,Single
+11100,51813,42,63,7,Bsc,Canada,0,Divorced
+6516,17487,25,18,4,Basic,Australia,0,Married
+1734,40706,46,81,11,PhD,South Africa,0,Single
+2131,62859,55,1307,23,PhD,Spain,0,Divorced
+6439,61074,56,1102,31,Bsc,South Africa,0,Married
+10591,43638,45,201,11,Bsc,Spain,0,Single
+9797,58116,58,443,16,Bsc,Spain,0,Married
+9336,62187,45,636,21,PhD,Spain,0,Single
+2174,46344,60,27,6,Bsc,United State,0,Single
+3197,77353,34,670,20,Bsc,Spain,0,Married
+9185,69759,48,1029,18,PhD,Spain,0,Single
+905,21846,28,84,11,Bsc,South Africa,0,Divorced
+10858,76532,39,820,25,Bsc,Spain,0,Single
+8925,70053,49,1012,26,Master,Spain,0,Married
+2499,75342,56,563,18,Undergraduate,Spain,0,Single
+1109,27590,32,12,4,Master,Spain,0,Single
+326,51148,41,315,16,Bsc,India,0,Married
+10967,33378,51,99,9,Bsc,South Africa,0,Divorced
+5370,32644,41,413,18,PhD,Spain,1,Married
+2098,33581,45,17,4,PhD,Spain,0,Married
+1773,12393,36,57,6,Undergraduate,South Africa,0,Married
+5036,42710,30,406,14,PhD,Spain,0,Single
+4856,82347,57,1853,25,Undergraduate,India,2,Married
+8722,82347,57,1853,25,Undergraduate,Canada,2,Married
+2156,22554,59,41,10,PhD,Spain,0,Married
+2569,17323,27,46,5,Bsc,United State,0,Married
+10151,62204,54,946,22,Bsc,Spain,0,Divorced
+10473,78028,58,528,20,PhD,Spain,2,Single
+7079,63887,52,1245,32,Bsc,South Africa,0,Divorced
+6875,32727,49,529,17,PhD,Canada,0,Single
+6728,29103,29,48,6,Bsc,Spain,0,Single
+2471,61482,49,299,12,Bsc,South Africa,0,Married
+49,20587,44,25,5,Bsc,Canada,0,Single
+4973,20587,44,25,5,Bsc,Canada,0,Single
+6387,52190,38,77,9,PhD,South Africa,1,Single
+5866,48186,40,219,12,Bsc,Spain,0,Single
+8523,19329,46,60,10,Bsc,Canada,0,Married
+7901,34109,43,22,4,Master,Australia,0,Married
+898,23477,28,147,10,Bsc,Spain,0,Married
+10242,47472,48,75,8,PhD,Spain,0,Single
+5835,14849,38,65,9,PhD,Spain,0,Divorced
+6919,26224,36,63,9,Undergraduate,Spain,0,Married
+6197,27238,52,57,9,PhD,Spain,0,Single
+10475,51381.5,44,317,14,Master,United State,0,Single
+4201,57967,52,468,19,Bsc,India,0,Single
+5092,51569,65,467,19,PhD,Spain,1,Single
+6566,72550,60,1319,28,PhD,Australia,0,Married
+6613,44511,44,727,26,Master,Australia,0,Married
+9094,62972,59,587,16,Undergraduate,Spain,0,Married
+9847,62972,59,587,16,Undergraduate,Spain,0,Married
+10767,77845,25,1346,21,PhD,United State,2,Single
+7943,36663,39,35,6,PhD,South Africa,0,Married
+1055,53204,38,45,5,Master,Germany,0,Married
+1458,21059,32,44,9,Master,Spain,0,Married
+8402,67087,61,794,22,Master,Australia,0,Married
+6246,73892,61,1507,23,Bsc,Canada,0,Single
+4654,75114,22,1253,19,Bsc,South Africa,0,Single
+6103,42192,66,100,7,Bsc,Australia,0,Married
+8147,31454,54,48,8,Bsc,Spain,0,Married
+10207,22775,36,15,4,Bsc,South Africa,0,Single
+4838,22775,36,15,4,Bsc,India,0,Single
+10219,31590,42,38,5,Bsc,Canada,0,Single
+2176,80134,42,1690,16,Bsc,South Africa,3,Married
+9121,80134,42,1690,16,Bsc,Australia,3,Married
+5802,14188,42,75,7,Basic,Germany,0,Married
+10790,18169,29,21,4,PhD,Spain,0,Married
+178,62503,58,973,26,Bsc,Spain,0,Married
+2308,46734,60,330,14,Bsc,Spain,0,Married
+7431,68126,23,1820,17,PhD,Canada,1,Single
+9405,52869,60,172,11,PhD,South Africa,0,Married
+10525,26576,28,27,4,Bsc,Spain,1,Single
+7503,75825,38,2209,22,Bsc,Germany,1,Single
+8783,57045,64,454,18,Bsc,Australia,0,Married
+1403,34984,39,38,6,Undergraduate,Spain,0,Single
+4643,27803,41,176,9,Bsc,Australia,0,Married
+3463,69283,39,904,27,PhD,India,0,Married
+4055,18746,22,64,8,Basic,Spain,0,Single
+7010,70924,49,1363,20,Undergraduate,Spain,1,Married
+4767,70924,49,1363,20,Undergraduate,Spain,1,Married
+1927,69401,41,690,17,Undergraduate,Germany,0,Single
+437,75012,38,1027,23,Master,Australia,0,Divorced
+4331,85738,36,1371,21,Master,Spain,2,Single
+4084,60934,39,873,23,Bsc,Canada,0,Single
+8135,27161,28,52,5,Master,South Africa,0,Married
+9750,64325,53,1307,23,PhD,Spain,0,Divorced
+6682,18978,41,37,5,Basic,Spain,0,Married
+10581,41124,37,506,21,Bsc,Spain,0,Married
+3710,39684,30,81,7,PhD,Spain,0,Single
+5207,53378,51,793,29,PhD,Spain,0,Married
+9360,37040,32,316,12,Bsc,United State,0,Married
+4679,78710,37,1092,28,Master,Spain,0,Married
+1340,92910,28,1795,27,Bsc,Spain,3,Married
+10839,36283,38,29,6,Bsc,Canada,0,Single
+5303,79632,40,1113,20,PhD,South Africa,0,Single
+9829,28587,36,78,9,Bsc,Spain,0,Single
+10469,88325,33,1623,18,Bsc,India,0,Single
+3602,51412,56,195,11,Master,Spain,0,Married
+4756,63998,62,1168,25,Undergraduate,Spain,0,Divorced
+8181,38593,36,177,11,Undergraduate,Spain,0,Single
+6958,27889,37,26,5,Master,Australia,0,Married
+10856,45889,34,46,5,Undergraduate,Canada,0,Single
+3321,56575,47,542,20,PhD,Canada,0,Single
+5394,16014,35,38,10,Basic,Spain,0,Single
+433,61331,56,632,23,Master,Canada,0,Married
+6320,70893,38,1508,23,Master,Spain,0,Single
+5376,2447,35,1730,43,Bsc,United State,0,Married
+1867,64849,57,1336,19,Bsc,Spain,0,Single
+4324,42387,25,684,21,Bsc,Spain,0,Married
+3661,80617,19,1435,19,Undergraduate,India,0,Single
+521,54006,29,581,18,Bsc,Spain,0,Single
+10403,16531,36,44,9,Bsc,Canada,0,Single
+7186,30843,48,35,6,PhD,India,1,Single
+4329,18988,30,16,6,PhD,Australia,0,Married
+4394,81051,49,1501,23,PhD,Spain,2,Married
+1717,39747,26,273,13,Bsc,South Africa,0,Single
+1016,34554,55,55,7,PhD,Canada,0,Single
+3783,52854,55,116,9,PhD,South Africa,0,Married
+5848,81205,44,2009,19,Bsc,India,3,Single
+10727,69084,44,1586,25,PhD,Spain,0,Married
+5299,69084,44,1586,25,PhD,Spain,0,Married
+6872,65352,40,405,16,PhD,South Africa,0,Married
+1143,22063,42,55,7,Bsc,Canada,0,Married
+10381,47691,35,21,4,Bsc,Spain,0,Single
+11007,29187,46,34,5,PhD,Spain,0,Married
+9145,72504,42,1478,22,Bsc,Canada,0,Single
+5267,33986,44,44,5,Bsc,Spain,0,Divorced
+9738,42386,28,100,7,Master,South Africa,0,Single
+10212,42386,28,100,7,Master,India,0,Single
+10010,36957,61,152,11,PhD,Australia,0,Divorced
+10069,13724,26,58,5,Basic,South Africa,1,Single
+2694,42664,47,24,5,Bsc,Spain,0,Married
+10613,37334,56,62,11,PhD,Spain,0,Single
+4646,78497,63,978,25,Undergraduate,Canada,1,Married
+6935,78497,63,978,25,Undergraduate,India,1,Married
+5596,58821,58,728,21,Undergraduate,South Africa,0,Single
+1044,58398,61,596,20,Bsc,Australia,0,Single
+9274,80950,53,1213,23,Master,South Africa,1,Married
+9076,30732,34,185,13,PhD,South Africa,0,Married
+4947,89572,48,2059,24,Undergraduate,Spain,2,Single
+10176,57107,46,416,23,Bsc,Spain,2,Single
+3507,76467,44,1575,14,Bsc,United State,0,Single
+9235,51381.5,57,18,4,Bsc,Germany,0,Single
+10341,51315,66,222,10,Bsc,Australia,0,Single
+2639,43602,48,68,9,Bsc,South Africa,0,Single
+6201,38643,36,49,7,Bsc,Spain,0,Single
+7397,49090,63,688,21,Bsc,Spain,0,Single
+2181,70617,44,1280,14,Bsc,Spain,0,Married
+1204,67536,44,1829,30,PhD,South Africa,1,Married
+1170,27573,39,244,14,Bsc,Spain,0,Married
+8812,13533,35,48,7,Undergraduate,Spain,0,Divorced
+4690,50725,61,586,21,Bsc,Canada,0,Married
+1715,25851,36,48,7,Bsc,Australia,0,Single
+10821,57113,36,263,16,Bsc,Spain,0,Married
+6543,62847,69,1612,14,Master,Canada,0,Single
+7119,68627,32,825,12,Bsc,South Africa,0,Single
+3518,25271,31,50,5,Bsc,India,0,Married
+1245,63810,48,1371,23,Bsc,Spain,1,Single
+2561,63810,48,1371,23,Bsc,Germany,1,Single
+9624,65488,56,963,14,PhD,Spain,0,Single
+10509,36927,59,71,8,Master,United State,0,Single
+7629,22108,37,31,7,Bsc,Spain,0,Married
+7875,72025,65,1677,26,Bsc,Australia,3,Married
+2815,33183,39,120,9,Bsc,Spain,0,Married
+2936,23661,32,23,5,Master,South Africa,0,Single
+3665,25315,37,54,9,Undergraduate,Spain,0,Single
+10888,45938,53,636,20,Bsc,United State,0,Single
+6637,66951,26,1117,15,Bsc,India,0,Single
+5077,77298,35,969,24,Bsc,Canada,0,Single
+6173,77298,35,969,24,Bsc,Spain,0,Single
+3969,43018,40,133,7,Master,Germany,0,Single
+4580,75759,45,2486,26,Bsc,South Africa,3,Married
+663,33996,25,71,6,PhD,Spain,0,Single
+8299,33996,25,71,6,PhD,South Africa,0,Single
+8945,54137,44,203,11,Bsc,South Africa,0,Divorced
+10870,61223,47,1341,18,Bsc,South Africa,0,Married
+1184,69674,46,845,25,PhD,South Africa,0,Divorced
+6141,49494,42,385,14,Master,Canada,0,Single
+8825,51195,52,564,24,Bsc,South Africa,0,Single
+2217,37284,39,23,4,Undergraduate,India,0,Married
+4102,37284,39,23,4,Undergraduate,Spain,0,Married
+4653,42011,36,189,12,Bsc,South Africa,0,Single
+10092,70044,60,1504,26,Bsc,Spain,0,Divorced
+5788,46053,42,209,12,Bsc,Germany,0,Single
+4669,24480,33,102,10,Basic,South Africa,0,Married
+6295,54233,37,981,26,Bsc,Spain,0,Married
+7453,36130,60,488,21,Bsc,Spain,1,Single
+10841,56559,39,484,18,PhD,Spain,0,Single
+821,92859,22,2077,22,Master,Canada,0,Single
+3933,44010,34,662,24,Bsc,South Africa,0,Single
+1225,80124,51,1495,19,Bsc,South Africa,1,Married
+7059,80124,51,1495,19,Bsc,Spain,1,Married
+5633,50183,34,231,17,Bsc,South Africa,0,Married
+843,64722,43,805,25,Bsc,Spain,0,Married
+6211,37395,38,39,5,PhD,Spain,0,Single
+7007,29543,46,63,8,Master,Spain,0,Married
+9671,19514,46,69,10,Bsc,Spain,1,Married
+8975,19514,46,69,10,Bsc,Spain,1,Married
+6616,59481,39,461,16,Bsc,Spain,0,Single
+6248,91712,67,2217,27,Master,Spain,1,Single
+7428,80144,39,1367,19,Bsc,Australia,0,Single
+3075,59973,42,382,15,PhD,Spain,0,Married
+2937,68352,40,871,25,PhD,Canada,0,Single
+203,81169,39,2089,22,Master,Spain,0,Single
+2021,61456,39,1388,33,Bsc,Spain,0,Married
+880,22634,48,96,6,Basic,Spain,0,Single
+524,22634,48,96,6,Basic,Australia,0,Single
+10837,23957,39,68,6,Bsc,Canada,0,Married
+7011,33471,41,93,10,Bsc,South Africa,0,Married
+4184,52157,64,265,12,PhD,Spain,0,Single
+7679,30298,29,28,6,PhD,Spain,0,Single
+7485,56551,64,138,10,PhD,South Africa,0,Single
+7530,56551,64,138,10,PhD,Spain,0,Single
+4369,65487,57,1169,17,Master,Canada,0,Widowed
+10652,65487,57,1169,17,Master,Canada,0,Single
+286,44213,62,152,12,Bsc,Spain,0,Single
+5922,40344,40,218,12,PhD,Spain,0,Married
+7250,57867,36,612,25,Bsc,Canada,0,Single
+2478,25410,41,38,6,Bsc,Spain,0,Married
+1160,13260,44,49,10,Bsc,Spain,0,Married
+9214,42691,23,358,13,Bsc,Spain,0,Married
+273,36138,44,151,13,Master,Germany,1,Married
+851,57136,42,642,26,Master,Canada,0,Married
+9729,58275,59,615,23,Bsc,Germany,0,Single
+9665,54237,57,361,16,PhD,South Africa,0,Divorced
+2620,34596,40,23,4,PhD,South Africa,0,Married
+8254,34596,40,23,4,PhD,Germany,0,Married
+3852,74881,53,964,27,Master,India,0,Single
+1000,74881,53,964,27,Master,Spain,0,Single
+3099,44267,44,310,16,Bsc,Spain,0,Divorced
+6318,68487,26,1366,30,Bsc,Canada,0,Married
+5396,68487,26,1366,30,Bsc,Australia,0,Married
+7966,80982,55,1191,30,Bsc,Spain,0,Single
+454,69508,34,1135,28,Bsc,South Africa,0,Single
+309,63342,53,1101,19,PhD,South Africa,1,Single
+3571,63342,53,1101,19,PhD,Spain,1,Single
+8395,82014,53,1511,22,Bsc,South Africa,0,Single
+2591,76320,55,932,15,Bsc,United State,0,Single
+1640,64587,60,108,8,Bsc,Spain,0,Divorced
+810,74190,39,641,19,Bsc,Spain,0,Married
+9423,32765,35,46,8,Master,Spain,0,Married
+4345,51381.5,50,21,4,Undergraduate,Australia,0,Single
+89,22212,39,69,8,Undergraduate,South Africa,0,Married
+5294,18358,25,57,10,Bsc,Spain,0,Single
+1321,26067,40,56,9,Bsc,Canada,0,Married
+2686,22390,45,26,4,Basic,Australia,0,Single
+1215,70440,36,1572,23,Bsc,Spain,1,Single
+9283,60199,36,18,4,Bsc,Canada,0,Single
+3120,38547,33,22,4,Bsc,Canada,0,Single
+5868,19107,34,46,6,Bsc,Canada,0,Married
+8143,37929,29,265,13,PhD,Spain,2,Single
+3479,16813,64,50,6,Bsc,Canada,1,Single
+7214,62187,57,1283,18,Bsc,Spain,0,Married
+5543,57811,48,802,25,Bsc,Spain,1,Single
+9347,50943,58,46,5,Master,Spain,0,Single
+10160,50943,58,46,5,Master,Spain,0,Single
+1406,53201,39,415,22,Bsc,Spain,0,Single
+7019,54414,51,211,13,Bsc,South Africa,0,Single
+2157,26290,42,77,10,Bsc,Canada,0,Single
+8939,61250,55,730,25,Bsc,Spain,0,Divorced
+10250,28389,67,28,4,Basic,Spain,0,Single
+1272,55250,49,903,26,Master,Australia,0,Single
+3007,37758,48,40,6,Bsc,India,0,Single
+5513,37758,48,40,6,Bsc,Spain,0,Single
+679,37633,57,38,6,PhD,Spain,0,Married
+8876,33629,51,152,13,PhD,Spain,0,Single
+10827,36947,47,146,11,PhD,Australia,0,Married
+7300,69142,62,535,19,Bsc,India,1,Divorced
+4268,53154,55,158,9,Bsc,United State,0,Married
+4603,65695,54,656,21,PhD,Spain,0,Married
+8659,69805,62,1038,27,PhD,Germany,0,Single
+10708,36975,36,33,5,Undergraduate,Spain,0,Single
+1176,26228,41,25,4,Bsc,Spain,0,Married
+10380,37787,42,106,7,Master,India,0,Married
+7037,37087,40,401,17,PhD,South Africa,0,Married
+11096,57247,62,232,12,Undergraduate,Spain,0,Single
+6374,36930,60,297,16,PhD,Spain,0,Married
+5552,48721,51,293,17,Master,South Africa,0,Divorced
+2245,43641,45,139,10,Master,Spain,0,Married
+6200,75903,63,901,23,Bsc,Spain,0,Married
+9904,71391,58,1043,28,Bsc,Canada,0,Married
+10031,16927,38,53,12,PhD,South Africa,0,Married
+6642,27215,53,102,11,Bsc,South Africa,0,Divorced
+10882,53858,38,915,17,Bsc,Spain,0,Married
+5636,30983,51,167,8,Bsc,India,0,Single
+8692,43462,62,240,16,Bsc,Spain,0,Single
+8091,63943,58,1106,17,Bsc,India,0,Married
+8080,26816,28,22,4,Bsc,India,0,Single
+8370,75484,38,1159,18,Undergraduate,Canada,0,Single
+4550,33564,48,71,6,Master,Spain,0,Single
+3381,54348,61,90,8,Master,Canada,0,Married
+10556,54984,55,358,17,Bsc,Spain,1,Married
+9467,34738,30,20,5,Bsc,Spain,0,Single
+2891,68118,51,928,23,Bsc,United State,0,Divorced
+5011,68118,51,928,23,Bsc,Spain,0,Divorced
+8140,22682,41,95,10,Bsc,Australia,0,Single
+11039,51948,39,311,13,Bsc,Spain,0,Married
+78,25293,45,37,5,Bsc,Spain,0,Married
+5517,25293,45,37,5,Bsc,Australia,0,Married
+5290,41551,50,279,16,PhD,Canada,0,Married
+4128,56067,52,725,20,PhD,South Africa,0,Single
+8534,67433,62,992,28,Bsc,Spain,1,Married
+9592,22010,31,33,7,Bsc,Spain,0,Single
+8957,64831,62,1120,22,Undergraduate,South Africa,0,Single
+9308,62820,60,976,14,Bsc,South Africa,0,Married
+544,62820,60,976,14,Bsc,Spain,0,Married
+5989,78353,55,1576,24,Undergraduate,Canada,0,Divorced
+635,57183,48,610,25,Master,Spain,0,Married
+6673,23478,49,129,7,Bsc,United State,0,Single
+1710,30168,36,279,18,Bsc,Spain,0,Single
+523,37155,25,74,7,Bsc,Spain,0,Married
+8977,16581,29,24,4,Basic,Spain,0,Single
+9736,41850,34,96,9,Bsc,United State,0,Married
+1544,81380,47,1893,17,Master,Canada,0,Divorced
+6575,56386,33,612,25,Bsc,South Africa,0,Single
+6147,25818,43,28,4,Bsc,Germany,0,Divorced
+6354,15345,30,47,6,Bsc,Spain,0,Single
+4769,57954,37,493,23,Master,Spain,1,Single
+7540,50300,62,270,13,Bsc,Spain,0,Married
+5247,38725,59,45,7,PhD,Spain,0,Married
+5987,10404,25,43,7,Undergraduate,Spain,0,Single
+9960,26868,23,14,4,Basic,South Africa,0,Single
+10972,72298,65,939,14,Bsc,Spain,2,Single
+1399,72905,56,1515,20,Bsc,Spain,1,Married
+2698,47025,38,415,17,Bsc,United State,0,Single
+6340,29938,29,26,6,Bsc,South Africa,0,Single
+4107,46681,66,425,16,PhD,Spain,0,Single
+10906,46681,66,425,16,PhD,South Africa,0,Single
+2557,29548,44,29,5,Master,Spain,1,Single
+8786,62058,58,450,18,Master,Germany,0,Married
+7187,51381.5,45,721,25,Master,Australia,0,Single
+6119,36736,51,17,4,PhD,Spain,0,Single
+2980,8820,62,35,10,Master,Canada,0,Single
+3850,14918,51,43,5,Basic,India,0,Single
+1077,56715,40,1020,15,Bsc,Spain,0,Single
+9733,24882,36,80,5,Basic,India,1,Single
+8462,24882,36,80,5,Basic,Spain,1,Single
+4764,40442,62,169,12,Master,South Africa,0,Single
+2223,64176,49,1826,33,Undergraduate,Spain,0,Divorced
+7788,23536,31,10,4,PhD,Spain,0,Married
+5827,35246,56,62,11,Bsc,South Africa,0,Divorced
+2958,28442,36,57,10,Bsc,Spain,0,Married
+4954,48195,58,265,17,Bsc,Spain,0,Married
+3139,74116,32,2052,19,Undergraduate,South Africa,1,Single
+9952,78093,67,1105,17,Master,South Africa,0,Single
+8180,59354,62,310,15,Master,United State,0,Divorced
+3276,36301,38,78,7,Undergraduate,South Africa,0,Single
+4994,77598,69,1735,26,Master,Spain,1,Single
+3598,62710,42,606,22,Bsc,Spain,0,Married
+945,36317,49,133,9,Bsc,Spain,0,Single
+5048,42767,43,131,7,PhD,South Africa,0,Single
+6214,43815,32,79,6,Master,Spain,0,Married
+6230,44421,43,189,14,Bsc,Spain,0,Divorced
+2968,48948,69,902,24,PhD,Australia,1,Divorced
+8800,48948,69,902,24,PhD,South Africa,1,Divorced
+1907,63120,64,1477,26,Master,Spain,0,Divorced
+10478,55517,64,633,23,PhD,South Africa,0,Married
+4188,36864,57,354,14,Bsc,Australia,0,Single
+8720,51381.5,36,1679,1,Undergraduate,India,1,Single
+2225,82582,37,1617,21,Bsc,Australia,2,Divorced
+4790,79803,56,868,13,Bsc,Spain,0,Divorced
+1131,52569,47,95,7,PhD,South Africa,0,Single
+202,82032,66,1234,17,PhD,India,0,Single
+9589,82032,66,1234,17,PhD,India,0,Single
+3900,65685,42,769,21,Bsc,Canada,0,Married
+9958,65685,42,769,21,Bsc,Australia,0,Married
+8955,40451,57,49,5,PhD,Spain,1,Single
+10033,31163,41,38,5,Undergraduate,Germany,0,Divorced
+5751,31163,41,38,5,Undergraduate,Canada,0,Divorced
+3308,35704,62,94,9,Bsc,South Africa,0,Married
+7297,7500,41,57,11,Bsc,South Africa,0,Single
+8008,36075,31,119,7,Bsc,Spain,0,Single
+1232,70038,32,1244,17,PhD,Germany,0,Single
+2345,70038,32,1244,17,PhD,Australia,0,Single
+1628,71796,43,960,17,Bsc,South Africa,0,Single
+5081,47821,47,47,5,Undergraduate,Spain,0,Single
+839,45503,39,170,9,PhD,Spain,0,Married
+3706,28647,36,94,7,Bsc,Spain,1,Single
+5154,37760,42,54,6,Master,Spain,0,Divorced
+8584,85431,62,1165,17,PhD,Spain,0,Single
+6583,72635,59,981,21,Undergraduate,Spain,1,Married
+3433,72635,59,981,21,Undergraduate,Spain,1,Married
+10486,77142,66,990,17,Bsc,Spain,0,Married
+8687,53172,36,486,16,Bsc,India,0,Single
+7842,36065,46,74,9,Bsc,Spain,0,Single
+3749,73926,41,1580,24,Bsc,Canada,0,Single
+1331,35790,37,72,7,Bsc,Australia,0,Single
+5995,39552,52,384,20,Bsc,Spain,0,Divorced
+8985,68316,50,1211,32,Undergraduate,Spain,0,Single
+2798,102160,37,1240,26,PhD,South Africa,3,Single
+7108,51390,49,353,18,Master,South Africa,0,Single
+2781,72066,33,1792,17,Bsc,South Africa,2,Single
+3623,21675,38,45,10,Bsc,India,0,Single
+194,48006,49,41,5,Bsc,Spain,0,Married
+10833,65106,39,973,27,Bsc,Spain,1,Married
+2315,58401,54,96,6,Bsc,Spain,0,Divorced
+6336,29315,54,48,10,Bsc,South Africa,0,Married
+10738,49389,63,65,6,Master,Australia,0,Single
+8286,51717,49,122,8,PhD,South Africa,1,Single
+2166,46779,54,23,4,Undergraduate,South Africa,0,Single
+10691,28520,54,43,5,Master,Spain,0,Married
+9739,34377,51,114,8,Bsc,Spain,0,Single
+1829,54959,53,1232,21,PhD,Spain,1,Divorced
+6260,82384,59,1957,27,Master,Australia,1,Single
+10448,46998,58,377,18,Bsc,Spain,1,Single
+1343,58554,46,586,22,Bsc,United State,0,Single
+4749,58554,46,586,22,Bsc,India,0,Single
+531,57333,60,1662,33,PhD,Spain,0,Divorced
+6905,80685,20,1004,21,Bsc,Spain,0,Single
+1045,52117,49,279,13,Bsc,Spain,0,Single
+4012,62220,42,1226,23,PhD,Germany,0,Single
+5529,64014,68,444,22,PhD,Canada,1,Single
+4001,64014,68,444,22,PhD,South Africa,1,Single
+10420,46390,59,222,10,Master,United State,0,Divorced
+7723,75507,35,1440,21,Bsc,Germany,0,Single
+2963,75507,35,1440,21,Bsc,Australia,0,Single
+10634,59412,63,406,15,Master,Spain,0,Married
+5180,50616,46,149,10,PhD,Spain,0,Divorced
+6866,35924,45,34,5,Master,South Africa,0,Single
+1328,57937,32,683,20,Undergraduate,South Africa,0,Married
+1139,73356,30,1512,22,PhD,Spain,3,Married
+4961,21255,40,61,11,Master,Spain,0,Single
+5177,58494,40,396,16,Master,South Africa,0,Married
+2075,72460,45,1047,16,Bsc,South Africa,0,Married
+3428,68682,23,1598,24,PhD,Spain,0,Single
+4500,68682,23,1598,24,PhD,Spain,0,Single
+7369,36959,33,62,7,Master,Spain,0,Married
+4381,46463,43,235,17,PhD,Spain,0,Married
+9964,61825,35,424,15,Bsc,Spain,0,Single
+1630,61825,35,424,15,Bsc,Spain,0,Single
+5012,28691,25,34,5,Bsc,Spain,0,Married
+6918,28691,25,34,5,Bsc,Spain,0,Married
+7822,54058,38,662,20,Bsc,Spain,0,Single
+10156,84196,39,1237,20,Bsc,Spain,0,Single
+3033,38620,51,318,11,Master,Australia,0,Single
+4119,38620,51,318,11,Master,Germany,0,Single
+11110,3502,41,5,0,Bsc,India,0,Single
+332,47743,57,275,14,Bsc,Spain,1,Married
+737,80360,65,2231,15,PhD,Spain,3,Married
+10319,66303,43,1286,22,Bsc,Spain,1,Married
+2683,52413,45,910,26,Bsc,Canada,0,Married
+3445,60714,58,957,23,Bsc,South Africa,0,Single
+10913,31385,30,27,4,Master,Spain,1,Single
+4427,83257,19,1365,28,Undergraduate,Spain,2,Single
+8717,80427,39,1835,28,PhD,India,0,Married
+2066,38823,65,114,7,Bsc,Spain,0,Single
+3340,42014,37,436,20,Bsc,Canada,0,Married
+8685,42014,37,436,20,Bsc,South Africa,0,Married
+4149,76140,66,1348,21,PhD,Spain,0,Single
+8726,41713,50,174,13,Undergraduate,Canada,0,Divorced
+2295,62670,60,825,22,PhD,South Africa,0,Married
+3283,70932,42,909,22,Undergraduate,Spain,0,Married
+1915,78939,63,1507,20,PhD,Germany,0,Married
+800,44512,54,32,6,Bsc,South Africa,0,Single
+9166,63967,46,882,23,Bsc,Spain,0,Married
+5147,90842,66,1424,27,Bsc,Spain,0,Single
+13,25358,67,32,6,PhD,South Africa,0,Single
+8557,51381.5,32,46,7,Bsc,Australia,0,Single
+8724,28567,32,46,7,Bsc,Spain,0,Single
+9381,66373,36,606,23,Bsc,Australia,0,Married
+9384,66373,36,606,23,Bsc,Australia,0,Married
+3560,83844,62,1574,20,Bsc,Germany,1,Single
+241,83844,62,1574,20,Bsc,Spain,1,Single
+7521,83844,62,1574,20,Bsc,Canada,1,Single
+9799,83664,46,1173,19,PhD,Spain,0,Divorced
+5123,27450,63,143,7,Master,Spain,0,Married
+448,54880,36,795,21,PhD,Spain,0,Single
+4837,71322,49,1305,28,PhD,Spain,0,Married
+9365,60000,38,1277,24,PhD,Spain,0,Single
+8932,65176,45,1531,25,Master,South Africa,0,Single
+7055,61010,62,1021,26,PhD,Canada,0,Single
+3537,31089,33,79,10,Bsc,Spain,0,Single
+9081,20518,26,25,5,Bsc,Spain,0,Single
+4988,34469,66,62,9,PhD,South Africa,0,Married
+1050,28332,62,65,8,Bsc,Germany,0,Married
+5610,33456,49,36,6,Bsc,India,0,Single
+3526,38443,46,38,6,PhD,Spain,0,Married
+5136,65333,41,798,28,Bsc,Canada,2,Single
+1411,82623,62,940,16,Bsc,Spain,0,Divorced
+701,73691,43,1179,18,Bsc,Spain,1,Married
+6203,74485,67,1734,26,Bsc,Spain,0,Single
+7192,65748,59,545,18,Bsc,Spain,0,Single
+5181,24367,32,24,4,Basic,Spain,0,Single
+9220,91700,43,1968,20,Bsc,Spain,0,Single
+7734,79244,21,1216,22,Bsc,Australia,2,Widowed
+10446,82017,57,729,17,PhD,Canada,3,Married
+5524,58138,57,1617,25,Bsc,United State,0,Single
+3830,59354,61,459,16,Master,Canada,0,Married
+5186,58482,59,731,22,PhD,Canada,1,Married
+8514,29478,38,20,5,Bsc,Spain,0,Single
+7165,64474,42,823,22,Bsc,Spain,0,Single
+10236,31160,39,64,7,Master,South Africa,0,Single
+2392,40321,42,102,8,Bsc,Spain,0,Married
+1920,40321,42,102,8,Bsc,Spain,0,Married
+3673,55239,43,779,26,Bsc,South Africa,0,Single
+1453,57513,69,1060,27,PhD,Spain,0,Single
+4518,85693,35,1169,27,Bsc,Canada,0,Single
+8969,71855,37,1141,25,Bsc,South Africa,0,Married
+387,7500,38,61,6,Basic,United State,0,Married
+1079,71969,43,1086,19,PhD,India,1,Married
+164,28973,37,269,13,PhD,Spain,0,Married
+3434,80872,63,1336,19,Bsc,Spain,0,Single
+5721,84117,58,1566,24,PhD,Canada,1,Married
+8418,38741,56,61,7,Undergraduate,Germany,0,Single
+5300,38961,41,70,6,Master,Spain,0,Married
+10424,75922,46,1295,18,Bsc,South Africa,0,Single
+11171,56962,49,411,21,Master,Australia,0,Married
+1600,56962,49,411,21,Master,South Africa,0,Married
+7851,70165,65,926,22,Bsc,Spain,0,Single
+10701,65308,41,1211,28,Bsc,United State,2,Married
+891,29298,63,11,4,Master,Spain,0,Single
+6912,63246,47,772,22,PhD,Spain,0,Married
+5967,33402,62,70,9,Bsc,Germany,0,Single
+2109,96843,24,1544,28,Bsc,Spain,1,Single
+6292,82333,28,1822,18,PhD,Germany,1,Married
+8537,72643,65,1429,21,Bsc,Spain,1,Single
+9576,32313,32,159,11,PhD,Spain,0,Single
+5935,55284,58,764,23,Master,India,0,Single
+10264,15287,35,31,6,Bsc,South Africa,1,Divorced
+234,15287,35,31,6,Bsc,Spain,1,Divorced
+3202,51563,27,1250,19,PhD,South Africa,2,Married
+1103,81929,38,2053,20,Master,Australia,2,Married
+610,53593,61,480,23,PhD,Australia,0,Single
+4480,60432,41,401,19,Master,South Africa,0,Married
+10660,66726,57,438,17,Master,Spain,1,Married
+9353,62450,55,995,16,Bsc,India,1,Single
+4120,49514,39,369,13,Undergraduate,India,0,Single
+2836,43269,42,19,4,PhD,Germany,0,Married
+9579,33762,55,106,9,PhD,Canada,0,Married
+5841,60894,48,832,26,Bsc,Spain,0,Single
+3174,87771,55,1957,20,Bsc,Spain,4,Single
+5536,87771,55,1957,20,Bsc,Canada,4,Single
+2061,50737,59,99,7,Bsc,Spain,1,Married
+8477,26150,58,28,5,Bsc,Spain,0,Divorced
+640,57304,63,1026,25,Bsc,Spain,0,Married
+3828,71107,63,1327,28,Bsc,Spain,0,Married
+4093,53253,39,436,19,Master,Canada,0,Single
+8624,81320,56,928,18,Bsc,South Africa,0,Married
+2802,87000,22,961,18,Undergraduate,Australia,0,Married
+368,40049,40,290,14,Bsc,India,0,Married
+3599,63684,44,1464,23,Bsc,Spain,0,Married
+3389,69016,44,1533,34,Bsc,Spain,0,Married
+10710,7500,35,18,4,Bsc,Spain,0,Married
+7118,73803,57,1528,22,Bsc,Canada,1,Married
+4937,46094,41,44,5,Undergraduate,Spain,0,Married
+1127,85844,41,1958,20,PhD,Spain,1,Married
+833,38452,59,72,9,Master,Spain,0,Married
+3565,38452,59,72,9,Master,Spain,0,Married
+6086,80395,59,1380,24,Bsc,Australia,1,Married
+1763,87679,26,2524,29,Bsc,Canada,3,Single
+4697,35416,65,390,16,Master,South Africa,0,Divorced
+182,44124,68,397,17,PhD,Spain,0,Single
+1165,50729,56,496,24,PhD,South Africa,0,Single
+5386,94384,61,2302,18,Bsc,South Africa,3,Single
+6024,94384,61,2302,18,Bsc,Spain,3,Single
+2678,34412,24,209,11,Bsc,Australia,0,Single
+5790,31158,29,72,7,Bsc,Spain,0,Married
+236,34838,63,170,10,Bsc,Canada,0,Married
+6001,56775,35,937,25,Bsc,Spain,0,Married
+6250,54356,65,775,24,PhD,Spain,0,Single
+1168,72159,36,1401,21,PhD,Spain,0,Married
+10749,8028,23,178,16,Bsc,Spain,0,Single
+2926,55951,62,1374,23,Master,South Africa,2,Single
+716,67911,65,976,27,PhD,Spain,0,Single
+6544,67911,65,976,27,PhD,Germany,0,Single
+4298,20427,41,10,4,PhD,Spain,0,Single
+5823,32303,44,39,7,PhD,India,0,Single
+8375,55954,46,518,19,PhD,Australia,0,Married
+5723,49187,38,116,8,PhD,Spain,0,Single
+5763,49854,42,380,18,Master,Canada,0,Single
+8727,63693,36,1150,29,Bsc,South Africa,0,Divorced
+3056,63693,36,1150,29,Bsc,South Africa,0,Divorced
+8442,19510,29,30,6,Master,Canada,0,Married
+3712,52332,55,259,12,Bsc,India,1,Divorced
+10722,55593,41,546,17,Bsc,India,1,Single
+2406,54591,65,519,19,Bsc,Australia,0,Single
+7313,74859,65,1565,23,Undergraduate,Canada,1,Single
+2656,40851,43,59,5,Bsc,Canada,0,Divorced
+1993,58607,65,972,17,PhD,United State,1,Married
+4136,7500,22,119,11,Basic,Spain,0,Single
+2928,52614,39,990,16,PhD,Spain,0,Single
+2920,52614,39,990,16,PhD,Mexico,0,Single
+6661,67445,40,1174,32,Bsc,Spain,0,Married
+5462,67445,40,1174,32,Bsc,India,0,Married
+10897,67445,40,1174,32,Bsc,Australia,0,Married
+10542,36778,46,77,9,PhD,Spain,0,Married
+5756,39453,31,55,7,Bsc,Spain,0,Single
+3570,42731,45,244,13,PhD,South Africa,0,Single
+1072,40760,49,93,8,PhD,Canada,0,Single
+9606,69969,49,1536,13,PhD,Spain,2,Married
+2730,80317,59,1231,18,Bsc,Canada,0,Single
+2995,66636,57,1084,17,Master,Spain,0,Single
+8210,54730,39,405,18,Master,Spain,0,Married
+773,42835,43,595,23,Master,India,0,Divorced
+5272,53843,49,562,20,Master,South Africa,0,Married
+5125,79530,54,1348,26,Bsc,Spain,0,Married
+4391,63841,46,908,22,Master,South Africa,0,Divorced
+6283,63841,46,908,22,Master,Spain,0,Divorced
+3421,63841,46,908,22,Master,Australia,0,Divorced
+5731,27100,31,37,5,Master,Spain,0,Married
+7152,27100,31,37,5,Master,Germany,0,Married
+3919,72309,38,1931,20,Master,Canada,1,Single
+6097,50664,55,561,24,Bsc,South Africa,0,Single
+5150,20194,35,47,7,Basic,Spain,0,Single
+10479,76618,39,1511,11,PhD,Australia,0,Married
+5966,45207,40,215,15,PhD,Spain,1,Married
+3439,56721,42,296,15,Bsc,Spain,0,Married
+6609,27038,48,107,7,Bsc,South Africa,0,Single
+5393,23763,37,42,5,Bsc,Spain,0,Single
+9014,37085,39,61,10,Bsc,India,0,Married
+4050,49605,48,127,8,Master,Canada,0,Married
+6862,1730,43,8,15,Bsc,Spain,0,Divorced
+8315,34824,19,23,4,Bsc,United State,0,Single
+5184,34824,19,23,4,Bsc,Spain,0,Single
+3643,63206,40,928,14,Master,Canada,1,Married
+2589,26759,42,59,8,Bsc,Australia,0,Divorced
+4887,55412,38,63,6,PhD,Canada,0,Divorced
+10104,33590,40,8,4,Bsc,Canada,0,Single
+3254,70886,43,960,14,Bsc,Spain,0,Married
+2004,72679,45,1168,17,Bsc,Spain,0,Single
+6142,65073,69,900,14,Master,Spain,0,Married
+8553,44300,49,42,6,Bsc,Spain,0,Married
+9805,56129,61,660,22,Master,Canada,0,Single
+849,56129,61,660,22,Master,Spain,0,Single
+1606,38590,43,22,4,Bsc,South Africa,0,Single
+125,53083,56,271,17,Undergraduate,India,1,Single
+9305,79689,38,1315,27,Undergraduate,Spain,0,Single
+4706,34704,48,40,5,Bsc,Canada,0,Single
+4437,65316,52,260,12,Bsc,Spain,0,Married
+3081,41014,36,20,4,PhD,Spain,0,Married
+3536,19740,54,55,7,Bsc,India,0,Single
+8686,23724,35,75,7,Basic,Spain,0,Single
+9707,55212,45,1182,20,PhD,Spain,2,Married
+10872,55212,45,1182,20,PhD,Spain,2,Married
+9058,79800,59,1867,22,Bsc,Spain,3,Single
+4640,70647,47,1079,26,Bsc,South Africa,0,Divorced
+2525,38410,40,534,18,PhD,Canada,0,Married
+9503,28071,34,313,13,Bsc,Spain,0,Single
+10704,54803,45,693,19,Bsc,Spain,0,Single
+2669,74293,21,1127,16,Bsc,Spain,0,Single
+10037,74293,21,1127,16,Bsc,South Africa,0,Single
+5680,35684,30,30,5,Undergraduate,Spain,0,Married
+3726,34320,28,17,4,PhD,South Africa,0,Single
+4548,41967,33,54,5,Bsc,Canada,0,Single
+4599,49681,38,458,21,Master,Canada,0,Married
+879,49681,38,458,21,Master,South Africa,0,Married
+7409,53187,44,267,13,Bsc,Spain,0,Single
+1964,86610,63,1603,18,Bsc,Spain,0,Single
+0,70951,29,1198,17,Bsc,South Africa,0,Married
+4860,24206,44,25,5,Bsc,Spain,0,Single
+425,55357,29,727,22,Bsc,India,0,Married
+9500,58113,55,758,22,Bsc,Spain,0,Married
+3074,70643,30,1828,18,PhD,Spain,0,Married
+5140,64355,29,1445,21,PhD,Spain,0,Married
+2611,82576,55,1910,19,Master,South Africa,1,Single
+916,41644,42,31,6,PhD,Spain,0,Single
+10413,72570,30,1089,23,Bsc,Spain,0,Married
+3696,30630,49,52,7,Bsc,Spain,0,Divorced
+304,22944,33,76,9,Master,Spain,0,Single
+5113,86979,43,1702,16,PhD,Spain,1,Divorced
+2863,51381.5,44,1052,21,Bsc,Spain,2,Single
+4597,82072,44,2018,19,PhD,South Africa,0,Single
+675,52034,41,332,16,Master,Spain,0,Divorced
+4483,72354,21,1228,19,Bsc,South Africa,0,Single
+1502,28427,31,52,7,Bsc,Spain,0,Single
+736,28427,31,52,7,Bsc,India,0,Single
+4487,39858,45,95,7,Master,South Africa,0,Single
+3412,67381,63,957,17,Master,Spain,1,Married
+1744,23529,49,54,5,Basic,Spain,0,Single
+5837,51479,47,494,22,Bsc,Spain,0,Married
+3422,76068,39,1376,10,Bsc,Germany,2,Married
+7462,22507,60,570,19,Bsc,Canada,0,Single
+10702,52413,30,450,17,Bsc,Spain,0,Single
+2115,50116,57,66,7,Bsc,Germany,1,Single
+4138,76624,52,899,23,Bsc,Spain,1,Single
+11091,34587,61,22,6,Bsc,Germany,0,Single
+7712,62159,68,634,19,PhD,United State,0,Single
+3535,66294,49,967,13,Bsc,Spain,0,Single
+5899,5648,64,49,2,PhD,United State,1,Single
+8749,37235,30,61,5,Bsc,Spain,0,Single
+10955,85620,50,1600,14,Bsc,Spain,0,Single
+9491,23976,30,66,10,Bsc,South Africa,0,Single
+5286,41020,27,217,10,Master,Canada,0,Single
+3409,36108,30,339,15,Bsc,South Africa,1,Single
+2544,57530,63,92,7,Master,India,0,Divorced
+2118,62905,50,622,20,Undergraduate,Spain,0,Married
+9370,65846,69,1120,16,PhD,Canada,0,Married
+4864,34380,37,175,12,Bsc,Canada,0,Married
+405,41638,50,441,17,Bsc,Spain,1,Divorced
+10513,63207,22,1502,12,Bsc,Spain,1,Single
+5138,28320,64,43,5,Bsc,Spain,0,Single
+8387,43140,57,235,11,Bsc,Spain,0,Married
+378,52531,43,794,21,Bsc,Spain,0,Married
+5846,40246,37,13,4,Bsc,Germany,0,Divorced
+8870,35196,30,497,18,Bsc,Spain,0,Single
+10340,35196,30,497,18,Bsc,Spain,0,Single
+7290,70596,29,968,21,Bsc,Spain,0,Single
+8895,70596,29,968,21,Bsc,Spain,0,Single
+3635,52597,52,578,20,PhD,South Africa,0,Single
+11178,42394,42,32,5,Master,Germany,0,Single
+2410,81657,45,1097,16,Bsc,Spain,0,Single
+3281,49154,54,411,19,PhD,Spain,0,Married
+9905,34074,62,255,14,Bsc,Spain,1,Single
+2437,51381.5,25,1611,24,Bsc,Spain,2,Married
+2565,70638,59,1334,20,Master,South Africa,1,Divorced
+7912,38136,36,103,8,Bsc,United State,1,Married
+7072,67432,41,1335,19,Bsc,Australia,0,Married
+1409,40689,63,444,20,Bsc,United State,0,Single
+5314,40689,63,444,20,Bsc,Spain,0,Single
+7215,101970,31,1135,27,Bsc,Canada,3,Single
+8858,44325,42,542,21,PhD,Canada,1,Married
+895,61467,66,594,20,PhD,Spain,0,Married
+10313,48178,39,254,16,Bsc,Spain,0,Married
+642,16005,34,103,8,Basic,Canada,0,Married
+8504,79593,41,1366,19,Bsc,Germany,1,Married
+1020,79593,41,1366,19,Bsc,Spain,1,Married
+3717,61180,55,704,18,Bsc,Spain,1,Married
+7646,64449,25,805,24,Bsc,Spain,0,Single
+5796,77437,51,1125,23,Bsc,Spain,1,Married
+8625,17649,38,45,9,Bsc,United State,0,Married
+5407,53103,60,1085,28,Bsc,South Africa,1,Single
+4356,71819,43,1574,14,Bsc,Spain,2,Single
+2886,74290,43,1217,32,Master,Spain,2,Divorced
+10057,72282,63,1331,22,Bsc,Spain,0,Single
+10741,47352,63,319,16,Master,Spain,0,Single
+5491,47352,63,319,16,Master,Australia,0,Single
+4442,46524,53,177,9,Bsc,Canada,0,Single
+3972,50200,38,401,19,Bsc,Spain,0,Single
+2431,18222,24,67,6,Bsc,Spain,0,Married
+7899,77610,62,1680,17,PhD,Australia,0,Married
+9703,38097,44,184,11,PhD,South Africa,1,Married
+6927,44377,46,264,19,PhD,South Africa,0,Married
+7005,58684,33,813,21,Bsc,South Africa,1,Single
+246,66480,49,312,19,Bsc,Spain,0,Married
+4796,49638,62,39,5,Bsc,Spain,0,Divorced
+4725,50616,64,67,7,PhD,Spain,0,Single
+3286,26642,47,42,7,PhD,Spain,0,Divorced
+10680,33235,28,70,7,Bsc,Spain,0,Single
+4297,23228,45,40,7,Bsc,India,0,Single
+7327,36732,55,47,9,PhD,Spain,0,Married
+1553,82657,68,2283,23,Bsc,Germany,2,Single
+1665,64140,50,1750,18,PhD,South Africa,3,Divorced
+10640,44392,40,211,14,Bsc,Spain,0,Single
+7620,16185,24,106,8,Basic,India,0,Single
+7761,38702,36,109,9,Undergraduate,Australia,0,Single
+5062,54072,51,39,5,PhD,South Africa,0,Married
+6349,61787,27,1319,19,Master,Spain,0,Divorced
+3386,34935,22,137,8,Bsc,Spain,0,Married
+8175,34935,22,137,8,Bsc,South Africa,0,Married
+6245,59292,64,507,18,PhD,Spain,0,Single
+8780,59292,64,507,18,PhD,Spain,0,Single
+2276,57959,59,868,27,Bsc,Spain,0,Single
+1172,92491,31,2034,25,PhD,Spain,3,Married
+3225,42207,30,265,14,Master,Spain,1,Married
+8629,46984,58,41,5,Bsc,Canada,0,Single
+798,23442,27,27,5,Bsc,Spain,0,Single
+269,46757,51,1143,21,PhD,Spain,0,Single
+8213,14515,34,96,11,Undergraduate,Spain,0,Single
+10245,80910,28,756,15,Undergraduate,Spain,0,Single
+2447,30545,35,69,7,Bsc,India,0,Single
+9817,44802,44,1049,27,Master,India,0,Single
+1371,79941,38,984,16,Bsc,Australia,0,Single
+8093,79734,45,914,14,Master,Spain,1,Married
+713,50353,37,442,15,Master,Spain,0,Married
+11051,77376,58,661,23,PhD,Canada,0,Single
+5545,78075,42,988,14,PhD,Spain,0,Married
+5283,42473,38,144,10,PhD,Spain,0,Single
+5010,25008,26,34,6,Bsc,Spain,0,Single
+7495,56223,66,156,10,PhD,Spain,0,Married
+4368,47850,34,134,8,Bsc,Spain,0,Married
+6303,91820,28,1497,22,PhD,Canada,0,Single
+1030,40637,49,38,6,PhD,South Africa,0,Single
+10364,23295,55,20,4,Bsc,Spain,0,Divorced
+6945,84574,62,1375,32,Bsc,Spain,0,Single
+8562,54165,45,236,11,Bsc,Spain,0,Single
+2918,28510,33,91,9,Bsc,Spain,0,Divorced
+9167,67131,58,976,26,Bsc,Spain,0,Married
+4743,56242,45,971,28,PhD,United State,0,Married
+10742,86580,31,746,11,PhD,Spain,1,Married
+10965,76005,59,1722,22,Bsc,Spain,1,Single
+7129,54693,52,929,31,PhD,Spain,0,Married
+3732,52750,59,860,27,Master,Canada,0,Married
+7124,36997,46,94,12,Bsc,Canada,0,Divorced
+10686,34230,49,21,4,PhD,Spain,0,Single
+7247,47916,54,606,22,Bsc,Germany,1,Single
+1513,60839,35,1250,29,Undergraduate,Spain,0,Single
+460,79930,42,1753,17,PhD,South Africa,0,Married
+6653,55158,44,418,18,PhD,Spain,0,Married
+9400,85485,56,1383,19,Undergraduate,Spain,0,Single
+7106,75865,69,1242,19,PhD,Spain,0,Married
+4252,44375,49,301,12,Bsc,Spain,0,Married
+9240,60504,43,526,18,PhD,Spain,0,Single
+10770,65492,55,1045,26,Bsc,Canada,0,Married
+176,67506,34,331,12,Undergraduate,Spain,0,Single
+6870,68805,55,283,12,PhD,Spain,0,Divorced
+143,61209,44,957,13,Bsc,United State,0,Single
+6445,66825,47,858,16,Bsc,South Africa,0,Single
+4278,87188,31,1923,19,PhD,India,0,Single
+6906,84953,61,1024,18,Master,Spain,3,Single
+4637,74637,60,1650,25,PhD,South Africa,1,Single
+8690,86111,52,1385,23,Bsc,Canada,0,Married
+1173,77632,67,2252,13,Master,Spain,2,Single
+1928,31814,41,83,7,Bsc,South Africa,1,Married
+9029,70116,42,1536,23,PhD,Spain,0,Married
+10299,48240,45,882,25,PhD,Spain,0,Single
+9246,40101,29,415,17,Master,India,0,Single
+4943,70503,61,1727,16,Bsc,Spain,2,Married
+4122,79205,39,895,16,Bsc,Spain,1,Married
+2853,51766,34,275,12,Bsc,Canada,0,Single
+902,62994,34,312,13,Bsc,Canada,0,Single
+1672,65640,40,461,15,PhD,South Africa,0,Single
+7254,38361,45,137,10,Bsc,South Africa,0,Single
+8775,38361,45,137,10,Bsc,Australia,0,Single
+9543,19986,29,22,4,Bsc,Spain,0,Married
+7093,19986,29,22,4,Bsc,Spain,0,Married
+2894,72903,29,2013,21,Bsc,Spain,3,Single
+5956,45072,66,284,16,PhD,Australia,0,Divorced
+1921,59062,47,71,7,PhD,Spain,0,Married
+5057,61794,53,611,20,Master,Spain,0,Married
+10260,45143,49,311,15,Master,Spain,0,Single
+2262,45143,49,311,15,Master,South Africa,0,Single
+7930,26877,45,268,12,Master,Spain,0,Single
+1461,36921,49,38,7,PhD,Canada,0,Divorced
+7514,54342,58,177,12,Undergraduate,Australia,0,Single
+6461,62772,45,946,23,Master,Spain,1,Single
+257,75032,55,1215,20,PhD,Spain,0,Married
+9460,22419,51,162,8,Bsc,Spain,0,Married
+3855,22419,51,162,8,Bsc,Canada,0,Married
+367,36550,36,577,20,Undergraduate,Canada,0,Married
+9265,75027,61,1390,21,Bsc,South Africa,0,Married
+1990,63159,40,1797,17,PhD,Spain,1,Single
+3594,54108,41,747,32,Master,Canada,0,Married
+9292,81795,62,1382,23,Bsc,Spain,0,Married
+6218,59594,49,499,17,Bsc,Spain,1,Married
+6528,18492,32,10,4,Master,Spain,0,Single
+10164,94472,56,1691,16,Bsc,Spain,2,Single
+9937,70337,35,576,17,Bsc,United State,0,Single
+274,34853,41,34,7,Bsc,Germany,0,Single
+5250,51381.5,69,1564,22,Master,Australia,1,Single
+11010,16269,30,44,9,PhD,Spain,0,Single
+6969,50272,32,233,13,Bsc,Australia,0,Single
+10735,22804,43,26,5,Bsc,South Africa,0,Single
+5068,22804,43,26,5,Bsc,Spain,0,Single
+9974,30631,40,70,7,Bsc,South Africa,0,Married
+7053,78420,48,1453,22,PhD,South Africa,0,Single
+3179,81741,34,1572,19,Bsc,Spain,0,Single
+8082,25721,43,34,5,Bsc,Australia,0,Married
+1362,31907,42,449,14,Bsc,Germany,0,Single
+6768,37859,52,36,6,Bsc,Canada,0,Divorced
+2375,30261,42,22,4,Bsc,Spain,0,Single
+6856,21645,35,65,9,Bsc,Germany,0,Single
+4066,21282,36,46,7,Undergraduate,Spain,0,Divorced
+4333,32144,60,54,10,Bsc,India,1,Single
+2948,62637,60,185,10,Master,Canada,0,Divorced
+4927,16626,43,68,9,Bsc,South Africa,0,Single
+7426,54690,43,198,12,Undergraduate,Spain,0,Married
+8360,54690,43,198,12,Undergraduate,Spain,0,Married
+4058,61284,59,811,22,PhD,Spain,1,Single
+10755,23718,38,81,9,Undergraduate,Australia,0,Married
+8414,33419,52,86,8,PhD,Spain,0,Single
+6810,82025,31,1187,12,Bsc,South Africa,1,Divorced
+3839,15056,56,88,12,Basic,Spain,0,Single
+3483,48192,56,1526,25,Bsc,Canada,3,Married
+238,67309,47,1082,39,Undergraduate,Spain,0,Single
+591,66033,57,677,20,Bsc,India,0,Single
+5063,28769,37,191,12,Bsc,Spain,0,Single
+4303,6835,57,137,1,PhD,Canada,0,Single
+2258,32880,28,42,5,Bsc,Spain,0,Married
+7301,23616,32,79,8,Undergraduate,Spain,0,Single
+11121,19419,33,70,11,Bsc,India,0,Married
+5287,34961,41,79,10,Bsc,Spain,0,Married
+6457,64892,38,902,24,Bsc,South Africa,0,Divorced
+3559,16248,26,57,9,Undergraduate,India,0,Married
+5577,43776,31,23,4,Bsc,Spain,0,Single
+641,52074,47,119,7,Bsc,India,1,Single
+954,22123,54,102,7,Basic,Australia,0,Single
+1834,35544,36,67,6,Master,South Africa,0,Single
+8789,59060,25,274,14,Undergraduate,Spain,0,Married
+10584,65665,38,945,24,Bsc,Spain,0,Married
+2337,29819,43,39,9,Bsc,Spain,0,Divorced
+6071,81217,25,1157,22,Bsc,Spain,0,Single
+295,81217,25,1157,22,Bsc,Spain,0,Single
+10203,26095,24,42,5,Bsc,Spain,0,Single
+3968,65706,44,1199,27,Undergraduate,Canada,3,Divorced
+4037,31859,38,20,4,Bsc,South Africa,0,Divorced
+6932,93027,69,2119,22,PhD,Spain,1,Married
+10159,58710,44,1185,31,Bsc,Australia,0,Divorced
+1177,49618,48,129,11,Master,Spain,0,Single
+9426,58308,50,900,15,Master,Spain,0,Single
+10637,40800,50,99,8,Bsc,Spain,0,Married
+10826,18690,55,60,5,Bsc,Spain,0,Married
+4086,18690,55,60,5,Bsc,Germany,0,Married
+10304,18690,55,60,5,Bsc,Spain,0,Married
+7998,28087,56,112,9,Bsc,India,0,Single
+10992,75702,47,1148,26,Bsc,South Africa,0,Single
+6383,32892,43,46,8,PhD,South Africa,0,Single
+10536,32892,43,46,8,PhD,Spain,0,Single
+6036,89120,55,1924,19,Master,Spain,1,Single
+11092,27116,53,41,7,Bsc,South Africa,0,Married
+538,46107,25,125,7,Bsc,South Africa,0,Single
+10022,54466,41,16,4,PhD,Spain,0,Single
+10157,59686,49,274,12,Bsc,Canada,0,Single
+3503,82460,64,974,15,Bsc,South Africa,0,Divorced
+146,76045,54,1323,21,PhD,Spain,1,Single
+5538,83829,39,1862,17,Bsc,Spain,3,Divorced
+3910,83829,39,1862,17,Bsc,Spain,3,Divorced
+4227,32889,46,55,9,Master,Spain,0,Single
+6634,33462,35,54,6,Master,South Africa,0,Divorced
+8916,36627,39,16,4,Bsc,South Africa,0,Divorced
+6460,28718,32,57,7,Bsc,India,0,Married
+5883,77981,42,664,21,Bsc,Spain,0,Married
+10091,60230,58,1067,17,Bsc,Spain,0,Single
+697,74918,45,2047,21,Bsc,Spain,1,Single
+2607,40464,61,630,24,Bsc,Spain,0,Single
+8427,64857,58,1540,23,Master,Spain,0,Single
+217,64857,58,1540,23,Master,Canada,0,Single
+6202,63381,54,1005,26,Bsc,Spain,0,Single
+3856,63381,54,1005,26,Bsc,Spain,0,Single
+10648,66664,32,1289,19,Undergraduate,Spain,0,Single
+5120,66664,32,1289,19,Undergraduate,South Africa,0,Single
+6749,86358,48,1722,18,Bsc,Spain,0,Single
+1584,41443,37,482,20,Bsc,South Africa,0,Married
+9559,57072,53,1034,27,PhD,Canada,1,Married
+771,54178,47,194,10,Bsc,Germany,0,Single
+5237,48767,64,63,9,PhD,Australia,0,Single
+2461,51124,59,43,6,Master,Canada,0,Single
+5474,43020,44,223,12,Bsc,United State,0,Single
+2895,49980,51,195,11,Bsc,India,0,Single
+7972,72906,59,1151,17,Bsc,Spain,0,Single
+10067,25176,38,13,4,Undergraduate,Germany,0,Single
+500,96876,37,1941,24,Bsc,Spain,3,Single
+922,31086,35,48,6,Undergraduate,Germany,1,Married
+2861,24072,31,23,4,Bsc,Spain,0,Single
+375,76773,60,1156,16,Bsc,Spain,0,Divorced
+10936,72190,49,1947,16,Bsc,Australia,0,Married
+10314,83837,66,1318,25,PhD,India,2,Married
+4240,17345,36,58,7,Bsc,Spain,0,Married
+2674,75154,56,1143,16,Master,United State,0,Single
+2563,28249,53,43,6,Basic,India,0,Married
+8312,28249,53,43,6,Basic,Spain,0,Married
+6999,69661,34,834,23,Master,India,0,Married
+7574,27922,35,41,6,PhD,South Africa,0,Single
+5223,45903,48,66,8,Master,South Africa,0,Single
+2952,36273,37,76,8,Master,Spain,0,Single
+7683,70777,46,787,23,Master,Spain,0,Married
+9481,17148,38,68,11,Bsc,Canada,0,Married
+9907,66476,45,1013,26,Master,Germany,0,Single
+5454,45057,35,50,6,Master,United State,0,Married
+3798,41120,46,81,9,Bsc,Spain,0,Married
+7281,51381.5,55,186,9,PhD,Australia,0,Single
+4259,19485,28,10,4,Master,India,0,Single
+2549,21840,31,27,5,PhD,Spain,0,Single
+6437,41473,29,76,6,Undergraduate,Spain,0,Single
+2488,31395,58,64,10,Undergraduate,Spain,0,Divorced
+3945,68117,67,930,25,PhD,Spain,1,Single
+702,47682,39,521,19,Undergraduate,Spain,0,Single
+9010,83151,42,2346,23,Master,Spain,3,Married
+9710,58086,45,792,23,PhD,Spain,0,Divorced
+1509,84460,56,523,22,PhD,Spain,4,Single
+9120,66565,52,1065,19,Bsc,Spain,0,Single
+5252,23910,45,67,6,Bsc,Spain,0,Divorced
+5959,35893,46,199,15,Bsc,India,0,Single
+7441,71128,41,1615,27,Bsc,United State,0,Divorced
+4271,38683,25,341,17,Undergraduate,India,0,Single
+4095,37150,43,467,21,Bsc,United State,0,Married
+8852,61064,38,1080,28,Bsc,Spain,0,Married
+7698,51650,38,191,10,PhD,India,0,Married
+4174,55249,58,130,8,Master,Spain,0,Single
+3182,46854,41,263,15,PhD,India,1,Single
+193,14421,18,16,4,Basic,Spain,1,Married
+5229,54132,45,42,5,PhD,Germany,0,Single
+5555,153924,39,6,0,Bsc,Spain,0,Divorced
+7732,64813,36,745,20,Bsc,Spain,0,Married
+310,61872,44,573,21,Master,Canada,0,Married
+6261,58025,35,470,18,Bsc,India,0,Married
+6274,83790,66,1615,25,Master,South Africa,2,Married
+1655,34350,35,48,5,Bsc,Australia,0,Single
+2740,33438,56,90,11,PhD,Spain,0,Single
+4328,21955,28,55,8,Undergraduate,Spain,0,Married
+17,60491,43,1028,28,PhD,Spain,0,Married
+9153,59304,50,1048,28,PhD,Spain,0,Married
+520,34421,40,30,4,Bsc,Spain,0,Married
+8372,34421,40,30,4,Bsc,South Africa,0,Married
+73,51411,61,18,4,PhD,India,0,Single
+2002,71964,56,1870,17,Bsc,Spain,0,Divorced
+6059,64504,61,1314,25,PhD,Spain,0,Single
+11166,49678,53,315,14,Bsc,Spain,0,Married
+6257,60482,38,507,17,Master,South Africa,0,Single
+9224,55260,42,1139,25,PhD,South Africa,0,Single
+8732,67369,45,1461,25,Master,Spain,2,Single
+955,47175,52,240,17,Master,South Africa,1,Single
+4910,68743,47,2074,30,Bsc,United State,0,Divorced
+564,56937,33,906,30,PhD,Spain,1,Single
+8931,83033,28,1761,26,Bsc,South Africa,1,Single
+1998,37697,38,84,7,Bsc,India,0,Single
+1250,37697,38,84,7,Bsc,Spain,0,Single
+8397,44689,63,34,6,Bsc,Spain,1,Married
+9672,23162,44,65,8,Undergraduate,Canada,0,Married
+2125,63033,55,1102,16,Bsc,United State,0,Divorced
+5975,40304,47,57,6,PhD,Canada,0,Single
+983,40059,30,414,12,Bsc,United State,1,Married
+9938,80067,60,1600,17,Bsc,India,1,Married
+4385,36038,33,47,8,PhD,Spain,0,Single
+1612,51381.5,33,47,8,PhD,Australia,0,Single
+803,40521,46,21,4,Bsc,Spain,0,Single
+10675,66334,58,1161,19,PhD,Spain,0,Married
+7004,11012,30,84,9,Bsc,India,1,Single
+4432,31615,38,51,7,Bsc,Spain,0,Divorced
+5079,51381.5,43,97,10,Bsc,Australia,0,Married
+4475,69098,65,2440,25,PhD,Spain,0,Married
+10868,70792,63,1272,19,Bsc,Spain,0,Single
+6742,17688,35,11,4,Bsc,Spain,0,Married
+5692,25443,25,32,5,Basic,South Africa,0,Married
+339,57091,42,496,18,PhD,Spain,1,Married
+10398,24336,33,31,4,Undergraduate,Spain,0,Single
+8017,51111,33,55,7,Undergraduate,South Africa,0,Married
+3722,44503,42,48,7,Bsc,Spain,0,Single
+7326,56850,43,63,6,Master,Canada,0,Married
+2416,66582,45,1288,20,PhD,Spain,0,Single
+1878,23148,29,37,6,Undergraduate,Spain,0,Married
+5278,82224,50,902,21,Bsc,Germany,1,Married
+5734,61917,40,91,7,PhD,Spain,0,Married
+4370,43482,48,88,9,Bsc,India,0,Single
+8405,68274,35,305,13,Bsc,South Africa,0,Divorced
+7617,42373,40,163,13,Bsc,Spain,0,Single
+10339,51381.5,60,207,11,Master,Australia,0,Single
+6376,57537,35,545,19,Bsc,Australia,0,Single
+2150,80995,56,1482,22,PhD,Canada,0,Single
+7386,30992,38,43,5,Bsc,Canada,0,Divorced
+3006,30992,38,43,5,Bsc,Canada,0,Divorced
+11088,78642,43,1816,18,PhD,Spain,0,Single
+5185,74268,59,892,13,Bsc,South Africa,0,Married
+3523,75072,52,1073,19,Bsc,Spain,0,Single
+55,56253,51,597,22,Bsc,Spain,0,Single
+3807,59925,59,766,23,Bsc,Spain,0,Single
+2453,62807,54,819,23,Bsc,Spain,0,Single
+7787,62807,54,819,23,Bsc,Canada,0,Single
+2230,23626,44,43,10,PhD,Germany,0,Married
+8146,46106,38,54,5,Master,South Africa,0,Single
+988,81168,49,1193,18,Bsc,Spain,1,Married
+4832,27244,35,101,8,Bsc,Spain,0,Married
+3152,26091,57,89,9,Bsc,India,0,Single
+11188,26091,57,89,9,Bsc,Spain,0,Single
+361,43142,45,20,4,Master,Australia,0,Married
+5939,38232,43,122,11,Bsc,Spain,0,Single
+9349,92533,29,1131,23,Bsc,Germany,2,Married
+819,63285,69,1103,25,Bsc,Spain,0,Single
+10120,38946,59,257,12,Bsc,United State,0,Single
+4541,38946,59,257,12,Bsc,Canada,0,Single
+2456,40233,39,149,13,PhD,South Africa,0,Married
+2516,46831,45,78,7,Undergraduate,Spain,0,Married
+11013,67605,27,938,17,Bsc,Spain,0,Single
+9988,70379,38,860,25,Master,Canada,0,Single
+1627,77297,57,789,22,Undergraduate,Spain,1,Divorced
+1490,55759,52,854,26,Bsc,Canada,0,Married
+6710,58217,63,103,7,Master,Spain,0,Single
+7375,51369,38,576,16,Bsc,South Africa,0,Single
+10144,51369,38,576,16,Bsc,South Africa,0,Single
+3138,91249,58,1676,22,Bsc,Spain,4,Single
+1440,52513,36,1149,25,Undergraduate,Spain,0,Single
+4200,44159,44,275,15,Master,South Africa,0,Married
+4998,76081,52,1033,14,Bsc,Spain,1,Single
+7321,76081,52,1033,14,Bsc,India,1,Single
+8663,39996,40,15,4,Bsc,Australia,0,Divorced
+1958,55012,41,660,25,PhD,Spain,0,Single
+6963,77457,67,1157,18,Bsc,South Africa,1,Single
+1065,80695,51,1918,19,Bsc,United State,0,Single
+2712,71866,58,715,20,Bsc,Australia,0,Married
+6049,73450,32,1804,27,Master,Spain,2,Single
+6605,55614,69,682,20,PhD,Spain,1,Divorced
+11181,156924,65,8,0,PhD,Canada,0,Married
+5234,30753,47,81,7,Undergraduate,Canada,0,Single
+5253,54603,58,227,16,Master,Spain,0,Single
+11148,22280,39,13,4,Bsc,Spain,0,Single
+6289,59385,63,185,10,Master,Spain,0,Single
+9743,76998,59,1910,29,Bsc,Canada,1,Married
+9209,80573,43,1564,24,Master,South Africa,0,Single
+6417,80573,43,1564,24,Master,Spain,0,Single
+7937,24711,32,58,7,Bsc,Spain,0,Married
+6488,38829,55,99,8,PhD,Germany,0,Married
+3194,71466,40,1230,19,PhD,Canada,0,Single
+231,28839,58,32,7,Master,Spain,0,Single
+9697,53790,63,542,20,Bsc,Spain,0,Married
+4676,73705,63,1695,25,Master,Spain,0,Single
+8079,22448,32,55,9,Bsc,South Africa,0,Married
+10032,12571,38,53,11,Bsc,South Africa,0,Divorced
+10505,73113,54,1001,15,Master,South Africa,0,Single
+2005,35765,24,75,8,Bsc,Canada,0,Married
+6940,46734,48,223,12,PhD,Spain,1,Single
+2304,66313,51,770,23,PhD,South Africa,0,Single
+3170,68148,57,1042,15,Master,Spain,0,Single
+10466,44393,49,60,7,Bsc,Spain,0,Married
+7325,38197,28,40,5,PhD,Spain,0,Single
+455,51012,68,209,10,PhD,Spain,0,Married
+7592,51012,68,209,10,PhD,Spain,0,Married
+4547,13672,54,25,6,Bsc,Spain,0,Single
+6825,41452,61,16,4,Bsc,Canada,0,Single
+2961,42081,32,382,15,Bsc,Spain,1,Married
+8700,14906,28,66,9,Basic,South Africa,0,Single
+2278,33812,29,133,8,Undergraduate,United State,0,Single
+10703,46098,39,120,11,Master,Spain,0,Single
+9,46098,39,120,11,Master,Canada,0,Single
+2804,46098,39,120,11,Master,India,0,Single
+4915,53230,58,732,23,Undergraduate,Germany,0,Married
+3010,88420,25,2069,20,Master,Spain,3,Single
+4279,39548,51,54,7,Undergraduate,Spain,0,Single
+2564,61278,61,165,10,Bsc,Spain,0,Single
+1137,81246,50,1379,17,Bsc,Spain,2,Single
+5084,58330,39,1064,24,Bsc,Spain,0,Single
+7094,58330,39,1064,24,Bsc,Germany,0,Single
+6327,65777,47,1146,17,Bsc,United State,0,Single
+6131,70829,34,431,16,Undergraduate,Spain,0,Married
+5798,51381.5,41,985,15,Master,Germany,0,Single
+10379,59247,52,574,21,Master,Spain,0,Single
+606,25930,47,15,4,Bsc,Spain,0,Single
+7801,54753,55,728,21,Bsc,South Africa,0,Single
+2445,28440,40,63,6,PhD,Spain,0,Single
+5346,23559,41,79,9,Undergraduate,Germany,0,Married
+550,62335,62,708,21,Bsc,Spain,0,Divorced
+4478,63777,35,653,26,Bsc,India,0,Married
+2350,59666,42,1027,20,Bsc,Canada,1,Married
+1118,50965,58,685,22,Master,Spain,1,Married
+1491,71488,49,559,16,Undergraduate,Canada,0,Single
+4507,72228,62,1250,22,Bsc,Spain,0,Single
+7023,46231,61,263,15,PhD,South Africa,0,Single
+6977,75702,40,1921,29,Bsc,Spain,1,Single
+4042,43300,43,180,11,Bsc,Canada,0,Divorced
+7274,78618,57,2153,22,Bsc,Spain,1,Married
+2902,51381.5,56,45,5,Bsc,Australia,0,Single
+3332,29760,29,165,12,Bsc,Germany,0,Single
+7433,29760,29,165,12,Bsc,Spain,0,Single
+9386,50127,52,320,13,Bsc,Spain,1,Single
+5176,29604,26,53,5,Bsc,South Africa,1,Single
+10323,49413,62,304,13,Bsc,Spain,0,Married
+4682,51876,56,310,13,Bsc,Germany,0,Married
+3083,45837,40,373,18,Bsc,Spain,0,Married
+8015,85696,52,1313,20,PhD,Spain,0,Divorced
+1745,85696,52,1313,20,PhD,Spain,0,Divorced
+3136,59432,52,663,22,Master,Spain,0,Divorced
+6991,43185,63,637,20,Bsc,Australia,0,Divorced
+8132,60631,39,661,24,PhD,Germany,1,Married
+503,20559,29,53,7,Master,Australia,0,Married
+8148,50898,58,859,33,Master,South Africa,0,Single
+2736,73807,36,849,23,Bsc,India,0,Married
+8162,14661,58,26,5,Master,Spain,0,Single
+692,36807,60,16,4,Bsc,India,0,Single
+7706,46772,39,1048,30,Undergraduate,Canada,1,Single
+9298,81574,67,1798,18,PhD,South Africa,2,Single
+2986,30772,38,20,4,Bsc,Canada,0,Married
+10812,46377,36,90,7,PhD,South Africa,0,Married
+2909,78128,40,1264,20,PhD,Germany,2,Married
+6974,83443,42,1497,22,PhD,Germany,0,Single
+9140,50523,54,91,8,Undergraduate,United State,0,Single
+4554,47009,49,448,17,Bsc,Spain,0,Single
+7791,37054,47,25,6,Master,South Africa,0,Married
+5455,32011,43,122,10,PhD,Spain,0,Married
+7960,82122,52,1382,26,Undergraduate,Spain,1,Single
+3426,70300,39,1596,26,Bsc,Spain,0,Divorced
+5316,21024,38,84,7,Master,Spain,0,Single
+1404,34916,46,231,13,Bsc,South Africa,0,Single
+10598,27943,47,37,8,Bsc,Spain,0,Single
+8212,39791,43,174,10,Master,Spain,0,Married
+3233,62745,49,1117,29,PhD,South Africa,0,Married
+7892,18589,45,75,8,Bsc,United State,0,Single
+2975,85606,38,1956,24,Bsc,Spain,1,Single
+5043,26997,63,434,13,Basic,Spain,0,Married
+3104,82332,53,2006,21,Bsc,Germany,1,Single
+10854,38853,44,45,7,PhD,India,0,Married
+7419,27071,46,35,7,Master,Spain,0,Divorced
+5558,90933,60,1685,15,PhD,Spain,1,Single
+832,65814,48,747,23,PhD,Spain,0,Single
+4964,74250,56,1158,18,PhD,Canada,0,Single
+11030,33181,38,16,4,Master,Spain,1,Married
+4587,45006,69,266,12,Master,Spain,0,Single
+450,42315,56,270,12,Master,United State,0,Single
+11031,48699,64,40,5,PhD,Australia,0,Married
+4990,59111,60,869,21,Bsc,Australia,0,Married
+221,48726,59,242,12,Bsc,Germany,0,Married
+4351,37244,59,55,5,Bsc,Spain,1,Divorced
+1357,74854,44,1562,19,Bsc,Germany,0,Single
+5667,60896,50,1701,26,PhD,Canada,0,Married
+8867,67546,26,2126,20,PhD,South Africa,0,Married
+2747,67546,26,2126,20,PhD,Spain,0,Married
+7422,46923,27,369,16,Bsc,Spain,0,Single
+4148,38988,42,348,19,Bsc,Spain,0,Married
+9516,49118,43,1229,28,Undergraduate,Spain,2,Divorced
+1291,27683,36,351,16,PhD,Spain,0,Single
+1833,39190,40,133,9,PhD,Spain,0,Single
+7270,56981,33,1241,19,Bsc,South Africa,1,Divorced
+8182,23228,30,121,11,Bsc,Canada,0,Married
+10394,90000,30,1479,18,Bsc,Canada,3,Married
+1142,55707,61,428,16,PhD,Spain,0,Married
+451,9255,25,22,5,Bsc,India,0,Single
+7128,42997,37,15,4,PhD,Spain,0,Single
+10678,71232,55,917,25,Bsc,Spain,0,Single
+7755,57744,60,411,16,PhD,Spain,0,Married
+4754,33585,48,122,7,Master,Spain,0,Married
+20,46891,49,183,8,Undergraduate,Germany,0,Married
+2246,46891,49,183,8,Undergraduate,Spain,0,Married
+10307,50387,58,525,19,Bsc,Spain,0,Married
+2147,76653,45,2279,23,Bsc,Spain,2,Single
+10590,76542,58,1483,23,PhD,Spain,0,Single
+6565,76995,65,1782,26,Master,United State,1,Married
+6619,38415,36,44,6,Bsc,Spain,0,Married
+4817,22304,58,18,4,Bsc,Spain,0,Divorced
+4508,75127,62,833,19,Bsc,Germany,0,Single
+4843,75127,62,833,19,Bsc,South Africa,0,Single
+9197,39722,61,47,7,Bsc,Spain,0,Married
+6237,7144,48,416,25,PhD,Spain,0,Single
+6515,39771,37,50,6,Bsc,South Africa,0,Single
+5954,42618,42,192,11,Master,Spain,0,Divorced
+7938,51518,56,449,17,PhD,Germany,0,Single
+961,74716,42,860,17,Bsc,Spain,0,Married
+1764,33955,39,270,15,Bsc,South Africa,0,Single
+1916,45736,60,437,19,Master,Germany,0,Married
+6941,31632,43,95,6,Bsc,Spain,0,Single
+5562,60093,40,735,21,Bsc,Spain,0,Married
+1517,30822,45,51,5,Bsc,Spain,0,Single
+7286,41728,46,55,5,Bsc,Australia,0,Single
+4687,80739,56,1633,24,Master,Spain,0,Married
+5631,49767,23,692,18,Bsc,United State,0,Single
+1951,34445,33,839,27,Basic,Spain,0,Married
+123,67046,63,993,15,Bsc,Australia,0,Single
+9451,73538,49,1658,26,Bsc,Canada,0,Married
+7396,80398,48,1597,26,Bsc,Spain,1,Married
+3298,52973,58,1152,31,Master,South Africa,0,Married
+6730,38998,60,54,8,Bsc,Spain,0,Married
+9916,38998,60,54,8,Bsc,South Africa,0,Married
+2227,26490,56,210,11,Undergraduate,South Africa,0,Single
+946,26490,56,210,11,Undergraduate,Spain,0,Single
+3745,23331,26,103,8,Undergraduate,India,0,Married
+4094,60544,53,289,15,Bsc,Australia,0,Married
+8588,60544,53,289,15,Bsc,Germany,0,Married
+3916,49269,43,890,25,PhD,Spain,0,Single
+9135,27203,64,64,6,Bsc,Spain,0,Single
+1755,45204,26,114,7,Undergraduate,South Africa,0,Single
+2875,67023,36,906,24,Bsc,Spain,0,Married
+2008,77583,36,1149,19,Bsc,South Africa,1,Married
+10925,76630,31,1003,25,Bsc,South Africa,0,Married
+1604,47353,54,225,13,Master,Spain,0,Married
+5389,48920,50,347,16,Bsc,Spain,1,Married
+2878,67472,67,414,15,PhD,Spain,0,Married
+4440,64100,50,546,18,Master,South Africa,1,Married
+1324,38872,26,91,8,Bsc,India,0,Married
+6262,72217,52,1573,22,Master,Germany,0,Single
+3628,15038,27,80,7,Basic,Spain,0,Single
+3641,13624,38,36,7,Bsc,Spain,0,Married
+322,42554,36,41,7,Bsc,Australia,0,Single
+175,71952,28,1443,22,Bsc,Spain,2,Married
+6988,71952,28,1443,22,Bsc,Australia,2,Married
+8204,78041,43,1319,18,Undergraduate,Germany,0,Married
+7476,63972,50,1269,23,Master,South Africa,1,Single
+5221,52852,57,879,26,Bsc,Germany,1,Married
+8970,62010,42,530,19,PhD,Spain,0,Married
+9286,83151,54,747,19,Master,Spain,0,Single
+5831,77870,47,1815,18,Bsc,Spain,2,Married
+1010,46931,37,78,7,Bsc,Spain,0,Single
+11074,85072,37,1423,18,Bsc,South Africa,0,Single
+5896,73395,27,397,15,Master,Spain,0,Married
+3515,62307,62,160,9,Bsc,Spain,0,Single
+5324,58293,33,422,19,PhD,United State,0,Married
+6534,47889,40,67,6,Bsc,South Africa,0,Single
+8373,24594,35,29,5,Basic,Canada,0,Single
+3829,24594,35,29,5,Basic,South Africa,0,Single
+4501,69882,49,1478,20,Master,Spain,0,Single
+4179,24221,55,55,6,Bsc,Spain,0,Single
+2292,22327,29,24,5,Bsc,Spain,0,Single
+9239,61923,53,126,8,Master,United State,0,Married
+8953,35791,49,35,6,Master,Spain,0,Single
+10258,35791,49,35,6,Master,United State,0,Single
+3520,91172,24,1092,14,Master,Canada,4,Single
+10402,35441,47,39,6,Bsc,Canada,0,Married
+11114,19656,44,84,9,Bsc,Spain,0,Single
+9553,7500,27,15,4,Bsc,India,0,Married
+6055,71626,35,1305,19,Bsc,Spain,1,Married
+4786,75330,37,1109,29,Bsc,United State,0,Married
+5015,34529,38,162,9,Master,Spain,0,Married
+8560,48789,22,680,18,Bsc,Canada,0,Single
+3469,34487,37,103,9,PhD,Spain,0,Divorced
+5885,35688,41,211,16,Undergraduate,Canada,0,Married
+3310,35688,41,211,16,Undergraduate,Spain,0,Married
+2134,53700,62,694,22,Bsc,South Africa,0,Single
+2532,73454,27,1651,13,Master,Spain,1,Single
+2579,71113,57,835,26,Bsc,Spain,0,Married
+3117,51381.5,59,450,15,Bsc,Australia,0,Single
+5623,31535,34,51,5,Master,Spain,1,Married
+4789,80812,61,1677,18,Bsc,India,3,Single
+9523,40479,32,15,4,Bsc,Spain,0,Single
+5268,29440,54,56,7,Bsc,Germany,0,Married
+1545,38508,28,443,20,Bsc,Spain,0,Married
+2254,69520,31,1455,21,Bsc,Australia,0,Married
+2661,18701,50,44,10,Bsc,South Africa,0,Single
+3130,18701,50,44,10,Bsc,Spain,0,Single
+5847,69901,45,882,23,Bsc,Spain,0,Divorced
+5863,47703,61,655,21,Bsc,Spain,0,Married
+999,86037,23,730,25,Bsc,Canada,2,Single
+2931,71847,36,1192,22,Bsc,Spain,1,Divorced
+1890,42033,43,25,4,Undergraduate,Spain,0,Single
+5589,51983,50,793,24,Bsc,India,0,Divorced
+10172,68655,26,1538,21,Bsc,Spain,0,Single
+6729,68655,26,1538,21,Bsc,South Africa,0,Single
+10492,38285,55,10,4,Bsc,India,0,Single
+2939,79419,44,1631,15,Master,Canada,0,Single
+5948,57338,39,237,12,Bsc,United State,0,Single
+574,42523,50,125,7,Bsc,Germany,0,Married
+3266,42523,50,125,7,Bsc,Canada,0,Married
+10500,31761,30,98,9,Bsc,Australia,0,Married
+7987,65747,45,460,19,Bsc,Canada,1,Married
+1135,17144,54,47,12,Master,Canada,0,Single
+24,17144,54,47,12,Master,South Africa,0,Single
+7244,51381.5,63,124,10,Bsc,Australia,0,Single
+1966,84618,49,1672,26,PhD,Australia,1,Married
+7789,84618,49,1672,26,PhD,Spain,1,Married
+3336,66375,66,948,14,PhD,Australia,1,Single
+5644,42213,57,363,15,Bsc,Spain,1,Single
+1295,51381.5,51,725,19,Bsc,Canada,0,Married
+6663,51141,69,157,9,PhD,Spain,0,Single
+10262,15072,34,53,11,Bsc,India,0,Married
+456,7500,28,36,7,Undergraduate,Spain,0,Married
+3270,17117,36,128,11,Undergraduate,South Africa,0,Single
+5748,59754,49,475,16,Bsc,South Africa,0,Married
+8952,65569,61,859,23,Master,Spain,0,Married
+3921,28457,62,205,10,Undergraduate,Spain,0,Single
+9826,86857,42,2114,22,PhD,United State,0,Single
+5830,86857,42,2114,22,PhD,South Africa,0,Single
+8310,68142,50,1459,24,Bsc,Spain,0,Single
+6382,48794,61,54,5,Bsc,United State,0,Single
+8439,63404,50,902,15,Bsc,Spain,1,Single
+7613,49669,40,326,14,Undergraduate,Spain,0,Single
+48,55761,50,184,10,Bsc,Spain,1,Single
+5046,78331,56,1638,25,Bsc,South Africa,0,Divorced
+3231,37971,41,30,5,Bsc,United State,0,Married
+7181,30368,37,52,7,Bsc,Spain,0,Married
+1663,34043,36,49,5,PhD,Spain,0,Single
+5441,54111,49,388,15,PhD,Spain,0,Single
+8602,69932,50,1049,26,Bsc,Spain,0,Divorced
+9925,39665,33,216,12,PhD,Spain,1,Single
+9499,93404,60,1616,17,Bsc,Canada,2,Married
+6568,38680,30,79,6,Bsc,United State,0,Married
+3032,24570,30,193,11,Bsc,Spain,0,Married
+5153,77766,47,1529,34,PhD,Spain,1,Married
+4127,77766,47,1529,34,PhD,Spain,1,Married
+9940,64961,56,1009,16,Bsc,South Africa,0,Single
+7527,23748,46,76,9,Master,Spain,0,Divorced
+3406,45989,50,322,16,Bsc,South Africa,0,Single
+9771,23331,26,269,17,Undergraduate,India,0,Single
+6722,70421,60,767,23,PhD,Canada,0,Married
+213,23091,51,48,10,PhD,Spain,0,Single
+8541,24683,24,41,8,Undergraduate,Spain,0,Married
+8475,157243,41,1608,37,PhD,India,0,Married
+8070,54222,41,264,12,PhD,Spain,0,Married
+313,73455,46,2088,22,Bsc,South Africa,1,Single
+9757,84906,42,1631,24,Bsc,Spain,3,Single
+2088,84906,42,1631,24,Bsc,Germany,3,Single
+2320,47025,36,635,23,Undergraduate,Spain,0,Married
+966,44529,48,691,25,Bsc,Spain,1,Married
+9706,31560,40,94,8,PhD,Canada,0,Single
+3979,90687,31,1779,17,PhD,Spain,1,Divorced
+5602,66973,25,1282,28,PhD,India,0,Single
+2202,41154,36,69,6,Bsc,Spain,0,Single
+9645,64590,46,1338,24,Bsc,Spain,0,Married
+7230,50611,54,493,22,PhD,United State,1,Divorced
+5675,50611,54,493,22,PhD,United State,1,Divorced
+4974,83273,44,1392,29,Bsc,United State,0,Single
+5687,81702,34,1633,27,Bsc,Canada,0,Divorced
+5871,24401,35,467,16,Master,South Africa,0,Single
+3846,42557,40,270,15,Bsc,Spain,0,Married
+10001,7500,29,100,10,Undergraduate,Spain,0,Single
+2831,78416,38,1179,26,Bsc,Spain,0,Single
+868,44794,48,65,6,Bsc,South Africa,0,Married
+7212,44794,48,65,6,Bsc,Australia,0,Married
+1743,69719,40,801,11,Bsc,Spain,0,Single
+2415,62568,52,953,16,Bsc,Spain,1,Single
+7947,42231,45,37,5,Bsc,Spain,0,Married
+2106,20130,40,34,5,Undergraduate,Spain,0,Married
+3363,20130,40,34,5,Undergraduate,Spain,0,Married
+8595,42429,41,67,7,Bsc,Australia,0,Single
+7232,42429,41,67,7,Bsc,Spain,0,Single
+7829,36640,69,65,6,Undergraduate,India,0,Divorced
+9977,78901,41,734,20,Bsc,United State,0,Divorced
+10142,66476,38,689,20,PhD,United State,0,Divorced
+5263,31056,37,55,5,Undergraduate,Spain,0,Married
+22,46310,38,309,14,Bsc,Spain,0,Divorced
+528,65819,36,1383,20,Bsc,India,0,Married
+4070,94871,45,1078,18,PhD,Canada,2,Married
