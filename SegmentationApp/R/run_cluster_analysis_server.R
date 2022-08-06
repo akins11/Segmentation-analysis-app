@@ -43,6 +43,16 @@ run_cluster_analysis_server <- function(id, r_use_data_list, parent_session) {
         algorithm_summary(input$more_algorithm_choice)
       })
       
+      # reproducible options --------------------------------------------------|
+      observe({
+        if (!is.null(input$algorithm_choice)) {
+          if (input$algorithm_choice == "K-partition clustering (kmeans)") {
+            shinyjs::show(id = "km_reproducible", anim = TRUE)
+          } else {
+            shinyjs::hide(id = "km_reproducible", anim = TRUE)
+          }
+        }
+      })
       
       # Data suitability ------------------------------------------------------|
       data_points <- reactive({
@@ -77,8 +87,7 @@ run_cluster_analysis_server <- function(id, r_use_data_list, parent_session) {
       is_suitable <- reactive({
         if (input$run_data_suitability > 0 && 
             (isTRUE(input$user_confirmation) || data_points() <= 2500)) {
-          data_suitability(df = r_engr_data(),
-                           scale = FALSE)
+          data_suitability(df = r_engr_data(), scale = FALSE)
         }
       }) |>
         bindEvent(input$run_data_suitability,
@@ -88,82 +97,81 @@ run_cluster_analysis_server <- function(id, r_use_data_list, parent_session) {
       # NOTE: you should be able to cancel this operation half way.
       
       
-      # Optimal cluster -------------------------------------------------------|
+      # Clusters --------------------------------------------------------------|
       observe({
-        if (input$more_algorithm_choice == "" && input$get_optimal_center > 0) {
+        if (input$more_algorithm_choice == "" && !is.null(input$user_n_cluster_type)) {
           show_alert(title = "Something went wrong!!",
                      text = "An algorithm must be selected",
                      type = "error")
         }
       })
-  
+      
+      
       optimal_cal_centers <- reactive({
-        req(r_engr_data())
-        if (input$more_algorithm_choice != "") {
-          kmeans_algs <- algo_choice()$Partition
-          hclust_algs <- algo_choice()$Hierarchical
-
-          if (input$more_algorithm_choice %in% kmeans_algs) {
-            search_method <- "kmeans"
-          } else if (input$more_algorithm_choice %in% hclust_algs) {
-            search_method <- "complete"
+        req(r_engr_data(), algo_choice())
+        
+        if (!is.null(input$user_n_cluster_type)) {
+          if (input$more_algorithm_choice != "" && 
+              input$user_n_cluster_type == "get_optimal") {
+            
+            kmeans_algs <- algo_choice()$Partition
+            hclust_algs <- algo_choice()$Hierarchical
+            
+            if (input$more_algorithm_choice %in% kmeans_algs) {
+              search_method <- "kmeans"
+            } else if (input$more_algorithm_choice %in% hclust_algs) {
+              search_method <- "complete"           # ++++++++++++++++++++++
+            }
+            
+            optimal_center(df = r_engr_data(),
+                           search_method = search_method,
+                           max_n = 8,
+                           type  = "n_cluster")
           }
-
-          optimal_center(df = r_engr_data(),
-                         search_method = search_method,
-                         max_n = 8,
-                         type  = "n_cluster")
         }
-      }) |>
-        bindEvent(input$get_optimal_center,
-                  label = "get_optimal_center_reactive")
+      })
       
       output$print_optimal_centers <- renderPrint({
         req(optimal_cal_centers())
-        paste("The Optimal number of clusters is", optimal_cal_centers())
+        paste("The suggested optimal number of clusters is", optimal_cal_centers())
       })
       
       observe({
-        if (input$get_optimal_center > 0 && input$more_algorithm_choice != "") {
-          shinyjs::hide(id = "nc_header")
-          shinyjs::hide(id = "nc_exp")
-          shinyjs::hide(id = "sli_number_centers")
+        if (!is.null(input$user_n_cluster_type)) {
+          if (input$user_n_cluster_type == "assign_manually") {
+            shinyjs::show(id = "sli_number_centers", anim = TRUE)
+          } else {
+            shinyjs::hide(id = "sli_number_centers", anim = TRUE)
+          }
+        }
+      })
+      
+      selected_cluster <- reactive({
+        if (!is.null(input$user_n_cluster_type)) {
+          if (input$user_n_cluster_type == "get_optimal") {
+            optimal_cal_centers()
+            
+          } else if (input$user_n_cluster_type == "assign_manually") {
+            input$sli_number_centers
+          }
         }
       }) |>
-        bindEvent(input$get_optimal_center)
+        bindEvent(input$user_n_cluster_type)
       
-      
-      # center assignment 
-      optimal_centers <- reactive({
-        
-        if (input$get_optimal_center > 0 && input$sli_number_centers == 0) {
-          optimal_cal_centers()
-        } else if (input$get_optimal_center >= 0 && input$sli_number_centers > 0) {
-          input$sli_number_centers
-        }
-      }) |>
-        bindEvent(input$get_optimal_center, input$sli_number_centers)
-      
-      
-      # Run cluster analysis --------------------------------------------------|
+      # Input Error ----------------------------------------------------------|
       observe({
-        if (input$more_algorithm_choice == "" &&
-            input$get_optimal_center == 0 && input$sli_number_centers == 0) {
-          
+        if (input$more_algorithm_choice == "" && is.null(input$user_n_cluster_type)) {
           show_alert(title = "Something went wrong!!",
-                     text = "An algorithm and either `Get Optimal Number Of clusters`
-                              or `Assign Number of Clusters` must be selected",
+                     text = "An algorithm and either get optimal clusters
+                              or Assign manually must be selected",
                      type = "error")
           
-        } else if (input$more_algorithm_choice != "" &&
-                   input$get_optimal_center == 0 && input$sli_number_centers == 0) {
+        } else if (input$more_algorithm_choice != "" && is.null(input$user_n_cluster_type)) {
           show_alert(title = "Something went wrong!!",
-                     text = "`Get Optimal Number Of clusters` or `Assign Number 
-                              of Clusters` must be selected",
+                     text = "get optimal clusters or Assign manually must be selected",
                      type = "error")
-        }
-        else if (input$more_algorithm_choice == "" &&
-                   input$sli_number_centers > 0) {
+          
+        } else if (input$more_algorithm_choice == "" && !is.null(input$user_n_cluster_type)) {
           show_alert(title = "Something went wrong!!",
                      text = "An algorithm must be selected",
                      type = "error")
@@ -171,16 +179,21 @@ run_cluster_analysis_server <- function(id, r_use_data_list, parent_session) {
       }) |>
         bindEvent(input$run_cluster_computation)
       
-      
+      # Run cluster analysis --------------------------------------------------|
       cluster_data <- reactive({
-        req(r_orig_data(), r_engr_data(), 
-            input$more_algorithm_choice, optimal_centers())
+        req(r_orig_data(), r_engr_data(), input$more_algorithm_choice, 
+            selected_cluster())
         
-        run_cluster_algo(mdl_df = r_engr_data(),
-                         org_df = r_orig_data(),
-                         algorithm_type = input$more_algorithm_choice,
-                         h_method = "average",
-                         number_k_centers = optimal_centers())
+        if (!is.null(input$user_n_cluster_type)) {
+          if (input$km_reproducible) {
+            set.seed(111)
+          }
+          run_cluster_algo(mdl_df = r_engr_data(),
+                           org_df = r_orig_data(),
+                           algorithm_type = input$more_algorithm_choice,
+                           h_method = "average", # +++++++++++++++++++++++++
+                           number_k_centers = selected_cluster())
+        }
       }) |>
         bindEvent(input$run_cluster_computation,
                   label = "run_cluster_computation_reactive")
@@ -232,6 +245,6 @@ run_cluster_analysis_server <- function(id, r_use_data_list, parent_session) {
 }
 
 
-
+# Note that agnes(*, method="ward") corresponds to hclust(*, "ward.D2")
 
 
