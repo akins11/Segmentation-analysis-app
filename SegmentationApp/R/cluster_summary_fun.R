@@ -33,7 +33,6 @@ get_var_type_names <- function(df, type, remove_var) {
 
 
 
-
 #' Check Variable Data Type
 #'
 #' @param df data.frame
@@ -93,13 +92,42 @@ count_clusters <- function(df, output_type = "table") {
       ggplot2::labs(x = "Clusters", 
                     y = "Count", 
                     title = "Number Of Record In Each Cluster") +
-      ggplot2::theme_minimal()
+      ggplot2::theme_minimal() +
+      ggplot2::theme(plot.background = ggplot2::element_rect(fill = plt_plot_BC,
+                                                             color = plt_plot_BC))
+  }
+}
+
+
+#' Wrapper for ggplot2 scale_x_discrete() function
+#'
+#' @param df data.frame
+#' @param chr_var A character variable from the data.
+#' @param min_chr An integer for the lower threshold.
+#' @param ... Additional arguments passed to scale_x_discrete()
+#'
+#' @return 
+#' @export
+#'
+#' @examples
+scale_x_discrete_wrap <- function(df, chr_var, min_chr, ...) {
+  max_nchr <- max(nchar(unique(df[[chr_var]])))
+  total_chr <- nchar(paste(unique(df[[chr_var]]), collapse = ""))
+  
+  if (max_nchr >= 19) {
+    ggplot2::scale_x_discrete(labels = scales::label_wrap(10), ...)
+    
+  } else if (max_nchr >= min_chr || total_chr > 40) {
+    ggplot2::scale_x_discrete(guide = guide_axis(n.dodge = 2), ...)
+    
+  } else {
+    ggplot2::scale_x_discrete(...)
   }
 }
 
 
 
-#' Number of Catagories in Each Cluster.
+#' Number of Categories in Each Cluster.
 #'
 #' @param df data.frame: A data frame with a variable '.cluster' in it.
 #' @param chr_var character: A variable from the data.
@@ -137,15 +165,16 @@ chr_count_cluster <- function(df, chr_var, n_obs = 10, output_type = "table") {
       } else {
         f_plt <- f_plt +
           ggplot2::geom_col(ggplot2::aes(fill = .cluster), show.legend = FALSE) +
-          ggplot2::theme_minimal() +
-          ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 18,
-                                                             hjust = 1, vjust =1.7))
+          scale_x_discrete_wrap(f_tbl, chr_var, 10) +
+          ggplot2::theme_minimal()
       }
       f_plt +
         ggplot2::facet_wrap(ggplot2::vars(.cluster), scales = "free") +
         ggplot2::scale_fill_manual(values = rev(plt_clr$dash)) +
         ggplot2::labs(x = NULL, y = NULL, 
-                      title = paste("Count By", chr_lb, "In Each Cluster"))
+                      title = paste("Count Of", chr_lb, "For Each Cluster")) +
+        ggplot2::theme(plot.background = ggplot2::element_rect(fill = plt_plot_BC,
+                                                               color = plt_plot_BC))
       
     } else {
       uq_count <- dplyr::count(df, .data[[chr_var]]) |> 
@@ -170,7 +199,9 @@ chr_count_cluster <- function(df, chr_var, n_obs = 10, output_type = "table") {
         ggplot2::labs(y = chr_lb, 
                       x = NULL, 
                       title = paste("Proportion Of Count By", chr_lb, "In Each Cluster")) +
-        ggplot2::theme_minimal()
+        ggplot2::theme_minimal() +
+        ggplot2::theme(plot.background = ggplot2::element_rect(fill = plt_plot_BC,
+                                                               color = plt_plot_BC))
     }
   }
 }
@@ -328,7 +359,9 @@ cluster_stat_summary <- function(df,
         ggplot2::labs(x = "Cluster", 
                       y = plt_l, 
                       title = paste(plt_l, var_l, "In Each Cluster")) +
-        ggplot2::theme_minimal()
+        ggplot2::theme_minimal() +
+        ggplot2::theme(plot.background = ggplot2::element_rect(fill = plt_plot_BC,
+                                                               color = plt_plot_BC))
     }
     
   } else {
@@ -355,7 +388,9 @@ cluster_stat_summary <- function(df,
         ggplot2::labs(x = "Cluster", 
                       y = plt_l, 
                       title = paste(plt_l, var_ll, "In Each Cluster")) +
-        ggplot2::theme_minimal()
+        ggplot2::theme_minimal() +
+        ggplot2::theme(plot.background = ggplot2::element_rect(fill = plt_plot_BC,
+                                                               color = plt_plot_BC))
     }
     
   }
@@ -401,11 +436,13 @@ cluster_relationship_plot <- function(df, num_varx, num_vary) {
     ggplot2::scale_color_manual(values = rev(plt_clr$dash)) +
     ggplot2::theme_minimal() +
     ggplot2::theme(legend.position = "top", 
-                   legend.margin   = ggplot2::margin(t = -7, b = -8)) +
+                   legend.margin   = ggplot2::margin(t = -7, b = -8),
+                   plot.background = ggplot2::element_rect(fill = plt_plot_BC,
+                                                           color = plt_plot_BC)) +
     ggplot2::scale_y_continuous(labels = scales::comma_format(1)) +
     ggplot2::scale_x_continuous(labels = scales::comma_format(1)) +
     ggplot2::guides(color = ggplot2::guide_legend(title = NULL,
                                                   label.position = "top",
                                                   label.vjust  = -2,
-                                                  override.aes = list(size = 2)))
+                                                  override.aes = list(size = 2))) 
 }
