@@ -42,13 +42,16 @@ one_chr_variable <- function(df, chr_var, output_type = "plot") {
       ggplot2::geom_tile(show.legend = FALSE) +
       ggplot2::geom_vline(xintercept = seq_len(nb_s)-0.5, color = "gray87", size = 1) +
       ggplot2::geom_hline(yintercept = seq_len(uq_c)-0.5, color = "gray87", size = 1) +
-      ggplot2::geom_text(ggplot2::aes(label = scales::comma(count, 1)), color = "white") +
+      ggplot2::geom_text(ggplot2::aes(label = scales::comma(count, 1)), color = "white", size = 5) +
       ggplot2::scale_x_discrete(expand = c(0, 0)) +
       ggplot2::scale_y_discrete(expand = c(0, 0), 
                                 label = \(.x) stringr::str_trunc(.x, width = 15, side = "right")) +
-      ggplot2::scale_fill_gradient2(low  = "gray87",  
-                                    mid  = "gray55", 
-                                    high = "gray25") +
+      # ggplot2::scale_fill_gradient2(low  =  "gray87",  
+      #                               mid  = "gray55", 
+      #                               high = "gray25") +
+      ggplot2::scale_fill_gradient2(low  =  "#DEE2E6",  
+                                    mid  = "#6C757D", 
+                                    high = "#212529") +
       ggplot2::labs(x = "Segment", 
                     y = y_lb,
                     title=paste("Number of Records Of", y_lb, "In Each Segment")) +
@@ -56,7 +59,9 @@ one_chr_variable <- function(df, chr_var, output_type = "plot") {
       ggplot2::theme(axis.text.x = ggplot2::element_text(margin = ggplot2::margin(-2, 0, 0, 0),
                                                          hjust  = 1),
                      axis.text.y = ggplot2::element_text(margin = ggplot2::margin(0, -0.5, 0, 0)),
-                     panel.grid.major = ggplot2::element_blank())
+                     panel.grid.major = ggplot2::element_blank(),
+                     axis.title.x = element_text(vjust = -1),
+                     plot.background = ggplot2::element_rect(fill = plt_plot_BC, color = plt_plot_BC))
   }
 }
 
@@ -243,7 +248,9 @@ two_chr_variable <- function(df,
       ggplot2::theme_minimal() +
       ggplot2::theme(legend.key.size = ggplot2::unit(0.4, "cm"),
                      legend.title = ggplot2::element_text(size = 8),
-                     axis.title.x = ggplot2::element_text(size = 8))
+                     axis.title.x = ggplot2::element_text(size = 9, vjust = -1),
+                     plot.background = ggplot2::element_rect(fill = plt_plot_BC, 
+                                                             color = plt_plot_BC))
     
     if (len_unique_chr > 5) {
       f_plt <- f_plt + ggplot2::coord_flip()
@@ -321,7 +328,8 @@ one_num_variable <- function(df, num_var, output_type = "plot_at") {
         ggplot2::labs(x = "Segment", y = NULL) +
         ggplot2::theme_minimal() +
         ggplot2::theme(axis.text.x = ggplot2::element_text(angle = ifelse(len_segment > 6, 35, 0),
-                                                           hjust = if (len_segment > 6) 1 else NULL))
+                                                           hjust = if (len_segment > 6) 1 else NULL),
+                       plot.background = ggplot2::element_rect(fill = plt_plot_BC, color = plt_plot_BC))
       
     } else if (output_type == "plot_mm") {
       f_tbl |>
@@ -347,7 +355,8 @@ one_num_variable <- function(df, num_var, output_type = "plot_at") {
                                         <span style='color:{'gray26'};'>Maximum</span>
                                         {num_lb} In Each Segment </span>")) +
         ggplot2::theme_minimal() +
-        ggplot2::theme(plot.title = ggtext::element_markdown(lineheight = 1.1))
+        ggplot2::theme(plot.title = ggtext::element_markdown(lineheight = 1.1),
+                       plot.background = ggplot2::element_rect(fill = plt_plot_BC, color = plt_plot_BC))
     }
   } 
 }
@@ -395,6 +404,9 @@ two_num_variable <- function(df, num_varx, num_vary, output_type = "plot_full") 
     x_lb <- plot_labels(num_varx)
     y_lb <- plot_labels(num_vary)
     
+    f_plt <- ggplot2::ggplot(df, ggplot2::aes(x = .data[[num_varx]], 
+                                              y = .data[[num_vary]],
+                                              color = .segment)) 
     
     if (any(c(x_len, y_len) < 15)) {
       f_plt_points <- ggplot2::geom_jitter()
@@ -402,21 +414,21 @@ two_num_variable <- function(df, num_varx, num_vary, output_type = "plot_full") 
       f_plt_points <- ggplot2::geom_point()
     }
     
-    f_plt <- ggplot2::ggplot(df, ggplot2::aes(x = .data[[num_varx]], 
-                                              y = .data[[num_vary]],
-                                              color = .segment)) 
-    
     if (output_type == "plot_full") {
       f_plt +
         f_plt_points +
         ggplot2::scale_color_manual(values = plt_clr$dash) +
+        ggplot2::scale_x_continuous(labels = scales::comma_format()) +
+        ggplot2::scale_y_continuous(labels = scales::comma_format()) +
         ggplot2::theme_minimal() +
         ggplot2::labs(x = x_lb,
                       y = y_lb,
                       title = paste("Relationship Between", 
                                     x_lb, "&", y_lb, "In Each Segment")) +
         ggplot2::theme(legend.position = "top", 
-                       legend.margin   = ggplot2::margin(t = -7, b = -8)) +
+                       legend.margin   = ggplot2::margin(t = -7, b = -8),
+                       plot.background = ggplot2::element_rect(fill = plt_plot_BC, 
+                                                               color = plt_plot_BC)) +
         ggplot2::guides(color = ggplot2::guide_legend(title = NULL,
                                                       label.position = "top",
                                                       label.vjust  = -2,
@@ -434,11 +446,15 @@ two_num_variable <- function(df, num_varx, num_vary, output_type = "plot_full") 
       f_plt +
         f_plt_points +
         ggplot2::facet_wrap(ggplot2::vars(.segment), scale = "fixed") +
+        ggplot2::scale_x_continuous(labels = scales::comma_format()) +
+        ggplot2::scale_y_continuous(labels = scales::comma_format()) +
         ggplot2::labs(x = x_lb,
                       y = y_lb) +
         ggplot2::scale_color_manual(values = plt_clr$dash) +
         ggplot2::guides(color = "none") +
-        ggplot2::theme_minimal()
+        ggplot2::theme_minimal() +
+        ggplot2::theme(plot.background = ggplot2::element_rect(fill = plt_plot_BC,
+                                                               color = plt_plot_BC))
     }
   }
 }
@@ -600,19 +616,27 @@ adorn_aggregate <- function(df, fun, where = "both") {
 #' @param ... see ?tidytext::scale_x_reordered
 #' @param sep see ?tidytext::scale_x_reordered
 #' @param wd numeric: see ?stringr::str_trunc
+#' @param use_warp logical, use the scale_x_discrete_wrap function else scale_x_discrete
+#' @param df,chr_var,min_chr, if use_warp = TRUE, argument for scale_x_discrete_wrap
+#' @param ... other arguments passed to ggplot2::scale_x_discrete function.
 #'
 #' @return ggplot object.
 #' @export
 #'
 #' @examples
-scale_X_reordered <- function(..., sep = "___", wd) {
+scale_X_reordered <- function(..., sep = "___", wd, df, chr_var, min_chr, use_warp = FALSE) {
   
   cl_string <- function(x) {
     gsub(paste0(sep, ".+$"), "", x) |>
       stringr::str_trunc(width = wd, side = "right")
   }
   
-  ggplot2::scale_x_discrete(labels = \(.x) cl_string(.x), ...)
+  if (use_warp) {
+    scale_x_discrete_wrap(df, chr_var, min_chr, labels = \(.x) cl_string(.x), ...)
+    
+  } else {
+    ggplot2::scale_x_discrete(labels = \(.x) cl_string(.x), ...)
+  }
 }
 
 
@@ -682,7 +706,10 @@ chr_num_variable <- function(df,
                                      y = .data[[s_fun]], 
                                      fill = .segment)) +
         ggplot2::theme_minimal() +
-        ggplot2::theme(axis.text.y = ggplot2::element_text(size = 13))
+        ggplot2::theme(axis.text.y = ggplot2::element_text(size = 13),
+                       plot.background = ggplot2::element_rect(fill = plt_plot_BC,
+                                                               color = plt_plot_BC))
+      
     } else {
       f_tbl <- lump_large_chr_count(f_tbl, chr_var, n_max = n_cat)
       
@@ -694,13 +721,23 @@ chr_num_variable <- function(df,
                                      fill = .segment)) +
         ggplot2::coord_flip() +
         ggplot2::theme_minimal() +
-        ggplot2::theme(axis.text = ggplot2::element_text(size = 13))
+        ggplot2::theme(axis.text = ggplot2::element_text(size = 13),
+                       plot.background = ggplot2::element_rect(fill = plt_plot_BC,
+                                                               color = plt_plot_BC))
     }
-    f_plt + 
+    f_plt <- f_plt + 
       ggplot2::geom_col(show.legend = FALSE) +
       ggplot2::facet_wrap(ggplot2::vars(.segment), scales = "free") +
-      ggplot2::scale_fill_manual(values = plt_clr$dash) +
-      scale_X_reordered(wd = 15) +
+      ggplot2::scale_fill_manual(values = plt_clr$dash) 
+    
+    if (len_unique_chr < 6) {
+      f_plt <- f_plt + 
+        scale_X_reordered(wd = 15, df = f_tbl, chr_var = chr_var, min_chr = 13, use_warp = FALSE) 
+    } else {
+      f_plt <- f_plt + scale_X_reordered(wd = 15, use_warp = FALSE)
+    }
+    
+    f_plt +
       ggplot2::scale_y_continuous(labels = scales::comma_format(1)) +
       ggplot2::labs(x = chr_lb, y = NULL, 
                     title = paste(agg_lb, num_lb, "By", chr_tl, "In Each Segment")) 
