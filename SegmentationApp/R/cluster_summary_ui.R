@@ -8,47 +8,52 @@ cluster_summary_ui <- function(id) {
       column(
         width = 2,
         
-        div(
-          class = c("boxIn", "inputpad"),
+        panel(
+          class = "panel-color",
           
-          tags$p(
-            "
-            Each cluster can be summarised using an aggregate function with
-            selected numerical and character variables, This can show the 
-            relationship between selected variables and each cluster.
-            "
+          statiCard(
+            value = 0, 
+            subtitle = "Clusters", 
+            icon = icon("chart-pie"),
+            background = cs_col_BC,
+            color = "white",
+            id = ns("cluster_card")
           )
-        )
+        ),
         
       ),
       
       column(
         width = 6,
-        div(
-          class = "boxOut",
+
+        panel(
+          class = "panel-color",
           
           plotOutput(outputId = ns("cluster_count_plot")) |>
-            shinycssloaders::withSpinner(type = 4)
+            shinycssloaders::withSpinner(type = 4, 
+                                         color = spinner_color,
+                                         color.background = "white")
         )
       ),
       
       column(
         width = 4,
-        div(
-          class = "boxOut",
+
+        panel(
+          class = "panel-color",
           
           reactableOutput(outputId = ns("cluster_count_table")) |>
-            shinycssloaders::withSpinner(type = 4)
+            shinycssloaders::withSpinner(type = 4,
+                                         color = spinner_color,
+                                         color.background = "white")
         )
       )
     ),
     
-    # tags$br(),
     tags$br(),
     
     uiOutput(outputId = ns("is_with_charcter_var")),
     
-    # tags$br(),
     tags$br(),
     
     fluidRow(
@@ -58,17 +63,17 @@ cluster_summary_ui <- function(id) {
         width = 2,
         
         div(
-          class = c("boxIn", "inputpad"),
+          class = "boxIn",
           
           pickerInput(inputId = ns("num_vars_stat_sumy"),
-                      label   = "Select Variable(s)",
+                      label   = tags$h5("Select variable(s)"),
                       choices = NULL,
                       multiple = TRUE),
           
           tags$br(),
           
           pickerInput(inputId = ns("stat_vars"),
-                      label   = "Aggregate Function",
+                      label   = tags$h5("Aggregate function"),
                       choices = c("Average" = "mean",
                                   "Median"  = "median",
                                   "Sum"     = "sum",
@@ -82,7 +87,7 @@ cluster_summary_ui <- function(id) {
           
           actionBttn(inputId = ns("run_stat_sumy"),
                      label = "Run",
-                     style = "minimal",
+                     style = "stretch",
                      color = "success")
         )
         
@@ -91,27 +96,30 @@ cluster_summary_ui <- function(id) {
       column(
         width = 6,
         
-        div(
-          class = "boxOut",
+        panel(
+          class = "panel-color",
           
           plotOutput(outputId = ns("stat_summary_plot")) |>
-            shinycssloaders::withSpinner(type = 4)
+            shinycssloaders::withSpinner(type = 4,
+                                         color = spinner_color,
+                                         color.background = "white")
         )
       ),
       
       column(
         width = 4,
-        
-        div(
-          class = "boxOut",
+  
+        panel(
+          class = "panel-color",
           
           reactableOutput(outputId = ns("stat_summary_table")) |>
-            shinycssloaders::withSpinner(type = 4)
+            shinycssloaders::withSpinner(type = 4,
+                                         color = spinner_color,
+                                         color.background = "white")
         )
       )
     ),
   
-    # tags$br(),
     tags$br(),
     
     fluidRow(
@@ -121,27 +129,25 @@ cluster_summary_ui <- function(id) {
         width = 2,
         
         div(
-          class =  c("boxIn", "inputpad"),
+          class =  "boxIn",
           
           pickerInput(inputId = ns("num_var_x"),
-                      label = "X Variable",
+                      label = tags$h5("X variable"),
                       choices = NULL),
           
           tags$br(),
           
           pickerInput(inputId = ns("num_var_y"),
-                      label = "Y Variable",
+                      label = tags$h5("Y variable"),
                       choices = NULL),
           
           tags$br(),
           
           actionBttn(inputId = ns("run_rel_plot"),
                      label = "Run",
-                     style = "minimal",
+                     style = "stretch",
                      color = "success"),
           
-          tags$br(),
-          tags$br(),
           tags$br(),
           tags$br(),
           
@@ -154,12 +160,14 @@ cluster_summary_ui <- function(id) {
       
       column(
         width = 10,
-        
-        div(
-          class = "boxOut",
+
+        panel(
+          class = "panel-color",
           
           plotOutput(outputId = ns("cluster_scatter_plot")) |>
-            shinycssloaders::withSpinner(type = 4)
+            shinycssloaders::withSpinner(type = 4,
+                                         color = spinner_color,
+                                         color.background = "white")
         )
       )
     )
