@@ -6,6 +6,16 @@ cluster_summary_server <- function(id, clust_data, parent_session) {
     
     module = function(input, output, session) {
       # Cluster count ---------------------------------------------------------|
+      observe({
+        req(clust_data())
+        
+        updateStatiCard(
+          id = "cluster_card",
+          value = length(unique(clust_data()$.cluster))
+        )
+      }) |>
+        bindEvent(clust_data())
+      
       cluster_count <- reactive({
         req(clust_data())
         
@@ -58,14 +68,14 @@ cluster_summary_server <- function(id, clust_data, parent_session) {
                 class = c("boxIn", "inputpad"),
                 
                 pickerInput(inputId = session$ns("char_var_count"),
-                            label   = "Select A Variable",
+                            label   = tags$h5("Select a variable"),
                             choices = chr_names(),
                             options = pickerOptions(title = "Nothing Selected")),
                 
                 tags$br(),
                 
                 numericInput(inputId = session$ns("chr_count_nrows"),
-                             label   = "Number Of Rows",
+                             label   = tags$h5("Number Of Rows"),
                              min = 3, max = 100, value = 10)
               )
             ),
@@ -73,19 +83,21 @@ cluster_summary_server <- function(id, clust_data, parent_session) {
             column(
               width = 6,
               
-              div(
-                class = "boxOut",
+              panel(
+                class = "panel-color",
                 
                 plotOutput(outputId = session$ns("chr_count_plot")) |>
-                  shinycssloaders::withSpinner(type = 4)
+                  shinycssloaders::withSpinner(type = 4,
+                                               color = spinner_color,
+                                               color.background = "white")
               )
             ),
             
             column(
               width = 4,
               
-              div(
-                class = "boxOut",
+              panel(
+                class = "panel-color",
                 
                 reactableOutput(outputId = session$ns("chr_count_table"))
               )
