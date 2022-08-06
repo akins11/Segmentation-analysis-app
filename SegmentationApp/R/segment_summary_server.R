@@ -29,7 +29,7 @@ segment_summary_server <- function(id, seg_data) {
         if (nchar(input$frist_variable) == 0) {
           show_alert(
             title = "Error !!",
-            text = "The first Selection can not be empty.",
+            text = "The first selection can not be empty.",
             type = "error"
           )
         }
@@ -47,9 +47,9 @@ segment_summary_server <- function(id, seg_data) {
                                          input$second_variable) |> as.vector()
           
           if (all(c("numeric", "character") %in% selected_dtype)) {
-            shinyjs::show(id = "aggregate_dash_fun")
+            shinyjs::show(id = "aggregate_dash_fun", anim = TRUE)
           } else {
-            shinyjs::hide(id = "aggregate_dash_fun")
+            shinyjs::hide(id = "aggregate_dash_fun", anim = TRUE)
           }
         }
       }) |>
@@ -64,17 +64,17 @@ segment_summary_server <- function(id, seg_data) {
                                          input$second_variable) |> as.vector()
           
           if ("character" %in% selected_dtype) {
-            shinyjs::show(id = "n_category")
+            shinyjs::show(id = "n_category", anim = TRUE)
           } else {
-            shinyjs::hide(id = "n_category")
+            shinyjs::hide(id = "n_category", anim = TRUE)
           }
         } else if (input$frist_variable != "" && input$second_variable == "No Selection") {
           selected_dtype <- unite_dtypes(seg_data(), input$frist_variable)
           
           if (selected_dtype == "character") {
-            shinyjs::show(id = "n_category")
+            shinyjs::show(id = "n_category", anim = TRUE)
           } else {
-            shinyjs::hide(id = "n_category")
+            shinyjs::hide(id = "n_category", anim = TRUE)
           }
         }
       })|>
@@ -92,7 +92,7 @@ segment_summary_server <- function(id, seg_data) {
                         n_cat   = input$n_category,
                         str_fun = input$aggregate_dash_fun)
       }) |>
-        bindEvent(input$create_display, label = "ouput_list_reactive")
+        bindEvent(input$create_display, label = "output_list_reactive")
       
       
       # output options --------------------------------------------------------|
