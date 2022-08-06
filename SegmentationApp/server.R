@@ -22,3 +22,5 @@ server <- function(input, output, session) {
                          seg_data = segment_df)
   
 }
+
+
