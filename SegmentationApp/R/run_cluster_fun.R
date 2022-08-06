@@ -346,7 +346,7 @@ tidy_cluster <- function(df, algo, mdl, use_fun) {
 h_cluster <- function(df, 
                       use_fun, 
                       scale = FALSE,  
-                      method = "average",
+                      method = "median", # average ++++++++++++++
                       cut_k) {
   use_fun <- match.arg(use_fun, c("hclust", "agnes", "diana"))
   
@@ -377,7 +377,7 @@ h_cluster <- function(df,
 
 
 
-#' Valid Cluster Algorithm.
+#' Available Cluster Algorithm.
 #'
 #' @description Re-code cluster algorithm and number of clusters.
 #'
@@ -427,7 +427,7 @@ clust_alg_value <- function(algorithm, number_centers) {
 
 
 
-#' Wrapper Of Cluster Algorithms.
+#' Wrapper for Cluster Algorithms.
 #'
 #' @param mdl_df data.frame: A data data have been cleaned and preprocessed for 
 #' cluster analysis.
@@ -444,7 +444,7 @@ clust_alg_value <- function(algorithm, number_centers) {
 run_cluster_algo <- function(mdl_df,
                              org_df,
                              algorithm_type,
-                             h_method = "average",
+                             h_method = "median", # average
                              number_k_centers) {
   
   algorithm_type <- clust_alg_value(algorithm = algorithm_type)
@@ -493,7 +493,7 @@ algorithm_summary <- function(algorithm) {
     htmltools::div(
       shiny::markdown(
         "
-      **K-means Algorithm ::**
+      **< K-means Algorithm >**
       <br>
       Kmeans aims to partition the data supplied into k groups.
       i.e. items with similarity are grouped together such that the sum of
@@ -507,7 +507,7 @@ algorithm_summary <- function(algorithm) {
     htmltools::div(
       shiny::markdown(
         "
-      **Partitioning Around Medoids (pam) ::**
+      **< Partitioning Around Medoids (pam) >**
       <br>
       Similar to kmeans algorithm, pam-algorithm search for k medoids among
       the observations in the dataset, After finding a set of k medoids,
@@ -523,7 +523,7 @@ algorithm_summary <- function(algorithm) {
     htmltools::div(
       shiny::markdown(
         "
-      **Clustering Large Applications ::**
+      **< Clustering Large Applications >**
       <br>
       This can deal with much larger datasets compared to other petitioning
       algorithms This is done by taking sub set of the datasets
@@ -537,7 +537,7 @@ algorithm_summary <- function(algorithm) {
     htmltools::div(
       shiny::markdown(
         "
-      **Hierarchical clustering ::**
+      **< Hierarchical clustering >**
       <br>
       Hierarchical cluster algorithm uses a set of dissimilarities of the
       dataset observations. Initially, each object is assigned to its own
@@ -552,7 +552,7 @@ algorithm_summary <- function(algorithm) {
     htmltools::div(
       shiny::markdown(
         "
-      **Agglomerative Hierarchical clustering Strategy ::**
+      **< Agglomerative Hierarchical clustering Strategy >**
       <br>
       Agglomerative method constructs a hierarchy of clusterings, initially
       each observation is a small cluster by itself. Clusters are merged
@@ -567,7 +567,7 @@ algorithm_summary <- function(algorithm) {
     htmltools::div(
       shiny::markdown(
         "
-      **Divisive Hierarchical clustering Strategy ::**
+      **< Divisive Hierarchical clustering Strategy >**
       <br>
       Divisive method constructs a hierarchy of clusterings starting with
       large cluster containing all n observations. Clusters are
