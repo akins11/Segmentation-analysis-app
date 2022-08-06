@@ -75,9 +75,7 @@ upload_df_reactable <- function(df, page_size = 10) {
   
   reactable::reactable(
     data = df,
-    defaultColDef = reactable::colDef(headerStyle = list(background = "#f7f7f8", 
-                                                         fontSize = "15px"),
-                                      format = colFormat(digits = 1, separators = TRUE),
+    defaultColDef = reactable::colDef(format = colFormat(digits = 1, separators = TRUE),
                                       na = "–"),
     highlight = TRUE,
     outlined = TRUE,
@@ -89,11 +87,13 @@ upload_df_reactable <- function(df, page_size = 10) {
     paginationType = "jump",
     
     theme = reactable::reactableTheme(
+      backgroundColor = tbl_body_BC,
       borderColor = "#dfe2e5",
       highlightColor = "#f0f5f9",
-      headerStyle = list(borderColor = "#555"),
-      style = list(fontFamily = "-apple-system, BlinkMacSystemFont, 
-                                 Segoe UI, Helvetica, Arial, sans-serif")),
+      headerStyle = list(borderColor = tbl_header_BD, 
+                         backgroundColor = tbl_header_BC,
+                         fontSize = "15px"),
+      style = list(fontFamily = tbl_font_family)),
     
     language = reactable::reactableLang(pageInfo = "{rows} entries",
                                         pagePrevious = "\u276e",
@@ -119,9 +119,7 @@ var_selection_restructure_rt <- function(df, page_size = 10) {
   
   reactable::reactable(
     data = df,
-    defaultColDef = reactable::colDef(headerStyle = list(background = "#f7f7f8", 
-                                                         fontSize = "15px"),
-                                      format = colFormat(digits = 1, separators = TRUE),
+    defaultColDef = reactable::colDef(format = colFormat(digits = 1, separators = TRUE),
                                       na = "–"),
     outlined = TRUE,
     
@@ -132,10 +130,12 @@ var_selection_restructure_rt <- function(df, page_size = 10) {
     paginationType = "simple",
     
     theme = reactable::reactableTheme(
+      backgroundColor = tbl_body_BC,
       borderColor = "#dfe2e5",
-      headerStyle = list(borderColor = "#555"),
-      style = list(fontFamily = "-apple-system, BlinkMacSystemFont, 
-                                 Segoe UI, Helvetica, Arial, sans-serif")),
+      headerStyle = list(borderColor = tbl_header_BD, 
+                         backgroundColor = tbl_header_BC,
+                         fontSize = "15px"),
+      style = list(fontFamily = tbl_font_family)),
     
     language = reactable::reactableLang(pageInfo = "",
                                         pagePrevious = "\u276e",
@@ -161,7 +161,10 @@ cluster_segment_reactable <- function(df, include, page_size = 10) {
   col_preferance <- function(have_borderRight = TRUE) {
     pre_out <- colDef(sortable = TRUE,
                       align = "center",
-                      style = list(background = "rgba(0, 0, 0, 0.03)") )
+                      filterable = TRUE,
+                      style = list(background = cs_col_BC,
+                                   color = cs_col_TX,
+                                   textSize = "12px") )
     
     if (isTRUE(have_borderRight)) {
       pre_out$style$borderRight <- "1px solid #555"
@@ -184,9 +187,7 @@ cluster_segment_reactable <- function(df, include, page_size = 10) {
   
   reactable(
     data = df,
-    defaultColDef = reactable::colDef(headerStyle = list(background = "#f7f7f8", 
-                                                         fontSize = "15px"),
-                                      format = colFormat(digits = 1, separators = TRUE),
+    defaultColDef = reactable::colDef(format = colFormat(digits = 1, separators = TRUE),
                                       na = "–"),
     columns = edit_col,
     
@@ -202,10 +203,12 @@ cluster_segment_reactable <- function(df, include, page_size = 10) {
     paginationType = "jump",
     
     theme = reactable::reactableTheme(
+      backgroundColor = tbl_body_BC,
       borderColor = "#dfe2e5",
-      headerStyle = list(borderColor = "#555"),
-      style = list(fontFamily = "-apple-system, BlinkMacSystemFont, 
-                                 Segoe UI, Helvetica, Arial, sans-serif")),
+      headerStyle = list(borderColor = tbl_header_BD, 
+                         backgroundColor = tbl_header_BC,
+                         fontSize = "15px"),
+      style = list(fontFamily = tbl_font_family)),
     
     language = reactable::reactableLang(pageInfo = "",
                                         pagePrevious = "\u276e",
@@ -233,9 +236,12 @@ single_reactable <- function(df, include, page_size = 10) {
   if (!missing(include)) {
     col_preferance <- function() {
       colDef(sortable = TRUE,
+             filterable = TRUE,
              align = "center",
-             style = list(background = "rgba(0, 0, 0, 0.03)",
-                          borderRight = "1px solid #555") )
+             style = list(borderRight = "1px solid #555",
+                          background = cs_col_BC,
+                          color = cs_col_TX,
+                          textSize = "12px") )
     }
     
     if (include == "cluster") {
@@ -248,9 +254,7 @@ single_reactable <- function(df, include, page_size = 10) {
   
   reactable(
     data = df,
-    defaultColDef = reactable::colDef(headerStyle = list(background = "#f7f7f8", 
-                                                         fontSize = "15px"),
-                                      na = "–",
+    defaultColDef = reactable::colDef(na = "–",
                                       format = colFormat(digits = 1, separators = TRUE)),
     # columns = ifelse(!missing(include), edit_col, NULL),
     columns = if (!missing(include)) edit_col else NULL,
@@ -267,10 +271,12 @@ single_reactable <- function(df, include, page_size = 10) {
     paginationType = "jump",
     
     theme = reactable::reactableTheme(
+      backgroundColor = tbl_body_BC,
       borderColor = "#dfe2e5",
-      headerStyle = list(borderColor = "#555"),
-      style = list(fontFamily = "-apple-system, BlinkMacSystemFont, 
-                                 Segoe UI, Helvetica, Arial, sans-serif")),
+      headerStyle = list(borderColor = tbl_header_BD, 
+                         backgroundColor = tbl_header_BC,
+                         fontSize = "15px"),
+      style = list(fontFamily = tbl_font_family)),
     
     language = reactable::reactableLang(pageInfo = "",
                                         pagePrevious = "\u276e",
@@ -301,14 +307,15 @@ nested_reactable <- function(list_df, include) {
   # Outer data frame ----------------------------------------------------------|
   f_tbl <- tibble::tibble(Variables = vars)
   
-  cus_font = "-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif"
-  
   # edit cluster | segment ----------------------------------------------------|
   col_preferance <- function() {
     colDef(sortable = TRUE,
+           filterable = TRUE,
            align = "center",
-           style = list(background = "rgba(0, 0, 0, 0.03)",
-                        borderRight = "1px solid #555") )
+           style = list(borderRight = "1px solid #555",
+                        background = cs_col_BC,
+                        color = cs_col_TX,
+                        textSize = "12px") )
   }
   
   if (include == "cluster") {
@@ -340,13 +347,21 @@ nested_reactable <- function(list_df, include) {
           
           columns = edit_col,
           
-          theme = reactable::reactableTheme(style = list(fontFamily = cus_font))
+          theme = reactable::reactableTheme(style = list(fontFamily = tbl_font_family),
+                                            backgroundColor = tbl_body_BC,
+                                            headerStyle = list(borderColor = tbl_header_BD, 
+                                                               backgroundColor = tbl_header_BC,
+                                                               fontSize = "13px"),)
         )
       )
     },
     
     fullWidth = TRUE,
-    theme = reactable::reactableTheme(style = list(fontFamily = cus_font))
+    theme = reactable::reactableTheme(style = list(fontFamily = tbl_font_family),
+                                      backgroundColor = tbl_body_BC,
+                                      headerStyle = list(borderColor = tbl_header_BD, 
+                                                         backgroundColor = tbl_header_BC,
+                                                         fontSize = "15px"),)
   )
 }
 
