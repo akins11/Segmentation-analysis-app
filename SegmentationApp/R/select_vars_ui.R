@@ -5,15 +5,16 @@ select_vars_ui <- function(id) {
       align = "center",
       
       column(
-        width = 4,
+        width = 3,
         tags$br(),
         
        div(
-         class = c("boxIn", "inputMag"),
+         class = c("boxIn", "inputpad"),
          
-         h4("Select Variables For Cluster Analysis"),
+         h5(id = "vars-id",  "Select variables for cluster analysis"),
          
          tags$p(
+           id = "select-vars-info",
            "
            A minimum of two variable must be selected.
            Numeric variables are more preferred than character variables
@@ -32,7 +33,7 @@ select_vars_ui <- function(id) {
          tags$br(),
          
          pickerInput(inputId  = ns("select_data_id"),
-                     label    = h4("Select an ID variable (if avaliable)"),
+                     label    = h5("Select an ID variable (if avaliable)"),
                      choices  = NULL,
                      selected = "No Selection",
                      multiple = FALSE),
@@ -40,14 +41,15 @@ select_vars_ui <- function(id) {
          tags$br(),
          
          numericInput(inputId = ns("ni_n_sv_rows"),
-                      label   = h4("Number of rows to display"),
-                      min     = 3, max = 100, value = 5, step = 1),
+                      label   = h6("Number of rows"),
+                      min     = 3, max = 100, value = 5, step = 1,
+                      width = "60%"),
          
          tags$br(),
          
          prettyToggle(inputId = ns("pt_stand_vars"),
                       label_on = "Standardize",
-                      label_off = "Don't Standardize",
+                      label_off = "Don't standardize",
                       value = TRUE,
                       status_on = "success",
                       status_off = "primary",
@@ -65,28 +67,30 @@ select_vars_ui <- function(id) {
       ),
       
       column(
-        width = 8,
+        width = 9,
         
         tags$br(),
         
-        div(
-          class = "boxOut",
-          
+        panel(
+          class = "panel-color",
           tags$h4("Selected Variables"),
           
           reactableOutput(outputId = ns("selected_vars_out")) |>
-            shinycssloaders::withSpinner(type = 4, color.background = "white")
+            shinycssloaders::withSpinner(type = 4, 
+                                         color = spinner_color,
+                                         color.background = "white")
         ),
         
         tags$br(),
         
-        div(
-          class = "boxOut",
-          
+        panel(
+          class = "panel-color",
           tags$h4("Restructured Data"),
           
           reactableOutput(outputId = ns("engineered_data")) |>
-            shinycssloaders::withSpinner(type = 4, color.background = "white")
+            shinycssloaders::withSpinner(type = 4, 
+                                         color = spinner_color,
+                                         color.background = "white")
         )
       )
       
