@@ -10,11 +10,10 @@
 #' @examples
 get_user_segments <- function(x) {
   
-  supplied_segment <- strsplit(x, "(,)|(\\s)") |> unlist() |> as.character()
+  supplied_segment <- strsplit(x, ",")  |> unlist() |> as.character() |> trimws()
   supplied_segment[grep("[a-zA-Z]", supplied_segment)]
 }
-
-
+#(,)|(\\s)
 
 
 #' Segment assignment with aggregate summary.
