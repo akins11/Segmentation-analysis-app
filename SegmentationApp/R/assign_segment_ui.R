@@ -3,17 +3,17 @@ assign_segment_ui <- function(id) {
   shiny::tagList(
     fluidRow(
       column(
-        width = 4,
+        width = 3,
         align = "center",
         
         div(
-          class = c("boxInT", "inputpad"),
+          class = "boxInT",
           
           h3("Method Of Assignment"),
           dropMenu(
             tag =  actionBttn(inputId = ns("manual_assginment_method"), 
                               label = "Manual Assignment",
-                              style = "minimal",
+                              style = "stretch",
                               color = "primary",
                               size = "md"),
             
@@ -31,7 +31,6 @@ assign_segment_ui <- function(id) {
             
             tags$br(),
             tags$br(),
-            tags$br(),
             
             actionButton(inputId = ns("assign_manual"),
                          label = "Assign",
@@ -44,32 +43,26 @@ assign_segment_ui <- function(id) {
           dropMenu(
             tag = actionBttn(inputId = ns("aggregate_assignment_method"), 
                              label = "Aggregate Assignment",
-                             style = "minimal",
+                             style = "stretch",
                              color = "primary",
                              size  = "md"),
             
+            actionBttn(inputId = ns("show_agg_info"), 
+                       label = "More Info", 
+                       style = "material-circle",
+                       icon = icon("info-circle")),
+            uiOutput(outputId = ns("agg_info")),
             
-            tags$p(
-              "
-              Select a numerical variable which will be summarise using the choosen
-              aggregate function, The calculation will be done for each cluster and
-              the result will be sorted from the largest to the smallest.
-              "
-            ),
-            tags$strong("Make sure the segments provided are sorted from the 
-                        best to the least."),
-            
-            tags$br(),
             tags$br(),
             
             pickerInput(inputId = ns("agg_numeric_variable"),
-                        label = h4("Select A variable"),
+                        label = h4("Select a variable"),
                         choices = NULL),
             
             tags$br(),
             h4("Segments"),
             textInput(inputId = ns("agg_segments_value"),
-                      label = "values must be separated with comma or space",
+                      label = "values must be separated with comma",
                       value = "",
                       placeholder = "Segments...."),
             
@@ -93,14 +86,12 @@ assign_segment_ui <- function(id) {
                            bigger = TRUE),
             
             tags$br(),
-            tags$br(),
             
             actionButton(inputId = ns("assign_agg"),
                          label = "Assign",
                          class = "monitor")
           ),
           
-          tags$br(),
           tags$br(),
           tags$br(),
           
@@ -113,15 +104,17 @@ assign_segment_ui <- function(id) {
       ),
       
       column(
-        width = 8,
+        width = 9,
       
         tags$br(),
         
-        div(
-          class = "boxOut",
+        panel(
+          class = "panel-color",
           
           reactableOutput(outputId = ns("segment_table")) |>
-            shinycssloaders::withSpinner(type = 4)
+            shinycssloaders::withSpinner(type = 4,
+                                         color = spinner_color,
+                                         color.background = "white")
         ),
         
         tags$br(),
@@ -130,10 +123,12 @@ assign_segment_ui <- function(id) {
           class = "center-div",
           
           downloadButton(outputId = ns("download_segment"),
-                         label = "Download Data .csv")|>
+                         label = "Download Data .csv") |>
             shinyjs::hidden()
         )
       )
     )
   )
 }
+
+
