@@ -7,38 +7,40 @@ data_choice_ui <- function(id) {
       tags$br(),
       
       column(
-        width = 3,
+        width = 2,
 
         div(
           class = c("boxIn", "inputMag"),
           
           dropMenu(tag = actionBttn(inputId = ns("btn_upload_data"),
                                     label = "Upload Data",
-                                    style = "minimal",
+                                    style = "stretch",
                                     color = "primary"),
                    
                    fileInput(inputId = ns("fi_upload_data"),
-                             label  = "Upload A Data",
+                             label  = "",
                              accept = c(".csv", ".tsv"))
           ),
           
           tags$br(),
-          tags$br(),
           
           actionBttn(inputId = ns("btn_demo_data"),
                      label = "Use Demo Data",
-                     style = "minimal",
+                     style = "stretch",
                      color = "primary"),
           
           tags$br(),
           tags$br(),
+          
+          uiOutput(outputId = ns("drop_missing_value")),
+          
           tags$br(),
           
           numericInput(inputId = ns("ni_n_rows"),
-                       label = "Number Of Rows To Display",
-                       min   = 3, max = 100, step = 1, value = 10),
+                       label = tags$h6("Number Of rows"),
+                       min   = 3, max = 100, step = 1, value = 10, 
+                       width = "180px"),
           
-          tags$br(),
           tags$br(),
           tags$br(),
           
@@ -52,15 +54,27 @@ data_choice_ui <- function(id) {
       ),
       
       column(
-        width = 9,
-        class = "boxOut",
+        width = 10,
         
-        h4("Data Preview"),
-        tags$br(),
+        panel(
+          class = "panel-color",
+          h4("Data Preview"),
+          tags$br(),
+          
+          reactableOutput(outputId = ns("rt_upload_data")) |>
+            shinycssloaders::withSpinner(type = 4,
+                                         color = spinner_color,
+                                         color.background = "white")
+        ),
         
-        reactableOutput(outputId = ns("rt_upload_data")) |>
-          shinycssloaders::withSpinner(type = 4,
-                                       color.background = "white")
+        panel(
+          class = c("missing-info", "panel-color"),
+          uiOutput(outputId = ns("data_info")),
+          
+          tags$br(),
+          
+          uiOutput(outputId = ns("drop_missing_value_info"))
+        )
       )
     )
   )
