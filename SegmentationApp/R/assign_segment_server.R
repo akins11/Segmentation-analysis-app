@@ -45,6 +45,22 @@ assign_segment_server <- function(id, clust_data, parent_session) {
       
       
       # Aggregate Assignment --------------------------------------------------|
+      output$agg_info <- renderUI({
+        if (input$show_agg_info) {
+          tagList(
+            tags$p(
+              "
+               Select a numerical variable which will be summarise using the choosen
+               aggregate function, The calculation will be done for each cluster and
+               the result will be sorted from the largest to the smallest.
+              "
+            ),
+           tags$strong("Make sure the segments provided are sorted from the 
+                        best to the least.")
+          )
+        }
+      })
+      
       observe({
         numeric_vars_names <- get_var_type_names(df = clust_data(), 
                                                  type = "numeric")
@@ -64,16 +80,39 @@ assign_segment_server <- function(id, clust_data, parent_session) {
         req(num_clusters(), user_supplied_segments())
         
         if (num_clusters() != length(user_supplied_segments())) {
-          show_alert(title = "Wrong Number Of Segments",
-                     text = paste("There are", num_clusters(), "number of",
-                                  "clusters but you supplied",
-                                  length(user_supplied_segments()),
-                                  "segments."),
-                     type = "error")
+          if (num_clusters() > length(user_supplied_segments())) {
+            show_alert(title = "Wrong Number Of Segments",
+                       text = paste("There are", num_clusters(), "avaliable",
+                                    "clusters but you only supplied",
+                                    length(user_supplied_segments()),
+                                    "segments. Note that the number of segments
+                                    supplied must be the same number of avaliable
+                                    clusters"),
+                       type = "error")
+            
+          } else if (num_clusters() < length(user_supplied_segments())) {
+            show_alert(title = "Wrong Number Of Segments",
+                       text = paste("There are only", num_clusters(), "avaliable",
+                                    "clusters but you supplied",
+                                    length(user_supplied_segments()),
+                                    "segments. Note that the number of segments
+                                    supplied must be the same number of avaliable
+                                    clusters"),
+                       type = "error")
+          }
         }
       }) |>
         bindEvent(input$assign_agg)
       
+      observe({
+        req(clust_data())
+        if (input$agg_numeric_variable == "") {
+          show_alert(title = "No Variable Was Selected",
+                     text = "A numerical variable must be chosen",
+                     type = "error")
+        }
+      }) |>
+        bindEvent(input$assign_agg)
       
       agg_seg_assignment <- reactive({
         req(clust_data(), user_supplied_segments(), input$agg_numeric_variable,
