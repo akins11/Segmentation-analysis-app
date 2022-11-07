@@ -1,0 +1,64 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Segmentation Analysis app  `version 0.0.10`
+
+<!-- badges: start -->
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+<!-- badges: end -->
+
+
+This application can be used for performing market segmentation analysis
+with the use cluster analysis, it consist of dividing a market into groups
+of similar characteristics like age, income, personality, purchasing behavior,
+general behavior etc. you can read more on market segmentation on [Wikipedia](
+https://en.m.wikipedia.org/wiki/Market_segmentation) and also
+[cluster analysis](https://en.m.wikipedia.org/wiki/Cluster_analysis)
+
+The steps involved in running this analysis are::
+
+##### 1. Uploading a clean data set which have all columns as variables and all rows as observations, rows with missing values will be droped.
+
+
+![Data upload](/Users/AYOMIDE/Documents/R/shiny apps/segmentationAnalysisApp/man/figures/seg_a_upload_page.png)
+
+
+<br>
+
+##### 2. Select numerical (more preferred) and character variables, which will be used for creating clusters within the data. You don't need to select all the available variables in the data. Furthermore few number of variables selected will result in less time for the algorithm to compute the analysis.
+   
+![Variable selection](/Users/AYOMIDE/Documents/R/shiny apps/segmentationAnalysisApp/man/figures/seg_a_select_vars.png)
+
+<br>
+
+##### 3. Choosing a cluster algorithm and also the number of centers to group the data into. center selection can be done by running an analysis which determine the optimal number of centers in the data or setting a preferred number of centers manually. After all important inputs have been supplied the next operation will be to run a cluster analysis.
+   
+
+   
+![Run cluster analysis](/Users/AYOMIDE/Documents/R/shiny apps/segmentationAnalysisApp/man/figures/seg_a_cluster_a.png)
+
+<br>
+
+##### 4. Creating cluster summaries using the avaliable variables in the dataset, although this is optional but it will help in creating a visual image of how the segments should turn out.
+
+![Cluster summary](/Users/AYOMIDE/Documents/R/shiny apps/segmentationAnalysisApp/man/figures/seg_a_cluster_summary.png)
+<br>
+
+##### 5. Assign preferred segments to the data manually or use an aggregate summary. Results of the segments created can be downloaded and summaries of each segments can be viewed in the segmentation summary panel.
+
+![Assign Segment](/Users/AYOMIDE/Documents/R/shiny apps/segmentationAnalysisApp/man/figures/seg_a_assign_segment.png)
+
+![Segment summary](/Users/AYOMIDE/Documents/R/shiny apps/segmentationAnalysisApp/man/figures/seg_a_segment_summary.png)
+

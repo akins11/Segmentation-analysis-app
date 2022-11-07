@@ -1,0 +1,43 @@
+Package: segmentationAnalysisApp
+Title: Market Segmentation Analysis Application
+Version: 0.0.0.9000
+Authors@R: person('Ayomide', 'Akinwande', email = 'akinwande24ayomide@gmail.com', role = c('cre', 'aut'))
+Description: A shiny application that performs market/customer segmentation using cluster analysis.
+License: What license is it under?
+Imports: 
+    broom,
+    bslib,
+    cluster,
+    config (>= 0.3.1),
+    datawizard,
+    dplyr,
+    forcats,
+    ggplot2,
+    ggtext,
+    golem (>= 0.3.4),
+    janitor,
+    NbClust,
+    parameters,
+    purrr,
+    reactable,
+    reactablefmtr,
+    readxl,
+    rlang,
+    scales,
+    shiny (>= 1.7.2),
+    shinycssloaders,
+    shinyjs,
+    shinyWidgets,
+    stringr,
+    tibble,
+    tidyselect,
+    tidytext,
+    vroom
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.2.1
