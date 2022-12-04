@@ -37,14 +37,51 @@ mod_run_cluster_analysis_ui <- function(id) {
                                selected = NULL)
           ),
 
-          shinyjs::hidden(
+
+          shinyWidgets::dropMenu(
+            tag = shinyWidgets::actionBttn(inputId = "add_input",
+                                           label = "Algorithm Input (optional)",
+                                           style = "minimal",
+                                           color = "success",
+                                           size  = "sm"),
+
+            # p -------------------------------------------------------------->>
             shinyWidgets::prettyToggle(inputId = ns("km_reproducible"),
                                        label_on = "Reproducible",
                                        label_off = "Random",
                                        value = TRUE,
                                        thick = TRUE,
                                        shape = "square",
-                                       animation = "pulse")
+                                       animation = "pulse") |>
+              shinyjs::hidden(),
+
+
+            shiny::numericInput(inputId = ns("n_start"),
+                                label = "Number of random set to use.",
+                                value = 1, min = 1, max = 10, step = 1) |>
+              shinyjs::hidden(),
+
+            shiny::numericInput(inputId = ns("clara_sample"), # on the server side
+                                label = "Number of samples to use from the dataset.",
+                                value = 0) |>
+              shinyjs::hidden(),
+
+
+            # h -------------------------------------------------------------->>
+            shinyWidgets::pickerInput(inputId = ns("hc_method"),
+                                      label = "Type of agglomeration method.",
+                                      choices = NULL) |>
+              shinyjs::hidden(),
+
+            shinyWidgets::prettyRadioButtons(inputId = ns("ad_metric"),
+                                             label = "Metric for calculating dissimilarities.",
+                                             choices = c("Euclidean" = "euclidean",
+                                                         "Manhattan" = "manhattan"),
+                                             selected = "euclidean",
+                                             shape = "square",
+                                             animation = "pulse",
+                                             bigger = TRUE) |>
+              shinyjs::hidden()
           )
         )
       ),
@@ -123,14 +160,10 @@ mod_run_cluster_analysis_ui <- function(id) {
         shinyWidgets::panel(
           class = "panel-color",
           shiny::verbatimTextOutput(outputId = ns("print_data_sutability")) |>
-            shinycssloaders::withSpinner(type = 4,
-                                         color = spinner_color,
-                                         color.background = "white"),
+            ui_spinner(),
 
-          shiny::verbatimTextOutput(outputId = ns("print_optimal_centers")) |>
-            shinycssloaders::withSpinner(type = 4,
-                                         color = spinner_color,
-                                         color.background = "white")
+          shiny::uiOutput(outputId = ns("print_optimal_centers")) |>
+            ui_spinner()
         ),
 
         shiny::tags$br(),
@@ -138,9 +171,7 @@ mod_run_cluster_analysis_ui <- function(id) {
         shinyWidgets::panel(
           class = "panel-color",
           reactable::reactableOutput(outputId = ns("cluster_table")) |>
-            shinycssloaders::withSpinner(type = 4,
-                                         color = spinner_color,
-                                         color.background = "white")
+            ui_spinner()
         ),
 
         shiny::tags$br(),
@@ -163,7 +194,7 @@ mod_run_cluster_analysis_ui <- function(id) {
 #' run_cluster_analysis Server Functions
 #'
 #' @param id
-#' @param r_use_data_list
+#' @param r_use_data_list a list containing the original data and the restructured data.
 #' @param parent_session
 #'
 #' @noRd
@@ -174,6 +205,7 @@ mod_run_cluster_analysis_server <- function(id, r_use_data_list, parent_session)
     id = id,
 
     module = function(input, output, session) {
+
     ns <- session$ns
 
     r_orig_data <- shiny::reactive({r_use_data_list()$original_table})
@@ -221,18 +253,53 @@ mod_run_cluster_analysis_server <- function(id, r_use_data_list, parent_session)
       )
     })
 
-    # reproducible options --------------------------------------------------|
+    # additional input options ------------------------------------------------|
     shiny::observe({
       if (!is.null(input$algorithm_choice)) {
+
         if (input$algorithm_choice == "K-partition clustering (kmeans)") {
+
           shinyjs::show(id = "km_reproducible", anim = TRUE)
+
+          if (input$more_algorithm_choice == "K-partition clustering (kmeans)") {
+            shinyjs::show(id = "n_start", anim = TRUE)
+          } else {
+            shinyjs::hide(id = "n_start", anim = TRUE)
+          }
+
+          if (input$more_algorithm_choice == "Clustering Large Applications") {
+            shinyjs::show(id = "clara_sample", anim = TRUE)
+          } else {
+            shinyjs::hide(id = "clara_sample", anim = TRUE)
+          }
+
         } else {
           shinyjs::hide(id = "km_reproducible", anim = TRUE)
+          shinyjs::hide(id = "n_start", anim = TRUE)
+          shinyjs::hide(id = "clara_sample", anim = TRUE)
+        }
+
+
+        if (input$more_algorithm_choice == "Hierarchical clustering" ||
+            input$more_algorithm_choice == "Agglomerative Hierarchical Clustering (agnes)") {
+          shinyjs::show(id = "hc_method", anim = TRUE)
+        } else {
+          shinyjs::hide(id = "hc_method", anim = TRUE)
+        }
+
+        hcd <- c("Agglomerative Hierarchical Clustering (agnes)",
+                 "Divisive Hierarchical Clustering")
+
+        if (input$more_algorithm_choice %in% hcd) {
+          shinyjs::show(id = "ad_metric", anim = TRUE)
+        } else {
+          shinyjs::hide(id = "ad_metric", anim = TRUE)
         }
       }
     })
 
-    # Data suitability ------------------------------------------------------|
+
+    # Data suitability --------------------------------------------------------|
     data_points <- shiny::reactive({
       shiny::req(r_engr_data())
 
@@ -280,7 +347,7 @@ mod_run_cluster_analysis_server <- function(id, r_use_data_list, parent_session)
     # NOTE: you should be able to cancel this operation half way.
 
 
-    # Clusters --------------------------------------------------------------|
+    # Clusters ----------------------------------------------------------------|
     shiny::observe({
       if (input$more_algorithm_choice == "" && !is.null(input$user_n_cluster_type)) {
         shinyWidgets::show_alert(title = "Something went wrong!!",
@@ -304,7 +371,7 @@ mod_run_cluster_analysis_server <- function(id, r_use_data_list, parent_session)
             search_method <- "kmeans"
 
           } else if (input$more_algorithm_choice %in% hclust_algs) {
-            search_method <- "complete"           # ++++++++++++++++++++++
+            search_method <- "complete"               # ++++++++++++++++++++++
           }
 
           optimal_center(df = r_engr_data(),
@@ -315,10 +382,24 @@ mod_run_cluster_analysis_server <- function(id, r_use_data_list, parent_session)
       }
     })
 
+
     output$print_optimal_centers <- shiny::renderPrint({
       shiny::req(optimal_cal_centers())
-      paste("The suggested optimal number of clusters is", optimal_cal_centers())
+
+      if (input$run_data_suitability) {
+        shiny::tagList(
+          shiny::br(),
+
+          suggested_optimal_cluster_card(optimal_cal_centers())
+        )
+
+      } else {
+        shiny::tagList(
+          suggested_optimal_cluster_card(optimal_cal_centers())
+        )
+      }
     })
+
 
     shiny::observe({
       if (!is.null(input$user_n_cluster_type)) {
@@ -342,7 +423,7 @@ mod_run_cluster_analysis_server <- function(id, r_use_data_list, parent_session)
     }) |>
       shiny::bindEvent(input$user_n_cluster_type)
 
-    # Input Error ----------------------------------------------------------|
+    # Input Error -------------------------------------------------------------|
     shiny::observe({
       if (input$more_algorithm_choice == "" && is.null(input$user_n_cluster_type)) {
         shinyWidgets::show_alert(title = "Something went wrong!!",
@@ -352,7 +433,7 @@ mod_run_cluster_analysis_server <- function(id, r_use_data_list, parent_session)
 
       } else if (input$more_algorithm_choice != "" && is.null(input$user_n_cluster_type)) {
         shinyWidgets::show_alert(title = "Something went wrong!!",
-                                 text = "get optimal clusters or Assign manually must be selected",
+                                 text = "Get optimal clusters or Assign manually must be selected",
                                  type = "error")
 
       } else if (input$more_algorithm_choice == "" && !is.null(input$user_n_cluster_type)) {
@@ -363,20 +444,62 @@ mod_run_cluster_analysis_server <- function(id, r_use_data_list, parent_session)
     }) |>
       shiny::bindEvent(input$run_cluster_computation)
 
-    # Run cluster analysis --------------------------------------------------|
+    # clara n samples ---------------------------------------------------------|
+    shiny::observe({
+
+      shiny::updateNumericInput(session = session,
+                                inputId = "clara_sample",
+                                value = nrow(r_orig_data())*0.1,
+                                min = 5,
+                                max = nrow(r_orig_data())*0.2)
+    })
+
+
+    # h-cluster method --------------------------------------------------------|
+    shiny::observe({
+      shiny::req(input$more_algorithm_choice)
+
+      if (input$algorithm_choice == "Hierarchical clustering") {
+        if (input$more_algorithm_choice == "Hierarchical clustering") {
+          hc_m <- c("Single" = "single", "Complete" = "complete", "Average" = "average",
+                    "Median" = "median", "ward.D" = "ward.D", "ward.D2" = "ward.D2")
+
+        } else if (input$more_algorithm_choice == "Agglomerative Hierarchical Clustering (agnes)") {
+          hc_m <- c("Average"  = "average", "Single" = "single",
+                    "Complete" = "complete", "Ward" = "ward",
+                    "Weighted" = "weighted", "Flexible" = "flexible")
+
+        } else {
+          hc_m <- "Average"
+        }
+
+        shinyWidgets::updatePickerInput(session = session,
+                                        inputId = "hc_method",
+                                        choices = hc_m,
+                                        selected = "average")
+      }
+    })
+
+
+    # Run cluster analysis ----------------------------------------------------|
     cluster_data <- shiny::reactive({
-      shiny::req(r_orig_data(), r_engr_data(), input$more_algorithm_choice,
-          selected_cluster())
+      shiny::req(r_orig_data(), r_engr_data(), input$more_algorithm_choice, selected_cluster())
 
       if (!is.null(input$user_n_cluster_type)) {
         if (input$km_reproducible) {
           set.seed(111)
         }
+
+        n_sample <- ifelse(input$clara_sample > 0, input$clara_sample, NULL)
+
         run_cluster_algo(mdl_df = r_engr_data(),
                          org_df = r_orig_data(),
                          algorithm_type = input$more_algorithm_choice,
-                         h_method = "average", # +++++++++++++++++++++++++
-                         number_k_centers = selected_cluster())
+                         h_method = input$hc_method,
+                         r_metric = input$ad_metric,
+                         number_k_centers = selected_cluster(),
+                         r_n_starts = input$n_start,
+                         r_sample = n_sample)
       }
     }) |>
       shiny::bindEvent(input$run_cluster_computation,
