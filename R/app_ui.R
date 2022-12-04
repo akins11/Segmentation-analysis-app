@@ -4,14 +4,17 @@
 #'     DO NOT REMOVE.
 #' @import shiny
 #' @noRd
+#'
 app_ui <- function(request) {
-  tagList(
+  shiny::tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic
-    navbarPage(
+    bslib::page_navbar(
       title = "Segmentation Analysis",
       id = "navbar_container",
+
+      bg = "#FCFCFC",
 
       theme = bslib::bs_theme(version = 5,
                               bootswatch = "zephyr",
@@ -24,61 +27,75 @@ app_ui <- function(request) {
 
         shinyjs::useShinyjs(),
 
-        tags$script(src = "last_click.js")
+        shiny::tags$script(src = "last_click.js")
       ),
 
-      footer = tags$div(tags$br(), tags$br()),
+      footer = shiny::tags$div(tags$br(), shiny::tags$br()),
 
-      tabPanel(
+
+      bslib::nav_spacer(),
+
+      shiny::tabPanel(
         title = "Data Choice",
         value = "tab_data_choice",
 
         mod_load_data_ui(id = "data_choice")
       ),
 
-      tabPanel(
+      shiny::tabPanel(
         title = "Variable Selection",
         value = "tab_var_selection",
 
         mod_select_variables_ui(id = "select_cluster_variables")
       ),
 
-      tabPanel(
-        title = "Run Cluster Analysis",
-        value = "tab_run_cluster",
 
-        mod_run_cluster_analysis_ui(id = "run_cluster_analysis")
+      shiny::navbarMenu(
+        title = "Cluster Analysis",
+
+        tabPanel(
+          title = "Run Analysis",
+          value = "tab_run_cluster",
+
+          mod_run_cluster_analysis_ui(id = "run_cluster_analysis")
+        ),
+
+        shiny::tabPanel(
+          title = "Analysis Summary",
+          value = "tab_cluster_summary",
+
+          mod_cluster_summary_ui(id = "cluster_analysis_summary")
+        )
       ),
 
-      tabPanel(
-        title = "Cluster Summary",
-        value = "tab_cluster_summary",
 
-        mod_cluster_summary_ui(id = "cluster_analysis_summary")
+      shiny::navbarMenu(
+        title = "Segment Assignment",
+
+        shiny::tabPanel(
+          title = "Assign Segment",
+          value = "tab_assign_segment",
+
+          mod_assign_segments_ui(id = "assign_segments")
+        ),
+
+        shiny::tabPanel(
+          title = "Segmentation Summary",
+          value = "tab_segment_summary",
+
+          mod_segmentaion_summary_ui(id = "summarise_segments")
+        )
       ),
 
-      tabPanel(
+      bslib::nav_spacer(),
 
-        title = "Assign Segment",
-        value = "tab_assign_segment",
-
-        mod_assign_segments_ui(id = "assign_segments")
-      ),
-
-      tabPanel(
-        title = "Segmentation Summary",
-        value = "tab_segment_summary",
-
-        mod_segmentaion_summary_ui(id = "summarise_segments")
-      ),
-
-      tabPanel(
+      shiny::tabPanel(
         title = "About",
         value = "tab_about",
 
         markdown(
           "
-      ### **Segmentation Analysis app** `version 0.0.10`
+      ### **Segmentation Analysis app** `version 0.0.15`
 
       This application can be used for performing market segmentation analysis
       with the use cluster analysis, it consist of dividing a market into groups
@@ -112,13 +129,20 @@ app_ui <- function(request) {
          of each segments can be viewed in the segmentation summary panel.
 
 
-      **Contact**: [akinwandeayomide24@gmail.com](www.akinwandeayomide24@gmail.com)
+      **Contact**: [akinwandeayomide24@gmail.com](mailto:akinwandeayomide24@gmail.com)
       "
         )
-      )
+      ),
+
+      bslib::nav_item(
+        shiny::tags$a("Website", href = "https://akins11.github.io/Portfolio/")
+        #fontawesome::fa_i("fas fa-info"),
+      ),
     )
   )
 }
+
+
 
 #' Add external Resources to the Application
 #'
