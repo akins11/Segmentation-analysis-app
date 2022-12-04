@@ -1,7 +1,7 @@
 .navbar-brand {
-  background-color: #2E2E2E !important;
+  background-color: #343A40 !important;
   color: #F7F7F7 !important;
-  border: 1px solid #2E2E2E;
+  border: 1px solid #343A40;
   border-radius: 4px;
   padding-left: 4px;
   padding-right: 4px;
@@ -104,16 +104,31 @@ p {
 .algo-title {
   color: #ABABAB;
 }
+
 .algo-content {
   border: 1px solid #E8E8E8;
   padding: 4px;
 }
+
 .algo-fun-title {
   font-weight: bold;
   color: #878787;
   border-bottom: 1px solid #EEEEEE;
 }
+
 .algo-summary-content {
   font-weight: normal;
   color: #ADADAD;
+}
+
+.mh-430 {
+  min-height: 430px;
+}
+
+.mh-557 {
+  min-height: 557px;
+}
+
+.mh-430 {
+  min-height: 430px;
 }

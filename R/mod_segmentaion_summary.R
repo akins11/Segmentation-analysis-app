@@ -84,23 +84,17 @@ mod_segmentaion_summary_ui <- function(id) {
           class = "panel-color",
 
           shiny::plotOutput(outputId = ns("plot_output")) |>
-            shinycssloaders::withSpinner(type = 4,
-                                         color = spinner_color,
-                                         color.background = "white"),
+            ui_spinner(),
 
-          shiny::tags$br(),
-          shiny::tags$br(),
+          shiny::tags$br(), shiny::tags$br(),
 
           shiny::plotOutput(outputId = ns("t_plot_output")),
           reactable::reactableOutput(outputId = ns("p_table_output")),
 
-          shiny::tags$br(),
-          shiny::tags$br(),
+          shiny::tags$br(), shiny::tags$br(),
 
           reactable::reactableOutput(outputId = ns("table_output")) |>
-            shinycssloaders::withSpinner(type = 4,
-                                         color = spinner_color,
-                                         color.background = "white")
+            ui_spinner()
         )
       )
     )

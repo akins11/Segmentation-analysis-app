@@ -324,7 +324,7 @@ one_num_variable <- function(df, num_var, output_type = "plot_at") {
                             scales = "free_y",
                             ncol   = 2,
                             labeller = ggplot2::labeller(summary = \(x) paste(x, num_lb) )) +
-        ggplot2::scale_y_continuous(labels = scales::comma_format(1)) +
+        ggplot2::scale_y_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
         ggplot2::labs(x = "Segment", y = NULL) +
         ggplot2::theme_minimal() +
         ggplot2::theme(axis.text.x = ggplot2::element_text(angle = ifelse(len_segment > 6, 35, 0),
@@ -348,11 +348,11 @@ one_num_variable <- function(df, num_var, output_type = "plot_at") {
                             color  = "gray70",
                             fill   = "gray26",
                             stroke = 1.5) +
-        ggplot2::scale_x_continuous(labels = scales::comma_format(1)) +
+        ggplot2::scale_x_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
         ggplot2::labs(x = NULL, y = "Segments",
-                      title = glue::glue("<span style = 'font-size:13pt'>
-                                        <span style='color:{'azure4'};'>Minimum</span> &
-                                        <span style='color:{'gray26'};'>Maximum</span>
+                      title = glue::glue("<span style = 'font-size:13pt'> \\
+                                        <span style='color:{'azure4'};'>Minimum</span> & \\
+                                        <span style='color:{'gray26'};'>Maximum</span> \\
                                         {num_lb} In Each Segment </span>")) +
         ggplot2::theme_minimal() +
         ggplot2::theme(plot.title = ggtext::element_markdown(lineheight = 1.1),
@@ -418,8 +418,8 @@ two_num_variable <- function(df, num_varx, num_vary, output_type = "plot_full") 
       f_plt +
         f_plt_points +
         ggplot2::scale_color_manual(values = plt_clr$dash) +
-        ggplot2::scale_x_continuous(labels = scales::comma_format()) +
-        ggplot2::scale_y_continuous(labels = scales::comma_format()) +
+        ggplot2::scale_x_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
+        ggplot2::scale_y_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
         ggplot2::theme_minimal() +
         ggplot2::labs(x = x_lb,
                       y = y_lb,
@@ -446,8 +446,8 @@ two_num_variable <- function(df, num_varx, num_vary, output_type = "plot_full") 
       f_plt +
         f_plt_points +
         ggplot2::facet_wrap(ggplot2::vars(.segment), scale = "fixed") +
-        ggplot2::scale_x_continuous(labels = scales::comma_format()) +
-        ggplot2::scale_y_continuous(labels = scales::comma_format()) +
+        ggplot2::scale_x_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
+        ggplot2::scale_y_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
         ggplot2::labs(x = x_lb,
                       y = y_lb) +
         ggplot2::scale_color_manual(values = plt_clr$dash) +
@@ -738,7 +738,7 @@ chr_num_variable <- function(df,
     }
 
     f_plt +
-      ggplot2::scale_y_continuous(labels = scales::comma_format(1)) +
+      ggplot2::scale_y_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
       ggplot2::labs(x = chr_lb, y = NULL,
                     title = paste(agg_lb, num_lb, "By", chr_tl, "In Each Segment"))
   }

@@ -37,12 +37,10 @@ mod_cluster_summary_ui <- function(id) {
         width = 6,
 
         shinyWidgets::panel(
-          class = "panel-color",
+          class = "panel-color mh-430",
 
           shiny::plotOutput(outputId = ns("cluster_count_plot")) |>
-            shinycssloaders::withSpinner(type = 4,
-                                         color = spinner_color,
-                                         color.background = "white")
+            ui_spinner()
         )
       ),
 
@@ -50,12 +48,10 @@ mod_cluster_summary_ui <- function(id) {
         width = 4,
 
         shinyWidgets::panel(
-          class = "panel-color",
+          class = "panel-color mh-430",
 
           reactable::reactableOutput(outputId = ns("cluster_count_table")) |>
-            shinycssloaders::withSpinner(type = 4,
-                                         color = spinner_color,
-                                         color.background = "white")
+            ui_spinner()
         )
       )
     ),
@@ -107,12 +103,10 @@ mod_cluster_summary_ui <- function(id) {
         width = 6,
 
         shinyWidgets::panel(
-          class = "panel-color",
+          class = "panel-color mh-430",
 
           plotOutput(outputId = ns("stat_summary_plot")) |>
-            shinycssloaders::withSpinner(type = 4,
-                                         color = spinner_color,
-                                         color.background = "white")
+            ui_spinner()
         )
       ),
 
@@ -120,12 +114,10 @@ mod_cluster_summary_ui <- function(id) {
         width = 4,
 
         shinyWidgets::panel(
-          class = "panel-color",
+          class = "panel-color mh-430",
 
           reactable::reactableOutput(outputId = ns("stat_summary_table")) |>
-            shinycssloaders::withSpinner(type = 4,
-                                         color = spinner_color,
-                                         color.background = "white")
+            ui_spinner()
         )
       )
     ),
@@ -175,9 +167,7 @@ mod_cluster_summary_ui <- function(id) {
           class = "panel-color",
 
           shiny::plotOutput(outputId = ns("cluster_scatter_plot")) |>
-            shinycssloaders::withSpinner(type = 4,
-                                         color = spinner_color,
-                                         color.background = "white")
+            ui_spinner()
         )
       )
     )
@@ -283,12 +273,12 @@ mod_cluster_summary_server <- function(id, clust_data, parent_session) {
             width = 6,
 
             shinyWidgets::panel(
-              class = c("panel-color", "panel-h530"),
+              class = "panel-color mh-557",
 
-              shiny::plotOutput(outputId = ns("chr_count_plot"), height = "480px") |>
-                shinycssloaders::withSpinner(type = 4,
-                                             color = spinner_color,
-                                             color.background = "white")
+              shiny::br(),
+
+              shiny::plotOutput(outputId = ns("chr_count_plot"), height = "470px") |>
+                ui_spinner()
             )
           ),
 
@@ -296,7 +286,7 @@ mod_cluster_summary_server <- function(id, clust_data, parent_session) {
             width = 4,
 
             shinyWidgets::panel(
-              class = "panel-color",
+              class = "panel-color mh-557",
 
               reactable::reactableOutput(outputId = ns("chr_count_table"))
             )

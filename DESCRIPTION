@@ -1,6 +1,6 @@
 Package: segmentationAnalysisApp
 Title: Market Segmentation Analysis Application
-Version: 0.0.0.9000
+Version: 0.0.0.15
 Authors@R: person('Ayomide', 'Akinwande', email = 'akinwande24ayomide@gmail.com', role = c('cre', 'aut'))
 Description: A shiny application that performs market/customer segmentation using cluster analysis.
 License: What license is it under?

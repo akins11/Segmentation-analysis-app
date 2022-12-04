@@ -14,12 +14,13 @@ mod_load_data_ui <- function(id) {
   shiny::tagList(
     shiny::fluidRow(
       align = "center",
-      tags$br(),
+
+      shiny::tags$br(),
 
       shiny::column(
         width = 2,
 
-        div(
+        shiny::div(
           class = c("boxIn", "inputMag"),
 
           shinyWidgets::dropMenu(tag = shinyWidgets::actionBttn(inputId = ns("btn_upload_data"),
@@ -40,8 +41,7 @@ mod_load_data_ui <- function(id) {
                                    color = "primary",
                                    size = "sm"),
 
-          shiny::tags$br(),
-          shiny::tags$br(),
+          shiny::tags$br(), shiny::tags$br(),
 
           shiny::uiOutput(outputId = ns("drop_missing_value")),
 
@@ -52,8 +52,7 @@ mod_load_data_ui <- function(id) {
                               min   = 3, max = 100, step = 1, value = 10,
                               width = "180px"),
 
-          shiny::tags$br(),
-          shiny::tags$br(),
+          shiny::tags$br(), shiny::tags$br(),
 
           shinyjs::hidden(
             shinyWidgets::actionBttn(inputId = ns("btn_select_vars"),
@@ -73,9 +72,7 @@ mod_load_data_ui <- function(id) {
           shiny::tags$br(),
 
           reactable::reactableOutput(outputId = ns("rt_upload_data")) |>
-            shinycssloaders::withSpinner(type = 4,
-                                         color = spinner_color,
-                                         color.background = "white")
+            ui_spinner()
         ),
 
         shinyWidgets::panel(
@@ -250,6 +247,7 @@ mod_load_data_server <- function(id, parent_session) {
     # Update data info ------------------------------------------------------|
     output$data_info <- reactable::renderReactable({
       shiny::req(r_data())
+
       get_data_dimension(r_data())
     })
 

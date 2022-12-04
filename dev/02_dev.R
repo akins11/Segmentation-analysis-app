@@ -35,6 +35,7 @@ golem::add_fct("cluster_summary", with_test = TRUE)
 golem::add_fct("assign_segments", with_test = TRUE)
 golem::add_fct("segmentaion_summary", with_test = TRUE)
 golem::add_fct("react_table", with_test = TRUE)
+golem::add_fct("ui_component", with_test = TRUE)
 
 golem::add_utils("helpers", with_test = TRUE)
 

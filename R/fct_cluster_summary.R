@@ -89,6 +89,7 @@ count_clusters <- function(df, output_type = "table") {
       ggplot2::geom_text(ggplot2::aes(label = paste0(proportion,"%"),
                                       vjust = -0.2),
                          position = ggplot2::position_dodge(.9) ) +
+      ggplot2::scale_y_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
       ggplot2::labs(x = "Clusters",
                     y = "Count",
                     title = "Number Of Record In Each Cluster") +
@@ -168,18 +169,22 @@ chr_count_cluster <- function(df, chr_var, n_obs = 10, output_type = "table") {
           scale_x_discrete_wrap(f_tbl, chr_var, 10) +
           ggplot2::theme_minimal()
       }
+
       f_plt +
         ggplot2::facet_wrap(ggplot2::vars(.cluster), scales = "free") +
         ggplot2::scale_fill_manual(values = rev(plt_clr$dash)) +
-        ggplot2::labs(x = NULL, y = NULL,
+        ggplot2::scale_y_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
+        ggplot2::labs(x = NULL,
+                      y = NULL,
                       title = paste("Count Of", chr_lb, "For Each Cluster")) +
         ggplot2::theme(plot.background = ggplot2::element_rect(fill = plt_plot_BC,
                                                                color = plt_plot_BC))
 
     } else {
-      uq_count <- dplyr::count(df, .data[[chr_var]]) |>
-        dplyr::distinct(n) |>
-        dplyr::pull()
+      # uq_count <- dplyr::count(df, .data[[chr_var]]) |>
+      #   dplyr::distinct(n) |>
+      #   dplyr::pull()
+      uq_count <- table(df[[chr_var]]) |> unname() |> unique()
 
       if (length(uq_count) > 1) {
         df$char_var <- forcats::fct_lump(df[[chr_var]],
@@ -191,6 +196,7 @@ chr_count_cluster <- function(df, chr_var, n_obs = 10, output_type = "table") {
                                           keep = sample(uq, n_obs),
                                           other_level = paste("other", chr_var))
       }
+
       dplyr::count(df, char_var, .cluster) |>
         ggplot2::ggplot(ggplot2::aes(x = n, y = forcats::fct_rev(char_var), fill = .cluster)) +
         ggplot2::geom_col(position = ggplot2::position_fill()) +
@@ -320,13 +326,6 @@ cluster_stat_summary <- function(df,
                                  num_variables,
                                  plot_stat_var,
                                  output_type = "plot") {
-  #'@description Return a single or multiple descriptive summary table.
-  #'@param df data.frame: A df with a variable '.cluster' in it.
-  #'@param num_variables numeric: A single or multiple variables from the data.
-  #'@param output_type character: The type of output to return, either 'plot'
-  #'or 'table'
-  #'@param plot_stat_var character: stat description variable to use in the plot.
-  #'@import plot_labels, pluck_stat_summary, numeric_stat_summary
 
   output_type <- match.arg(output_type, c("table", "plot"))
 
@@ -355,10 +354,10 @@ cluster_stat_summary <- function(df,
                                                               .desc = TRUE),
                                      y = .data[[plot_stat_var]])) +
         ggplot2::geom_col(fill = plt_clr$bars) +
-        ggplot2::scale_y_continuous(labels = scales::comma_format(accuracy = 1)) +
+        ggplot2::scale_y_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
         ggplot2::labs(x = "Cluster",
                       y = plt_l,
-                      title = paste(plt_l, var_l, "In Each Cluster")) +
+                      title = paste(plt_l, var_l, "For Each Cluster")) +
         ggplot2::theme_minimal() +
         ggplot2::theme(plot.background = ggplot2::element_rect(fill = plt_plot_BC,
                                                                color = plt_plot_BC))
@@ -376,7 +375,8 @@ cluster_stat_summary <- function(df,
       })
 
     } else if (output_type == "plot") {
-      var_ll <- paste(var_l, collapse = ", ")
+      # var_ll <- paste(var_l, collapse = ", ")
+      # title = paste(plt_l, var_ll, "In Each Cluster")
 
       pluck_stat_summary(list_df, plot_stat_var, pivot = TRUE) |>
         ggplot2::ggplot(ggplot2::aes(x = .cluster,
@@ -384,10 +384,10 @@ cluster_stat_summary <- function(df,
         ggplot2::geom_col(fill = plt_clr$bars) +
         ggplot2::facet_wrap(ggplot2::vars(variable), scales = "free_y",
                             labeller = ggplot2::labeller(variable = plot_labels)) +
-        ggplot2::scale_y_continuous(labels = scales::comma_format(accuracy = 1)) +
+        ggplot2::scale_y_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
         ggplot2::labs(x = "Cluster",
                       y = plt_l,
-                      title = paste(plt_l, var_ll, "In Each Cluster")) +
+                      title = "Selected Variable Summary For Each Cluster") +
         ggplot2::theme_minimal() +
         ggplot2::theme(plot.background = ggplot2::element_rect(fill = plt_plot_BC,
                                                                color = plt_plot_BC))
@@ -422,6 +422,7 @@ cluster_relationship_plot <- function(df, num_varx, num_vary) {
   f_plt <- ggplot2::ggplot(df, ggplot2::aes(x = .data[[num_varx]],
                                             y = .data[[num_vary]],
                                             color = .cluster))
+
   if (any(c(x_len, y_len) < 10)) {
     f_plt <- f_plt + ggplot2::geom_jitter()
   } else  {
@@ -439,8 +440,8 @@ cluster_relationship_plot <- function(df, num_varx, num_vary) {
                    legend.margin   = ggplot2::margin(t = -7, b = -8),
                    plot.background = ggplot2::element_rect(fill = plt_plot_BC,
                                                            color = plt_plot_BC)) +
-    ggplot2::scale_y_continuous(labels = scales::comma_format(1)) +
-    ggplot2::scale_x_continuous(labels = scales::comma_format(1)) +
+    ggplot2::scale_y_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
+    ggplot2::scale_x_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
     ggplot2::guides(color = ggplot2::guide_legend(title = NULL,
                                                   label.position = "top",
                                                   label.vjust  = -2,

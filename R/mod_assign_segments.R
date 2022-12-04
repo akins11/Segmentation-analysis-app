@@ -121,9 +121,7 @@ mod_assign_segments_ui <- function(id) {
           class = "panel-color",
 
           reactable::reactableOutput(outputId = ns("segment_table")) |>
-            shinycssloaders::withSpinner(type = 4,
-                                         color = spinner_color,
-                                         color.background = "white")
+            ui_spinner()
         ),
 
         shiny::tags$br(),
@@ -168,10 +166,12 @@ mod_assign_segments_server <- function(id, clust_data, parent_session) {
     output$segment_values <- shiny::renderUI({
       shiny::req(num_clusters())
       lapply(seq_len(num_clusters()), function(.x) {
-        shinyWidgets::textInputIcon(inputId = ns(paste0("seg_", .x)),
-                                    label = "",
-                                    icon  = list(paste("cluster", .x)),
-                                    value = "")
+        htmltools::tagQuery(
+          shinyWidgets::textInputIcon(inputId = ns(paste0("seg_", .x)),
+                                      label = "",
+                                      icon  = list(paste("cluster", .x)),
+                                      value = "")
+        )$find("input")$addAttrs("autocomplete" = "off")$allTags()
       })
     })
 

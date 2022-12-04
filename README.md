@@ -1,10 +1,13 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 # Segmentation Analysis app `version 0.0.10`
 
-
+<!-- badges: start -->
 
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-
+<!-- badges: end -->
 
 This application can be used for performing market segmentation analysis
 with the use cluster analysis, it consist of dividing a market into

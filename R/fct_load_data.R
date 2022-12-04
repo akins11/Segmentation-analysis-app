@@ -5,7 +5,8 @@
 #' @return Boolean
 #' @export
 #'
-#' @examples
+#' @examples  check_for_missing_values(upload_data)
+#'
 check_for_missing_values <- function(df) {
   if (is.data.frame(df)) {
     vapply(df, \(.x) sum(is.na(.x)) > 1, FUN.VALUE = logical(1)) |>
@@ -24,13 +25,14 @@ check_for_missing_values <- function(df) {
 #' @return data frame
 #' @export
 #'
-#' @examples
+#' @examples drop_all_missing_values(upload_data, 50)
+#'
 drop_all_missing_values <- function(df, missing_threshold = 75) {
   vars_with_large_NAs <- vapply(df,
                                 \(.x) (sum(is.na(.x))/nrow(df))*100 >= missing_threshold,
                                 FUN.VALUE = logical(1))
 
-  f_tbl <- df[!vars_with_large_NAs]
+  f_tbl <- df[, !vars_with_large_NAs]
   f_tbl[complete.cases(f_tbl), ]
 }
 
@@ -42,7 +44,7 @@ drop_all_missing_values <- function(df, missing_threshold = 75) {
 #' @param clean_df  A data.frame without any missing value
 #' @param original_df_nrows Number of rows of the original dataset
 #'
-#' @return
+#' @return boolean.
 #' @export
 #'
 #' @examples

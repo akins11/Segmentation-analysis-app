@@ -87,9 +87,7 @@ mod_select_variables_ui <- function(id) {
           shiny::tags$h6("Selected Variables"),
 
           reactable::reactableOutput(outputId = ns("selected_vars_out")) |>
-            shinycssloaders::withSpinner(type = 4,
-                                         color = spinner_color,
-                                         color.background = "white")
+            ui_spinner()
         ),
 
         shiny::tags$br(),
@@ -99,9 +97,7 @@ mod_select_variables_ui <- function(id) {
           shiny::tags$h6("Restructured Data"),
 
           reactable::reactableOutput(outputId = ns("engineered_data")) |>
-            shinycssloaders::withSpinner(type = 4,
-                                         color = spinner_color,
-                                         color.background = "white")
+            ui_spinner()
         )
       )
     )
