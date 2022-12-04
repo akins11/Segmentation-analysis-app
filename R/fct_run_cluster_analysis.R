@@ -282,7 +282,7 @@ k_center_model <- function(df,
                            k_center,
                            iter.max = 10,
                            n_starts = 10,
-                           samples) {
+                           samples = NULL) {
 
   use_algo <- match.arg(use_algo, c("kmeans", "pam", "clara"))
 
@@ -298,16 +298,15 @@ k_center_model <- function(df,
                         k = k_center,
                         stand  = scale,
                         variant = "faster",
-                        # nstart = n_starts,
                         cluster.only = TRUE)
 
   } else if (use_algo == "clara") {
-    samples <- ifelse(missing(samples), nrow(df)*0.1, samples)
+    samples <- ifelse(is.null(samples), nrow(df)*0.1, samples)
 
     mdl <- cluster::clara(x = df,
                           k = k_center,
                           stand   = scale,
-                          # rngR = TRUE,
+                          rngR = TRUE,
                           samples = samples,
                           cluster.only = TRUE)
   }
@@ -381,7 +380,8 @@ tidy_cluster <- function(df, algo, mdl, use_fun) {
 h_cluster <- function(df,
                       use_fun,
                       scale = FALSE,
-                      method = "median", # average ++++++++++++++
+                      method = "median",
+                      metric = "euclidean",
                       cut_k) {
   use_fun <- match.arg(use_fun, c("hclust", "agnes", "diana"))
 
@@ -390,14 +390,14 @@ h_cluster <- function(df,
 
   } else if (use_fun == "agnes") {
     f_mdl <- cluster::agnes(df,
-                            metric = "euclidean",
+                            metric = metric,
                             stand = scale,
                             method = method,
                             keep.data = FALSE)
 
   } else if (use_fun == "diana") {
     f_mdl <- cluster::diana(df,
-                            metric = "euclidean",
+                            metric = metric,
                             stand = scale,
                             keep.data = FALSE)
   }
@@ -480,7 +480,10 @@ run_cluster_algo <- function(mdl_df,
                              org_df,
                              algorithm_type,
                              h_method = "median", # average
-                             number_k_centers) {
+                             r_metric = "euclidean",
+                             number_k_centers,
+                             r_n_starts = 10,
+                             r_sample = NULL) {
 
   algorithm_type <- clust_alg_value(algorithm = algorithm_type)
 
@@ -490,11 +493,12 @@ run_cluster_algo <- function(mdl_df,
 
   if (cluster_algorithm %in% c("kmeans", "pam", "clara")) {
     f_mdl <- k_center_model(df = mdl_df,
-                            use_algo  = cluster_algorithm,
+                            use_algo = cluster_algorithm,
                             scale    = FALSE,
                             k_center = number_k_centers,
                             iter.max = 10,
-                            n_starts = 10)
+                            n_starts = r_n_starts,
+                            samples = r_sample)
 
     tidy_cluster(df   = org_df,
                  algo = "kmeans",
@@ -506,6 +510,7 @@ run_cluster_algo <- function(mdl_df,
                        use_fun = cluster_algorithm,
                        scale   = FALSE,
                        method  = h_method,
+                       metric  = r_metric,
                        cut_k   = number_k_centers)
 
     tidy_cluster(df = org_df, algo = "hclust", mdl = d_mdl)
